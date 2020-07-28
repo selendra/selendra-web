@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white h-20 lg:px-20">
+  <div class="bg-white lg:px-20" style="min-height: 5rem">
     <div class="hidden md:block">
       <div class="lg:grid grid-cols-3 pt-4 bg-white">
         <div class="flex justify-center">
