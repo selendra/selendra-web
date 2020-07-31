@@ -28,7 +28,7 @@ class Header extends Component {
         <div className="hidden md:block">
           <div className="grid grid-cols-3 pt-4"> 
             <div>
-              <img src={require('../assets/Selendra.png')} alt="logo" className="w-12"/>
+              <img src={require('../assets/Selendra.png')} alt="logo" className="w-12 h-12"/>
             </div>
             <div className="flex items-center">
               <span className="font-semibold flex items-center cursor-pointer">
