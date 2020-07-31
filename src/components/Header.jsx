@@ -54,7 +54,7 @@ class Header extends Component {
               <Menu />
             </button>
             <div className="flex justify-center w-full pt-4">
-              <img src={require('../assets/Selendra.png')} alt="selendra" className="w-12 mr-8"/>
+              <img src={require('../assets/Selendra.png')} alt="selendra" className="w-12 h-12 mr-8"/>
             </div>
           </div>
           { sidebar }
