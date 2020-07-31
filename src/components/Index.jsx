@@ -7,30 +7,14 @@ class Index extends Component {
     super(props);
     this.state = {
       modal1Visible: false,
-      // name: '',
-      // email: '',
       loading: false
     };  
     this.setModal1Visible = this.setModal1Visible.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleName = this.handleName.bind(this);
-    this.handleEmail = this.handleEmail.bind(this);
   }
 
   setModal1Visible(modal1Visible) {
     this.setState({ modal1Visible });
-  }
-
-  handleName (evt) {
-    this.setState({
-      name: evt.target.value
-    })
-  }
-
-  handleEmail(evt) {
-    this.setState({
-      email: evt.target.value
-    })
   }
 
   handleSubmit(val) {
@@ -104,7 +88,7 @@ class Index extends Component {
                   <Input/>
                 </Form.Item>
                 <Form.Item>
-                  <Button type="primary" htmlType="submit" block loading={this.state.loading}>Submit</Button>
+                  <Button type="primary" htmlType="submit" block loading={ this.state.loading }>Submit</Button>
                 </Form.Item>
               </Form>
             </Modal>
