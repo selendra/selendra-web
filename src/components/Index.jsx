@@ -38,7 +38,7 @@ class Index extends Component {
       <div className="h-screen">
         <div className="flex justify-center items-center h-full">
           <div className="text-center"> 
-            <img src={require('../assets/Selendra.png')} alt="logo" className="w-12 h-12 ml-4 logo" />
+            <img src={require('../assets/Selendra.png')} alt="logo" className="w-12 h-12 ml-6 logo" />
             <span className="block">Coming Soon!!</span>
             <br></br>
             <Button type="primary" onClick={() => this.setModal1Visible(true)}>
