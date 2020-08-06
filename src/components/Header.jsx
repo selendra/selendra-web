@@ -10,7 +10,7 @@ class Header extends Component {
     this.state = {
       active: false
     };  
-    this.handleNav = this.handleNav.bind(this);
+    // this.handleNav = this.handleNav.bind(this);
   }
   handleNav = () => {
     this.setState((prevState) => 

@@ -231,6 +231,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      Nunito: ['Nunito'],
       sans: [
         'system-ui',
         '-apple-system',

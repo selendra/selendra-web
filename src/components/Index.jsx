@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Form, Input, Modal, Button, notification } from 'antd';
+import { Form, Input, Button, notification, Row, Col } from 'antd';
 import axios from 'axios';
+import '../styles/index.css';
 
 class Index extends Component {
   constructor(props) {
@@ -35,42 +36,34 @@ class Index extends Component {
 
   render() {
     return (
-      <div className="h-screen">
-        <div className="flex justify-center items-center h-full">
-          <div className="text-center"> 
-            <img src={require('../assets/Selendra.png')} alt="logo" className="w-12 h-12 ml-6 logo" />
-            <span className="block">Coming Soon!!</span>
-            <br></br>
-            <Button type="primary" onClick={() => this.setModal1Visible(true)}>
-              Get Notify
-            </Button>
-            <Modal
-              centered
-              title="Get Notify"
-              style={{ top: 20 }}
-              visible={this.state.modal1Visible}
-              onOk={() => this.setModal1Visible(false)}
-              onCancel={() => this.setModal1Visible(false)}
-            >
+      <>
+        <div className="lg:h-screen landing-page">
+          <div>
+            <Row>
+              <Col xs={{span:24}} sm={{span:24}} md={{span:12}} className="text-white section-1">
+                <p className="text-5xl font-bold text-center">Selendra</p>
+                <p className="text-xl">A digital assets ownership issuance and management platform that is secured, transparent, fast and interoperational and is trustless; powered by Blockchain.</p>
+              </Col>
+              <Col></Col>
+            </Row>
+          </div>
+        </div>
+        <div>
+          <Row className="py-6 px-20">
+            <Col xs={{span:24}} sm={{span:24}} md={{span:8}} className="">
+              <p className="text-4xl">Sign Up for Project Updates</p>
+              <p className="text-xl">We’ll update you on our project status & let you know when we’ve launched.</p>
+            </Col>
+            <Col xs={{span:24}} sm={{span:12}} md={{span:10, offset:5}} lg={{offset:5}}>
               <Form
+                size={'large'}
+                layout={'vertical'}
                 name="basic"
                 initialValues={{
                   remember: true,
                 }}
                 onFinish={this.handleSubmit}
               >
-                <Form.Item 
-                  label="Name:"
-                  name='name'
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your Name!',
-                    },
-                  ]}
-                >
-                  <Input />
-                </Form.Item>
                 <Form.Item 
                   label="Email:"
                   name="email"
@@ -91,10 +84,10 @@ class Index extends Component {
                   <Button type="primary" htmlType="submit" block loading={ this.state.loading }>Submit</Button>
                 </Form.Item>
               </Form>
-            </Modal>
-          </div>
+            </Col>
+          </Row>
         </div>
-      </div>
+      </>
     );
   }
 }

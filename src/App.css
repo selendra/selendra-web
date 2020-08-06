@@ -2,10 +2,6 @@ body {
   background: #E2E8F0!important;
 }
 
-.App {
-  text-align: center;
-}
-
 .logo {
   animation: rotate-s-loader 6s linear infinite;
 }

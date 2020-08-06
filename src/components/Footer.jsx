@@ -52,7 +52,7 @@ class Footer extends Component {
           <div>
             <p className="font-bold text-2xl mb-4">Connect With Us</p>
             <div className="grid grid-rows-2 py-3">
-              <div className="flex justify-center">
+              <div className="flex">
                 <button>
                   <Facebook />
                 </button>
@@ -60,7 +60,7 @@ class Footer extends Component {
                   <Telegram />
                 </button>
               </div>
-              <div className="flex justify-center mt-6">
+              <div className="flex mt-6">
                 <button>
                   <Medium />
                 </button>

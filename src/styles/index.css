@@ -1,0 +1,13 @@
+.landing-page {
+  background-image: url('../assets/zee-landing.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.section-1 {
+  padding: 16% 6%;
+}

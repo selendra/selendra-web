@@ -8,7 +8,7 @@ import Index from './components/Index.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-Nunito">
       <Header />
       <Index />
       <Footer />
