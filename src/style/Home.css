@@ -1,0 +1,77 @@
+.container {
+  min-height: 100vh;
+  background-color: hsl(232, 63%, 10%);
+}
+.content {
+  padding: 0 190px;
+}
+
+.selendra_title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home_logo {
+  width: 74px;
+  height: 74px;
+}
+
+.description {
+  font-size: 29px;
+  font-weight: bold;
+  color: #585D86;
+  line-height: 28px;
+  padding-top: 1rem;
+}
+
+.home_button {
+  width: 160px!important;
+}
+
+.github_button {
+  margin-left: 20px;
+  width: 160px!important;
+  border-radius: 6px!important;
+  background: transparent!important;
+  color: #fff!important;
+}
+
+.github_button span {
+  /* margin-top: 10px!important; */
+}
+.notify {
+  padding-top: 6rem;
+  background: rgba(255,255,255,10%);
+  padding: 0 190px;
+}
+.home_title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #585D86;
+}
+
+.notify_sub {
+  font-size: 29px;
+  color: #585D86;
+}
+
+.ant-input {
+  background: #181C35!important;
+  color: #fff!important;
+}
+.ant-input-affix-wrapper {
+  background: #181C35!important;
+  border: 0px!important;
+}
+
+.email_svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.ant-input-affix-wrapper-lg {
+  padding: 15.5px 11px!important;
+}

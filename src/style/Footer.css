@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 6rem;
+  background: #181C35;
+  padding: 0 190px;
+}
+
+.footer_title {
+  font-size: 29px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer_sub {
+  font-size: 22px;
+  color: #585D86;
+}
