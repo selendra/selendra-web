@@ -14,3 +14,47 @@
   font-size: 22px;
   color: #585D86;
 }
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer p {
+    margin-bottom: 8px;
+  }
+  .footer_title {
+    font-size: 24px;
+  }
+  .footer_sub {
+    font-size: 16px;
+  }
+  .footer_social {
+    width: 44px;
+    height: 44px;
+  }
+}
+ 
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer p {
+    margin-bottom: 8px;
+  }
+  .footer_title {
+    font-size: 24px;
+  }
+  .footer_sub {
+    font-size: 16px;
+  }
+  .footer_social {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px){
+  .footer {
+    padding: 20px;
+  }
+}

@@ -75,3 +75,61 @@
 .ant-input-affix-wrapper-lg {
   padding: 15.5px 11px!important;
 }
+
+@media only screen and (max-width: 339px) {
+  .content{
+    padding: 0px 10px;
+  }
+  .selendra_title {
+    font-size: 30px;
+  }
+  .github_button {
+    margin: 1rem;
+  }
+  .notify {
+    padding: 0px 10px;
+  }
+  .home_title {
+    font-size: 24px
+  }
+  .notify_sub {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content{
+    padding: 10px 0;
+  }
+  .home_logo {
+    margin-left: 16px;
+  }
+  .description {
+    text-align: center;
+  }
+  .notify {
+    padding: 0px 10px;
+  }
+  .home_title {
+    font-size: 24px
+  }
+  .notify_sub {
+    font-size: 16px;
+  }
+}
+ 
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .content{
+    padding: 0px 10px;
+  }
+  .notify {
+    padding: 0px 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px){
+  .content{
+    padding: 0px 20px;
+  }
+}

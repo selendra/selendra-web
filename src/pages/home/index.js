@@ -11,61 +11,62 @@ function Home() {
   return (
     <div className='container'>
       <div className="content">
-      <Row align='middle' style={{minHeight: '92vh'}}>
-        <Col span={'12'}>
-          <span className="selendra_title">
-            <img src={logo} alt="logo" className='home_logo'></img> selendra
-          </span>
-          <p className='description'>
-            A multi-use cases blockchain <br/>
-            super-app for the Internet 2.0
-          </p>
-          <Row>
-            <Button className="button home_button" size='large'>Sign Up</Button>
-            <Button className='github_button' size='large'>
-              <Row justify='center'>
-                GitHub <Github />
-              </Row>
-            </Button>
-          </Row>
-        </Col>
-        <Col span={'12'}>
-          <Row justify='center'>
-            <Portfolio />
-          </Row>
-        </Col>
-      </Row>
-      <Row align='middle' style={{minHeight: '100vh'}}>
-        <Col span={'12'}>
-          <Row justify='start'>
-            <img src={promo} alt="promo" />
-          </Row>
-        </Col>
-        <Col span={'12'}>
-          <Row justify="end">
+        <Row align='middle' style={{minHeight: '92vh'}}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <span className="selendra_title">
-              <img src={logo} alt="logo" className='home_logo'></img> selendra <br/>
-              walletapp
+              <img src={logo} alt="logo" className='home_logo'></img> selendra
             </span>
             <p className='description'>
-              Available both Mobile and <br/>
-              WebApp
+              A multi-use cases blockchain <br/>
+              super-app for the Internet 2.0
             </p>
-            <Row>
+            <Row justify='center'>
               <Button className="button home_button" size='large'>Sign Up</Button>
               <Button className='github_button' size='large'>
                 <Row justify='center'>
-                  Get APK <Github />
+                  GitHub <Github />
                 </Row>
               </Button>
             </Row>
-          </Row>
-        </Col>
-      </Row>
+          </Col>
+          <Col xs={0} sm={0} md={12} lg={12} xl={12}>
+            <Row justify='center'>
+              <Portfolio />
+            </Row>
+          </Col>
+        </Row>
+        ////
+        <Row align='middle' style={{minHeight: '100vh'}}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Row justify='start'>
+              <img src={promo} alt="promo" />
+            </Row>
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Row justify="center">
+              <span className="selendra_title">
+                <img src={logo} alt="logo" className='home_logo'></img> selendra <br/>
+                walletapp
+              </span>
+              <p className='description'>
+                Available both Mobile and <br/>
+                WebApp
+              </p>
+              <Row justify='center'>
+                <Button className="button home_button" size='large'>Sign Up</Button>
+                <Button className='github_button' size='large'>
+                  <Row justify='center'>
+                    Get APK <Github />
+                  </Row>
+                </Button>
+              </Row>
+            </Row>
+          </Col>
+        </Row>
       </div> 
       <div style={{paddingTop: "6rem"}}></div>
       <Row className='notify'>
-        <Col span={12}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <div style={{padding: '1rem 0'}}>
             <span className="home_title">Sign Up for Project Updates</span>
             <p className='notify_sub'>We’ll update you on our project status <br/>
@@ -73,7 +74,7 @@ function Home() {
             </p> 
           </div>
         </Col>
-        <Col span={12}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <div style={{padding: '2rem 0'}}>
             <Input prefix={<Email className="email_svg"/>} placeholder='Email' size='large'></Input>
             <div style={{padding: '1rem 0'}}></div>
