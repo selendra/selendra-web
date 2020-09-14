@@ -1,3 +1,5 @@
+## About
+
 Selendra is a multi-use cases blockchain super-app for the Internet 2.0 for identity management, ownership of assets distribution & management, decentralized e-commerce, finance, decentralized computing and storage, and IoT applications and more. 
 
 ## Available Scripts
