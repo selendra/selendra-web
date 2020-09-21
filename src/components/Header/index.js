@@ -1,81 +1,126 @@
 import React, { useState } from 'react';
-import { Layout, Menu, Row, Col, Button } from 'antd';
-import '../../style/Nav.css';
 import logo from '../../assets/selendra.png';
-import { ReactComponent as Dropdown } from '../../assets/dropdown.svg';
+import { Row, Col, Button, Dropdown, Card, Menu } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 import { ReactComponent as MenuBar } from '../../assets/menu.svg';
+import { ReactComponent as Close } from '../../assets/close.svg';
+import { Link } from 'react-router-dom';
 
-const { Header } = Layout;
-
-function Nav() {
+function Header() {
   const [nav, setNav] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   }
-  return (
+  const handleClose = () => {
+    setNav(false);
+  }
+
+  const menu = (
+    <Card className='pa-2 bg-gray-light r-12 text-white md-width'>
+      <Row>
+        <Col md={12} lg={12} xl={12}>
+          <p className='font-22 font-bold'>Consumer App</p>
+          <Link to='/wallet'>
+            <Row>
+              <img src={logo} alt="logo" className='icon ml-1'></img>
+              <span className='font-16 font-bold text-white hover ml-1'>
+                SELENDRA
+              </span>
+            </Row>
+          </Link>
+        </Col>
+        <Col md={12} lg={12} xl={12}>
+          <p className='font-22 font-bold'>Businesses</p>
+          <p className='font-16 font-bold ml-1'>Customer Loyalty</p>
+          <p className='font-16 font-bold ml-1'>Vested Shares</p>
+          <p className='font-16 font-bold ml-1'>Payment</p>
+        </Col>
+      </Row>
+    </Card>
+  )
+  return(
     <>
-      <Header className='header'>
-        <Menu theme="dark" mode="horizontal">
-          <Menu.Item key="1">
-            <img src={logo} alt="logo" className="logo"/>
-            <span className="title">selendra</span>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <span>Company <Dropdown className="dropdown"/></span>
-          </Menu.Item>
-          <Menu.Item key="3">Product</Menu.Item>
-          <Menu.Item className='signup'>
-            <Button className="button">Sign Up</Button>
-          </Menu.Item>
-          <Menu.Item className='login'>
-            <span style={{color: '#08B952'}}>Login</span>
-          </Menu.Item>
-        </Menu>
-      </Header>
+      <div className='header justify-center'>
+        <div className='container'>
+          <Row align='middle'>
+            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
+              <Link to='/'>
+                <Row align='middle'>
+                  <img src={logo} alt="logo" className='home_logo'></img>
+                  <span className='font-45 font-bold text-white'>
+                    SELENDRA
+                  </span>
+                </Row>
+              </Link>
+            </Col>
+            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
+              <Row justify='center'>
+                <Dropdown overlay={menu}>
+                  <span className='font-16 font-bold hover'>Products <DownOutlined /></span>
+              </Dropdown>
+                <span className='font-16 font-bold hover ml-2'>Company</span>
+              </Row>
+            </Col>
+            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
+              <Row justify='end'>
+                <Col>
+                  <span className='font-16 font-bold hover'>Login</span>
+                  <Button size='large' className='btn ml-2'>Sign Up</Button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    {/* Mobile */}
       <div className='mobile_nav'>
         <div className='mobile_header'>
           <Row align='middle' style={{height: '80px'}}>
             <MenuBar className='menu_icon' onClick={handleNav}/>
-            <Row justify='center' style={{width: '100vw', position: 'absolute'}}>
-            <img src={logo} alt="logo" className="logo"/>
-            <span className="title">selendra</span>
+            <Row justify='center' align='middle' style={{width: '100vw', position: 'absolute'}}>
+              <img src={logo} alt="logo" className="home_logo"/>
+              <span className="font-22 font-bold">SELENDRA</span>
             </Row>
           </Row>
         </div>
       {
-        nav && 
+        nav &&
         <div className='navItem'>
-          <Row justify='center' style={{height: '100vh', width: '100vw'}}>
-          <ul>
-            <li>
-              <span>Home</span>
-            </li>
-            <li>
-              <span>Company</span>
-            </li>
-            <li>
-              <span>Products</span>
-            </li>
-            <li>
-              <span>About Us</span>
-            </li>
-            <li>
-              <span>Privacy & Policy</span>
-            </li>
-            <li>
-              <span>Login</span>
-            </li>
-            <li>
-              <Button className='button nav_btn' size='large'>Sign Up</Button>
-            </li>
-          </ul>
+          {/* <Row justify='end'><Close onClick={handleClose} className='close-icon'/></Row> */}
+          <Row justify='center' align='middle' style={{height: '100vh', width: '100vw'}}>
+            <ul>
+              <li>
+                <a href='/'>
+                  <span className='font-22 font-bold text-white'>Home</span>
+                </a>
+              </li>
+              <li className='pt-1'>
+                <span className='font-22 font-bold'>Company</span>
+              </li>
+              <li className='pt-1'>
+                <a href='/wallet'>
+                  <span className='font-22 font-bold text-white'>Products</span>
+                </a>
+              </li>
+              <li className='pt-1'>
+                <span className='font-22 font-bold'>About Us</span>
+              </li>
+              <li className='pt-1'>
+                <span className='font-22 font-bold'>Privacy & Policy</span>
+              </li>
+              <li className='pt-1'>
+                <span className='font-22 font-bold'>Login</span>
+              </li>
+              <li className='pt-1'>
+                <Button className='btn' size='large'>Sign Up</Button>
+              </li>
+            </ul>
           </Row>
         </div>
       }
       </div>
     </>
-  )
+  );
 }
 
-export default Nav;
+export default Header;
