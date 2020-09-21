@@ -74,6 +74,7 @@
   background: #090D28;
   color: #fff;
   width: 100vw;
+  overflow-x: hidden;
 }
 /* Header */
 .header {
