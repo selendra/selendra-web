@@ -14,7 +14,7 @@ function Notify() {
               & let you know when we’ve launched.
             </p>
           </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col xs={24} sm={24} md={{span: 10, offset:2}} lg={{span: 10, offset:2}} xl={{span: 10, offset:2}}>
             <Input prefix={<Email className="email_icon"/>} placeholder='Email' size='large'></Input>
             <div style={{padding: '1rem 0'}}></div>
             <Button className="btn" block size='large'>Sign Up</Button>

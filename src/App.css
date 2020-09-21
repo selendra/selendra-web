@@ -170,7 +170,7 @@
   }
 /* Header */
   .header { display: none; }
-  .header .home_logo {
+  .mobile_header .home_logo {
     width: 40px;
     height: 40px;
   }
@@ -194,9 +194,9 @@
   .header .font-45 {
     font-size: 29px;
   }
-  .header .home_logo {
-    /* width: 32px;
-    height: 32px; */
+  .mobile_header .home_logo {
+    width: 40px;
+    height: 40px;
   }
   .container {
     width: 100vw;

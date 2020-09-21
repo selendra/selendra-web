@@ -1,4 +1,4 @@
-import { Col, Row, Button, Input } from 'antd';
+import { Col, Row, Button } from 'antd';
 import React from 'react';
 import logo from '../../assets/selendra.png';
 import { ReactComponent as Portfolio} from '../../assets/portfolio.svg';
