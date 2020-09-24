@@ -52,6 +52,9 @@
 .pt-1 {
   padding-top: 1rem;
 }
+.mt-1 {
+  margin-top: 1rem;
+}
 .pa-2 {
   padding: 2rem!important;
 }
@@ -147,6 +150,33 @@
 /* RESPONSIVE */
 /* SmartPhone */
 @media only screen and (max-width: 500px) {
+  /* about */
+  .about .font-22 {
+    font-size: 16px;
+  }
+  .about .font-45 {
+    font-size: 29px;
+  }
+  /* privacy */
+  .privacy .font-22 {
+    font-size: 16px;
+  }
+  .privacy .font-45 {
+    font-size: 29px;
+  }
+  .privacy .font-29 {
+    font-size: 24px;
+  }
+  /* term of use */
+  .termofuse .font-22 {
+    font-size: 16px;
+  }
+  .termofuse .font-29 {
+    font-size: 24px;
+  }
+  .termofuse .font-45 {
+    font-size: 29px;
+  }
   .container {
     padding: 2rem;
   }

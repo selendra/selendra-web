@@ -103,10 +103,19 @@ function Header() {
                 </a>
               </li>
               <li className='pt-1'>
-                <span className='font-22 font-bold'>About Us</span>
+                <a href='/about'>
+                  <span className='font-22 font-bold text-white'>About Us</span>
+                </a>
               </li>
               <li className='pt-1'>
-                <span className='font-22 font-bold'>Privacy & Policy</span>
+                <a href='/privacy'>
+                  <span className='font-22 font-bold text-white'>Privacy & Policy</span>
+                </a>
+              </li>
+              <li className='pt-1'>
+                <a href='/termofuse'>
+                  <span className='font-22 font-bold text-white'>Term of use</span>
+                </a>
               </li>
               <li className='pt-1'>
                 <span className='font-22 font-bold'>Login</span>
