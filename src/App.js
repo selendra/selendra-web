@@ -21,17 +21,13 @@ function App() {
       <div className="App">
         <Header />
           <Switch>
-            {/* <Row justify='center'>
-              <div className='container'> */}
             <Route path='/' exact component={Home} />
             <Route path='/wallet' exact component={Wallet} />
             <Route path='/about' exact component={About} />
             <Route path='/termofuse' exact component={Termofuse} />
             <Route path='/privacy' exact component={Privacy} />
-              {/* </div>
-            </Row> */}
           </Switch>
-        <Notify />
+        <Notify/>
         <Footer/>
       </div>
     </Router>

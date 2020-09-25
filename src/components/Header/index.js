@@ -11,9 +11,6 @@ function Header() {
   const handleNav = () => {
     setNav(!nav);
   }
-  // const handleClose = () => {
-  //   setNav(false);
-  // }
 
   const menu = (
     <Card className='pa-2 bg-gray-light r-12 text-white md-width'>
