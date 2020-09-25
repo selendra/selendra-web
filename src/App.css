@@ -10,6 +10,12 @@
 .bg-gray-light {
   background-color: #293462!important;
 }
+.bg-gray {
+  background-color: #181C35!important;
+}
+.border-none {
+  border: none!important;
+}
 .r-12 {
   border-radius: 12px!important;
 }
@@ -78,6 +84,13 @@
   color: #fff;
   width: 100vw;
   overflow-x: hidden;
+}
+/* about */
+.about  img {
+  width: 200px;
+  height: 200px;
+  /* object-fit: contain; */
+  border-radius: 50%;
 }
 /* Header */
 .header {
