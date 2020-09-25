@@ -2,6 +2,7 @@ import { Button, Col, Row } from 'antd';
 import React from 'react';
 import logo from '../../assets/selendra.png';
 import promo from '../../assets/promo.png';
+import { ReactComponent as Android } from '../../assets/android.svg';
 
 function Wallet() {
   return (
@@ -31,7 +32,11 @@ function Wallet() {
                       <Button className='btn' block>Sign Up</Button>
                     </Col>
                     <Col span={12}>
-                      <Button type='ghost' className='text-white r-6 ml-2'>Get APK</Button>
+                      <Button type='ghost' className='text-white r-6 ml-2'>
+                        <Row>
+                          Get APK <Android/>
+                        </Row>
+                      </Button>
                     </Col>
                   </Row>
                 </div>

@@ -52,6 +52,9 @@
 .pt-1 {
   padding-top: 1rem;
 }
+.mt-1 {
+  margin-top: 1rem;
+}
 .pa-2 {
   padding: 2rem!important;
 }
@@ -74,6 +77,7 @@
   background: #090D28;
   color: #fff;
   width: 100vw;
+  overflow-x: hidden;
 }
 /* Header */
 .header {
@@ -146,6 +150,33 @@
 /* RESPONSIVE */
 /* SmartPhone */
 @media only screen and (max-width: 500px) {
+  /* about */
+  .about .font-22 {
+    font-size: 16px;
+  }
+  .about .font-45 {
+    font-size: 29px;
+  }
+  /* privacy */
+  .privacy .font-22 {
+    font-size: 16px;
+  }
+  .privacy .font-45 {
+    font-size: 29px;
+  }
+  .privacy .font-29 {
+    font-size: 24px;
+  }
+  /* term of use */
+  .termofuse .font-22 {
+    font-size: 16px;
+  }
+  .termofuse .font-29 {
+    font-size: 24px;
+  }
+  .termofuse .font-45 {
+    font-size: 29px;
+  }
   .container {
     padding: 2rem;
   }
@@ -170,7 +201,7 @@
   }
 /* Header */
   .header { display: none; }
-  .header .home_logo {
+  .mobile_header .home_logo {
     width: 40px;
     height: 40px;
   }
@@ -194,9 +225,9 @@
   .header .font-45 {
     font-size: 29px;
   }
-  .header .home_logo {
-    /* width: 32px;
-    height: 32px; */
+  .mobile_header .home_logo {
+    width: 40px;
+    height: 40px;
   }
   .container {
     width: 100vw;

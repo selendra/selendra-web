@@ -4,6 +4,7 @@ import { ReactComponent as Facebook } from '../../assets/facebook.svg';
 import { ReactComponent as Telegram } from '../../assets/telegram.svg';
 import { ReactComponent as Medium } from '../../assets/medium.svg';
 import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -12,10 +13,16 @@ function Footer() {
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className='font-29 font-bold'>Company</p>
-            <div className='font-22 text-gray'>
-              <p>About Selendra</p>
-              <p>Privacy & Policy</p>
-              <p>Term of use</p>
+            <div className='font-22'>
+              <Link to='/about'>
+                <p className='text-gray'>About Selendra</p>
+              </Link>
+              <Link to='/privacy'>
+                <p className='text-gray'>Privacy & Policy</p>
+              </Link>
+              <Link to='/termofuse'>
+                <p className='text-gray'>Term of use</p>
+              </Link>
             </div>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>

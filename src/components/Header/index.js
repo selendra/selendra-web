@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../../assets/selendra.png';
-import { Row, Col, Button, Dropdown, Card, Menu } from 'antd';
+import { Row, Col, Button, Dropdown, Card } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { ReactComponent as MenuBar } from '../../assets/menu.svg';
-import { ReactComponent as Close } from '../../assets/close.svg';
+// import { ReactComponent as Close } from '../../assets/close.svg';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -11,9 +11,9 @@ function Header() {
   const handleNav = () => {
     setNav(!nav);
   }
-  const handleClose = () => {
-    setNav(false);
-  }
+  // const handleClose = () => {
+  //   setNav(false);
+  // }
 
   const menu = (
     <Card className='pa-2 bg-gray-light r-12 text-white md-width'>
@@ -103,10 +103,19 @@ function Header() {
                 </a>
               </li>
               <li className='pt-1'>
-                <span className='font-22 font-bold'>About Us</span>
+                <a href='/about'>
+                  <span className='font-22 font-bold text-white'>About Us</span>
+                </a>
               </li>
               <li className='pt-1'>
-                <span className='font-22 font-bold'>Privacy & Policy</span>
+                <a href='/privacy'>
+                  <span className='font-22 font-bold text-white'>Privacy & Policy</span>
+                </a>
+              </li>
+              <li className='pt-1'>
+                <a href='/termofuse'>
+                  <span className='font-22 font-bold text-white'>Term of use</span>
+                </a>
               </li>
               <li className='pt-1'>
                 <span className='font-22 font-bold'>Login</span>
