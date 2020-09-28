@@ -89,8 +89,11 @@
 .about  img {
   width: 200px;
   height: 200px;
-  /* object-fit: contain; */
+  object-fit: contain;
   border-radius: 50%;
+}
+.about .ant-card-body {
+  margin: 10px!important;
 }
 /* Header */
 .header {

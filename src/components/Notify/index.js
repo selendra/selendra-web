@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ReactComponent as Email} from '../../assets/email.svg';
 import {Row, Col, Input, Button} from 'antd';
+import axios from 'axios';
 
 function Notify() {
+  const [email, setEmail] = useState();
+
+  const handleSignUp = () => {
+    axios.post('https://sheet.best/api/sheets/5e68144d-ab55-4dcb-a1ac-097aeed04d31', {
+      Email: email
+    })
+  }
+
   return (
     <div className='bg-gray-light justify-center notify'>
       <div className='container'>
         <Row className='py-2 bg-gray-light' align='middle'>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <p className='font-45 font-bold'>Sign Up For Project Update</p>
+            <p className='font-45 font-bold'>Sign Up For Update</p>
             <p className='font-29'>
-              We’ll update you on our project status 
-              & let you know when we’ve launched.
+              You will get update on project roadmap status, network launch, and token distribution.
             </p>
           </Col>
           <Col xs={24} sm={24} md={{span: 10, offset:2}} lg={{span: 10, offset:2}} xl={{span: 10, offset:2}}>
-            <Input prefix={<Email className="email_icon"/>} placeholder='Email' size='large'></Input>
+            <Input 
+              type='text'
+              value={email}
+              onChange={ e => setEmail(e.target.value) } 
+              prefix={<Email className="email_icon"/>} 
+              placeholder='Email' 
+              size='large'
+            ></Input>
             <div style={{padding: '1rem 0'}}></div>
-            <Button className="btn" block size='large'>Sign Up</Button>
+            <Button className="btn" block size='large' onClick={handleSignUp}>Sign Up</Button>
           </Col>
         </Row>
       </div>
