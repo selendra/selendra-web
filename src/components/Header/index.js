@@ -83,7 +83,6 @@ function Header() {
       {
         nav &&
         <div className='navItem'>
-          {/* <Row justify='end'><Close onClick={handleClose} className='close-icon'/></Row> */}
           <Row justify='center' align='middle' style={{height: '100vh', width: '100vw'}}>
             <ul>
               <li>

@@ -1,12 +1,12 @@
 import React from 'react';
-import {Row, Col, Card, Carousel} from 'antd';
-import saingSab from '../../assets/saing-sab.jpg'
-import rithyThol from '../../assets/rithy-thol.png'
-import yuth from '../../assets/Sokhomoliyuth-Tea.jpg'
-import piset from '../../assets/piset-heang.jpg'
-import daveat from '../../assets/daveat-corn.jpg'
-import nath from '../../assets/nath-lay.jpg'
-import shing from '../../assets/shenshing-ly.png';
+import {Row, Col, Card} from 'antd';
+import saingSab from '../../assets/our-team/saing-sab.png'
+import rithyThol from '../../assets/our-team/rithy-thol.png'
+import yuth from '../../assets/our-team/sokhomoliyuth-tea.png'
+import piset from '../../assets/our-team/piset.png'
+import daveat from '../../assets/our-team/daveat.png'
+import nath from '../../assets/our-team/nath.png'
+import shing from '../../assets/our-team/shing.png';
 
 function About() {
   return (
@@ -26,26 +26,26 @@ function About() {
               </div>
             </Col>
           </Row>
-          {/* <p className='font-45 font-bold text-gray'>Our Team</p>
+          <p className='font-45 font-bold text-gray'>Our Team</p>
             <div>
               <Row className='py-2' justify='center'>
                 <Col xs={24} sm={24} md={{span: 6, offset: 0}} lg={{span: 6, offset: 0}} xl={{span: 6, offset: 0}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={saingSab}></img>
+                    <img src={saingSab} alt='saing-sab'></img>
                     <p className='font-29'>Saing Sab</p>
                     <p className='font-22'>Co-Founder</p>
                   </Card>
                 </Col>
                 <Col xs={24} sm={24} md={{span: 6, offset: 2}} lg={{span: 6, offset: 2}} xl={{span: 6, offset: 2}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={rithyThol}></img>
+                    <img src={rithyThol} alt='rithy-thol'></img>
                     <p className='font-29'>Rithy Thol</p>
                     <p className='font-22'>Advisor</p>
                   </Card>
                 </Col>
                 <Col xs={24} sm={24} md={{span: 6, offset: 2}} lg={{span: 6, offset: 2}} xl={{span: 6, offset: 2}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={yuth}></img>
+                    <img src={yuth} alt='yuth'></img>
                     <p className='font-29'>Sokhomoliyuth Tea</p>
                     <p className='font-22'>Technical Advisor</p>
                   </Card>
@@ -56,21 +56,21 @@ function About() {
               <Row className='py-2' justify='center'>
                 <Col xs={24} sm={24} md={{span: 6, offset: 0}} lg={{span: 6, offset: 0}} xl={{span: 6, offset: 0}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={daveat}></img>
+                    <img src={daveat} alt='daveat-corn'></img>
                     <p className='font-29'>Daveat Corn</p>
                     <p className='font-22'>Mobile Developer</p>
                   </Card>
                 </Col>
                 <Col xs={24} sm={24} md={{span: 6, offset: 2}} lg={{span: 6, offset: 2}} xl={{span: 6, offset: 2}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={piset}></img>
+                    <img src={piset} alt='piset-heang'></img>
                     <p className='font-29'>Piset Heang</p>
                     <p className='font-22'>Web Developer</p>
                   </Card>
                 </Col>
                 <Col xs={24} sm={24} md={{span: 6, offset: 2}} lg={{span: 6, offset: 2}} xl={{span: 6, offset: 2}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={nath}></img>
+                    <img src={nath} alt='nath-lay'></img>
                     <p className='font-29'>Nath Lay</p>
                     <p className='font-22'>Blockchain Developer</p>
                   </Card>
@@ -81,13 +81,13 @@ function About() {
               <Row className='py-2' justify='center'>
                 <Col xs={24} sm={24} md={{span: 6, offset: 0}} lg={{span: 6, offset: 0}} xl={{span: 6, offset: 0}}>
                   <Card className='text-center text-white bg-gray border-none' style={{width: 300}}>
-                    <img src={shing}></img>
+                    <img src={shing} alt='shing'></img>
                     <p className='font-29'>ShenShing Ly</p>
                     <p className='font-22'>Blockchain Developer</p>
                   </Card>
                 </Col>
               </Row>
-            </div> */}
+            </div>
         </div>
       </Row>
     </div>
