@@ -4,7 +4,8 @@ import { ReactComponent as Facebook } from '../../assets/facebook.svg';
 import { ReactComponent as Telegram } from '../../assets/telegram.svg';
 import { ReactComponent as Medium } from '../../assets/medium.svg';
 import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
-import { Link } from 'react-router-dom';
+import { ReactComponent as Twitter } from '../../assets/twitter.svg';
+import { Link, useHistory } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -37,26 +38,41 @@ function Footer() {
             <p className='font-29 font-bold'>Developers</p>
             <div className='font-22 text-gray'>
               <p>Documentation</p>
-              <p>GitHub</p>
+              <a href='https://github.com/selendra' target='blank'>
+                <p className='text-gray'>GitHub</p>
+              </a>
             </div>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className='font-29 font-bold'>Connect with us</p>
             <Row>
-              <Col span={12}>
-                <Facebook className='footer-icon'/>
+              <Col span={7}>
+                <a href='https://www.facebook.com/selendraio' target='blank'>
+                  <Facebook className='footer-icon'/>
+                </a>
               </Col>
-              <Col span={12}>
-                <Telegram className='footer-icon'/>
+              <Col span={7}>
+                <a href='https://t.me/selendra_sel' target='blank'>
+                  <Telegram className='footer-icon'/>
+                </a>
+              </Col>
+              <Col span={7}>
+                <a href='https://twitter.com/selendraio' target='blank'>
+                  <Twitter className='footer-icon'/>
+                </a>
               </Col>
             </Row>
             <div style={{padding: '1rem 0'}}></div>
             <Row>
-              <Col span={12}>
-                <Medium className='footer-icon'/>
+              <Col span={7}>
+                <a href='https://medium.com/selendra' target='blank'>
+                  <Medium className='footer-icon'/>
+                </a>
               </Col>
-              <Col span={12}>
-                <Linkedin className='footer-icon'/>
+              <Col span={7}>
+                <a href='https://www.linkedin.com/company/selendra' target='blank'>
+                  <Linkedin className='footer-icon'/>
+                </a>
               </Col>
             </Row>
           </Col>
