@@ -37,7 +37,9 @@ function Footer() {
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className='font-29 font-bold'>Developers</p>
             <div className='font-22 text-gray'>
-              <p>Documentation</p>
+              <a href='https://github.com/selendra/indracore/wiki' target='blank'>
+                <p className='text-gray'>Documentation</p>
+              </a>
               <a href='https://github.com/selendra' target='blank'>
                 <p className='text-gray'>GitHub</p>
               </a>
