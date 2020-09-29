@@ -26,13 +26,15 @@ function Home() {
                 </Row>
                 <Row>
                   <Col span={12}>
-                    <Button className='btn' block>Sign Up</Button>
+                      <Button className='btn' block>Sign Up</Button>
                   </Col>
                   <Col span={12}>
                     <Button type='ghost' className='text-white r-6 ml-2'>
-                      <Row>
-                        GitHub <Github/>
-                      </Row>
+                      <a href='https://github.com/selendra' target='blank'>
+                        <Row>
+                          GitHub <Github/>
+                        </Row>
+                      </a>
                     </Button>
                   </Col>
                 </Row>

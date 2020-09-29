@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
 import { ReactComponent as Email} from '../../assets/email.svg';
-import {Row, Col, Input, Button} from 'antd';
+import {Row, Col, Input, Button, message} from 'antd';
 import axios from 'axios';
 
 function Notify() {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSignUp = () => {
-    axios.post('https://sheet.best/api/sheets/5e68144d-ab55-4dcb-a1ac-097aeed04d31', {
-      Email: email
-    })
+    if(email) {
+      setLoading(true);
+      axios.post('https://sheet.best/api/sheets/5e68144d-ab55-4dcb-a1ac-097aeed04d31', {
+        Email: email
+      })
+      .then(_=> {
+        message.success('Thank you for sign up!!');
+        setLoading(false);
+        setEmail('');
+      })
+    }
   }
 
   return (
@@ -32,7 +41,7 @@ function Notify() {
               size='large'
             ></Input>
             <div style={{padding: '1rem 0'}}></div>
-            <Button className="btn" block size='large' onClick={handleSignUp}>Sign Up</Button>
+            <Button className="btn" block size='large' onClick={handleSignUp} loading={loading}>Sign Up</Button>
           </Col>
         </Row>
       </div>

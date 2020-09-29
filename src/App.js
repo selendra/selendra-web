@@ -14,11 +14,13 @@ import {
 } from 'react-router-dom';
 import Termofuse from './pages/termofuse';
 import Privacy from './pages/privacy&policy';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop/>
         <Header />
           <Switch>
             <Route path='/' exact component={Home} />
@@ -27,7 +29,7 @@ function App() {
             <Route path='/termofuse' exact component={Termofuse} />
             <Route path='/privacy' exact component={Privacy} />
           </Switch>
-        <Notify/>
+        <Notify id='notify__tab'/>
         <Footer/>
       </div>
     </Router>
