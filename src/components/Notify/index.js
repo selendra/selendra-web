@@ -22,6 +22,7 @@ function Notify() {
   }
 
   return (
+    <section id="notify__tab">
     <div className='bg-gray-light justify-center notify'>
       <div className='container'>
         <Row className='py-2 bg-gray-light' align='middle'>
@@ -46,6 +47,7 @@ function Notify() {
         </Row>
       </div>
     </div>
+    </section>
   )
 }
 

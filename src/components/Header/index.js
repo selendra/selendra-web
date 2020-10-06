@@ -3,8 +3,7 @@ import logo from '../../assets/selendra.png';
 import { Row, Col, Button, Dropdown, Card } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { ReactComponent as MenuBar } from '../../assets/menu.svg';
-// import { ReactComponent as Close } from '../../assets/close.svg';
-import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 function Header() {
   const [nav, setNav] = useState(false);
@@ -17,14 +16,14 @@ function Header() {
       <Row>
         <Col md={12} lg={12} xl={12}>
           <p className='font-22 font-bold'>Consumer App</p>
-          <Link to='/wallet'>
+          <a href='/wallet'>
             <Row>
               <img src={logo} alt="logo" className='icon ml-1'></img>
               <span className='font-16 font-bold text-white hover ml-1'>
                 SELENDRA
               </span>
             </Row>
-          </Link>
+          </a>
         </Col>
         <Col md={12} lg={12} xl={12}>
           <p className='font-22 font-bold'>Businesses</p>
@@ -42,14 +41,14 @@ function Header() {
         <div className='container'>
           <Row align='middle'>
             <Col xs={0} sm={8} md={8} lg={8} xl={8}>
-              <Link to='/'>
+              <a href='/'>
                 <Row align='middle'>
                   <img src={logo} alt="logo" className='home_logo'></img>
                   <span className='font-45 font-bold text-white'>
                     SELENDRA
                   </span>
                 </Row>
-              </Link>
+              </a>
             </Col>
             <Col xs={0} sm={8} md={8} lg={8} xl={8}>
               <Row justify='center'>
@@ -62,8 +61,12 @@ function Header() {
             <Col xs={0} sm={8} md={8} lg={8} xl={8}>
               <Row justify='end'>
                 <Col>
-                  <span className='font-16 font-bold hover'>Login</span>
-                  <Button size='large' className='btn ml-2'>Sign Up</Button>
+                  <Link to="notify__tab" smooth={true} duration={1000}>
+                    <span className='font-16 font-bold hover'>Login</span>
+                  </Link>
+                  <Link to="notify__tab" smooth={true} duration={1000}>
+                    <Button size='large' className='btn ml-2'>Sign Up</Button>
+                  </Link>
                 </Col>
               </Row>
             </Col>

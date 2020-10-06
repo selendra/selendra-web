@@ -29,7 +29,7 @@ function App() {
             <Route path='/termofuse' exact component={Termofuse} />
             <Route path='/privacy' exact component={Privacy} />
           </Switch>
-        <Notify id='notify__tab'/>
+        <Notify />
         <Footer/>
       </div>
     </Router>
