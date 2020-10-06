@@ -5,7 +5,7 @@ import { ReactComponent as Telegram } from '../../assets/telegram.svg';
 import { ReactComponent as Medium } from '../../assets/medium.svg';
 import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
 import { ReactComponent as Twitter } from '../../assets/twitter.svg';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (

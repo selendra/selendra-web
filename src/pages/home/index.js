@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../../assets/selendra.png';
 import { ReactComponent as Portfolio} from '../../assets/portfolio.svg';
 import { ReactComponent as Github} from '../../assets/github.svg';
+import { Link } from "react-scroll";
 
 function Home() {
   return(
@@ -26,7 +27,11 @@ function Home() {
                 </Row>
                 <Row>
                   <Col span={12}>
-                      <Button className='btn' block>Sign Up</Button>
+                    <Button className='btn' block>
+                      <Link to="notify__tab" smooth={true} duration={1000}>
+                        Sign Up
+                      </Link>
+                    </Button>
                   </Col>
                   <Col span={12}>
                     <Button type='ghost' className='text-white r-6 ml-2'>

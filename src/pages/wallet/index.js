@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../../assets/selendra.png';
 import promo from '../../assets/promo.png';
 import { ReactComponent as Android } from '../../assets/android.svg';
+import { Link } from 'react-scroll';
 
 function Wallet() {
   return (
@@ -29,7 +30,9 @@ function Wallet() {
                   </Row>
                   <Row>
                     <Col span={12}>
-                      <Button className='btn' block>Sign Up</Button>
+                      <Link to="notify__tab" smooth={true} duration={1000}>
+                        <Button className='btn' block>Sign Up</Button>
+                      </Link>
                     </Col>
                     <Col span={12}>
                       <Button type='ghost' className='text-white r-6 ml-2'>
