@@ -4,22 +4,22 @@ import {Row, Col, Input, Button, message} from 'antd';
 import axios from 'axios';
 
 function Notify() {
-  const [email, setEmail] = useState('');
-  const [loading, setLoading] = useState(false);
+    const [email, setEmail] = useState('');
+    const [loading, setLoading] = useState(false);
 
-  const handleSignUp = () => {
-    if(email) {
-      setLoading(true);
-      axios.post('https://sheet.best/api/sheets/5e68144d-ab55-4dcb-a1ac-097aeed04d31', {
-        Email: email
-      })
-      .then(_=> {
-        message.success('Thank you for sign up!!');
-        setLoading(false);
-        setEmail('');
-      })
+    const handleSignUp = () => {
+      if(email) {
+        setLoading(true);
+        axios.post('https://sheet.best/api/sheets/5e68144d-ab55-4dcb-a1ac-097aeed04d31', {
+          Email: email
+        })
+        .then(_=> {
+          message.success('Thank you for sign up!!');
+          setLoading(false);
+          setEmail('');
+        })
+      }
     }
-  }
 
   return (
     <section id="notify__tab">

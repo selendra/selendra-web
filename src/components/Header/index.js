@@ -10,7 +10,7 @@ function Header() {
   const handleNav = () => {
     setNav(!nav);
   }
-
+  
   const menu = (
     <Card className='pa-2 bg-gray-light r-12 text-white md-width'>
       <Row>
@@ -54,7 +54,7 @@ function Header() {
               <Row justify='center'>
                 <Dropdown overlay={menu}>
                   <span className='font-16 font-bold hover'>Products <DownOutlined /></span>
-              </Dropdown>
+                </Dropdown>
                 <span className='font-16 font-bold hover ml-2'>Company</span>
               </Row>
             </Col>

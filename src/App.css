@@ -163,6 +163,21 @@
 .ant-input {
   height: 60px;
 }
+.success__logo {
+  width: 140px;
+  height: 140px;
+}
+.success__title {
+  font-size: 32px;
+  font-weight: bold ;
+}
+.success__description {
+  font-size: 24px;
+}
+.success__card {
+  margin: 20px!important;
+  text-align: center!important;
+}
 /* RESPONSIVE */
 /* SmartPhone */
 @media only screen and (max-width: 500px) {
