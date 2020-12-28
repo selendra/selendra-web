@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Button, Carousel } from 'antd';
 import './styles/wallet.css';
 import selendra from '../../assets/selendra.png';
