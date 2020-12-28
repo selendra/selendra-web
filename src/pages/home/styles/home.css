@@ -1,0 +1,108 @@
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.home__container {
+  margin: 0 auto;
+  max-width: 76rem;
+}
+
+.home__title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.home__description {
+  color: #585D86;
+  font-size: 24px;
+}
+
+.home__right Button {
+  color: #fff;
+  width: 140px;
+}
+
+.home__btn > Button {
+  background: #08B952!important;
+  border: 0!important;
+  color: #fff!important;
+}
+
+.home__ourVision {
+  color: #40FF90;
+  font-size: 32px;
+  font-weight: 600;
+}
+.home__featureTitle {
+  color: #40FF90;
+  font-size: 24px;
+}
+.home__feature {
+  font-size: 24px;
+  color: #585D86;
+  transition: color 1s;
+}
+
+.home__feature:hover {
+  color: #fff;
+}
+
+.home__btnScroll {
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+.home__partnerTitle {
+  font-size: 52px;
+  color: #40FF90;
+  font-weight: 700;
+  margin: 0;
+}
+
+.home__partnerImg {
+  width: 240px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: .5;
+  transition: all .25s ease;
+}
+
+.home__partnerImg:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.home__card {
+  width: 320px;
+  padding: 20px!important;
+  background: rgba( 9, 13, 40, 0.80 )!important;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+  backdrop-filter: blur( 1.0px )!important;
+  -webkit-backdrop-filter: blur( 10.0px )!important;
+  border-radius: 10px!important;
+}
+
+.home__card p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.home__partner {
+  margin: 4% 0;
+}

@@ -1,0 +1,41 @@
+.notify {
+  width: 100%;
+  height: 100%;
+  background-color: #353855;
+}
+
+.notify__container {
+  padding: 2% 0;
+  margin: 0 auto;
+  max-width: 76rem;
+}
+
+.notify__title {
+  font-size: 52px;
+  color: #EDEEFF;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.notify__description {
+  font-size: 24px;
+  color: #EDEEFF;
+  margin-bottom: 0;
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+  background-color: #181C35!important;
+  border: none!important;
+  color: #fff!important;
+  border-radius: 8px!important;
+}
+.ant-input {
+  height: 60px;
+}
+
+.notify__btn > Button {
+  background: #08B952!important;
+  border: 0!important;
+  color: #fff!important;
+}

@@ -1,135 +1,79 @@
-import React, { useState } from 'react';
-import logo from '../../assets/selendra.png';
-import { Row, Col, Button, Dropdown, Card } from 'antd';
+import { Row, Col, Dropdown, Card, Button } from 'antd';
+import selendra from '../../assets/selendra.png';
+import './styles/header.css';
 import { DownOutlined } from '@ant-design/icons';
-import { ReactComponent as MenuBar } from '../../assets/menu.svg';
-import { Link } from "react-scroll";
+import mkplace from '../../assets/mkplace.png';
+import { Link } from 'react-router-dom';
 
-function Header() {
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  }
-  
+
+export default function Header() {
   const menu = (
-    <Card className='pa-2 bg-gray-light r-12 text-white md-width'>
+    <Card className='header__card'>
       <Row>
         <Col md={12} lg={12} xl={12}>
-          <p className='font-22 font-bold'>Consumer App</p>
+          <p className='header__cardTitle'>Consumer App</p>
           <a href='/wallet'>
-            <Row>
-              <img src={logo} alt="logo" className='icon ml-1'></img>
-              <span className='font-16 font-bold text-white hover ml-1'>
-                SELENDRA
+            <Row align='middle'>
+              <img src={selendra} alt="logo" className='header__cardImg'></img>
+              <span className='header__cardItem'>
+                Wallet
+              </span>
+            </Row>
+          </a>
+          <br />
+          <a href='/mkplace'>
+            <Row align='middle'>
+              <img src={mkplace} alt="logo" className='header__cardImg'></img>
+              <span className='header__cardItem'>
+                Market Place
               </span>
             </Row>
           </a>
         </Col>
         <Col md={12} lg={12} xl={12}>
-          <p className='font-22 font-bold'>Businesses</p>
-          <p className='font-16 font-bold ml-1'>Customer Loyalty</p>
-          <p className='font-16 font-bold ml-1'>Vested Shares</p>
-          <p className='font-16 font-bold ml-1'>Payment</p>
+          <p className='header__cardTitle'>Businesses</p>
+          <p className='header__cardItem'>Customer Loyalty</p>
+          <p className='header__cardItem'>Vested Shares</p>
+          <p className='header__cardItem'>Payment</p>
         </Col>
       </Row>
     </Card>
   )
 
-  return(
-    <>
-      <div className='header justify-center'>
-        <div className='container'>
-          <Row align='middle'>
-            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
-              <a href='/'>
-                <Row align='middle'>
-                  <img src={logo} alt="logo" className='home_logo'></img>
-                  <span className='font-45 font-bold text-white'>
-                    SELENDRA
-                  </span>
-                </Row>
-              </a>
-            </Col>
-            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
-              <Row justify='center'>
-                <Dropdown overlay={menu}>
-                  <span className='font-16 font-bold hover'>Products <DownOutlined /></span>
-                </Dropdown>
-                <span className='font-16 font-bold hover ml-2'>Company</span>
+  return (
+    <div className='header'>
+      <div className='header__container'>
+        <Row justify='space-between' align='middle' style={{height: '80px'}}>
+          <Col>
+            <Link to='/'>
+              <Row align='middle'>
+                <img src={selendra} alt='selendra' className='header__logo'/>
+                <span className='header__title'>SELENDRA</span>
               </Row>
-            </Col>
-            <Col xs={0} sm={8} md={8} lg={8} xl={8}>
-              <Row justify='end'>
-                <Col>
-                  <Link to="notify__tab" smooth={true} duration={1000}>
-                    <span className='font-16 font-bold hover'>Login</span>
-                  </Link>
-                  <Link to="notify__tab" smooth={true} duration={1000}>
-                    <Button size='large' className='btn ml-2'>Sign Up</Button>
-                  </Link>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </div>
-      </div>
-    {/* Mobile */}
-      <div className='mobile_nav'>
-        <div className='mobile_header'>
-          <Row align='middle' style={{height: '80px'}}>
-            <MenuBar className='menu_icon' onClick={handleNav}/>
-            <Row justify='center' align='middle' style={{width: '100vw', position: 'absolute'}}>
-              <img src={logo} alt="logo" className="home_logo"/>
-              <span className="font-22 font-bold">SELENDRA</span>
+            </Link>
+          </Col>
+          <Col>
+            <Row justify='center'>
+              <Dropdown overlay={menu}>
+                <span className='header__item'>Products <DownOutlined /></span>
+              </Dropdown>
+              <span style={{marginLeft: '28px'}} className='header__item'>Company</span>
             </Row>
-          </Row>
-        </div>
-      {
-        nav &&
-        <div className='navItem'>
-          <Row justify='center' align='middle' style={{height: '100vh', width: '100vw'}}>
-            <ul>
-              <li>
-                <a href='/'>
-                  <span className='font-22 font-bold text-white'>Home</span>
-                </a>
-              </li>
-              <li className='pt-1'>
-                <span className='font-22 font-bold'>Company</span>
-              </li>
-              <li className='pt-1'>
-                <a href='/wallet'>
-                  <span className='font-22 font-bold text-white'>Products</span>
-                </a>
-              </li>
-              <li className='pt-1'>
-                <a href='/about'>
-                  <span className='font-22 font-bold text-white'>About Us</span>
-                </a>
-              </li>
-              <li className='pt-1'>
-                <a href='/privacy'>
-                  <span className='font-22 font-bold text-white'>Privacy & Policy</span>
-                </a>
-              </li>
-              <li className='pt-1'>
-                <a href='/termofuse'>
-                  <span className='font-22 font-bold text-white'>Term of use</span>
-                </a>
-              </li>
-              <li className='pt-1'>
-                <span className='font-22 font-bold'>Login</span>
-              </li>
-              <li className='pt-1'>
-                <Button className='btn' size='large'>Sign Up</Button>
-              </li>
-            </ul>
-          </Row>
-        </div>
-      }
+          </Col>
+          <Col>
+            <Row>
+              <Button type='text' style={{color: '#fff'}} className='header__item'>
+                <a href='https://wallet.selendra.com/login' target='blank'>Login</a>
+              </Button>
+              <div className='header__btn'>
+                <Button>
+                  <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
+                </Button>
+              </div>
+            </Row>
+          </Col>
+        </Row>
       </div>
-    </>
-  );
+    </div>
+  )
 }
-
-export default Header;
