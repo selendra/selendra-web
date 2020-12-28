@@ -1,39 +1,47 @@
-import React from 'react';
 import './App.css';
-import Home from './pages/home';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Notify from './components/Notify';
-import Wallet from './pages/wallet';
-import About from './pages/about';
+import { 
+  Home, 
+  Wallet, 
+  About, 
+  MkPlace, 
+  Privacy, 
+  TermOfUse, 
+  Success 
+} from './pages';
+import { 
+  Header, 
+  Notify, 
+  Footer 
+} from './components';
 import {
   BrowserRouter as
   Router,
   Route,
   Switch
 } from 'react-router-dom';
-import Termofuse from './pages/termofuse';
-import Privacy from './pages/privacy&policy';
-import ScrollToTop from './utils/ScrollToTop';
+import ScrollToTop from './utils/scrollToTop';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <ScrollToTop/>
         <Header />
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/wallet' exact component={Wallet} />
             <Route path='/about' exact component={About} />
-            <Route path='/termofuse' exact component={Termofuse} />
+            <Route path='/mkplace' exact component={MkPlace} />
             <Route path='/privacy' exact component={Privacy} />
+            <Route path='/termofuse' exact component={TermOfUse} />
+            <Route path='/successfullyverified' exact component={Success} />
+            {/* 
+            <Route path='/failedverified' exact component={Failedverified} /> 
+            */}
           </Switch>
         <Notify />
-        <Footer/>
-      </div>
-    </Router>
+        <Footer />
+      </Router>
+    </div>
   );
 }
-
-export default App;

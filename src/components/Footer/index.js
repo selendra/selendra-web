@@ -1,66 +1,60 @@
-import React from 'react';
-import {Row, Col } from 'antd';
-import { ReactComponent as Facebook } from '../../assets/facebook.svg';
-import { ReactComponent as Telegram } from '../../assets/telegram.svg';
-import { ReactComponent as Medium } from '../../assets/medium.svg';
-import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
-import { ReactComponent as Twitter } from '../../assets/twitter.svg';
+import { Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
+import './styles/footer.css';
+import { ReactComponent as Facebook } from '../../assets/facebook.svg';
+import { ReactComponent as Twitter } from '../../assets/twitter.svg';
+import { ReactComponent as Medium } from '../../assets/medium.svg';
+import { ReactComponent as Telegram } from '../../assets/telegram.svg';
+import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className='footer justify-center'>
-      <div className='container py-2'>
+    <div className='footer'>
+      <div className='footer__container'>
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <p className='font-29 font-bold'>Company</p>
-            <div className='font-22'>
-              <Link to='/about'>
-                <p className='text-gray'>About Selendra</p>
-              </Link>
-              <Link to='/privacy'>
-                <p className='text-gray'>Privacy & Policy</p>
-              </Link>
-              <Link to='/termofuse'>
-                <p className='text-gray'>Term of use</p>
-              </Link>
-            </div>
+            <p className='footer__title'>Company</p>
+            <Link to='/about'>
+              <p className='footer__item'>About Selendra</p>
+            </Link>
+            <Link to='/privacy'>
+              <p className='footer__item'>Privacy & Policy</p>
+            </Link>
+            <Link to='/termofuse'>
+              <p className='footer__item'>Term of use</p>
+            </Link>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <p className='font-29 font-bold'>Solution</p>
-            <div className='font-22 text-gray'>
-              <p>Customer Loyalty</p>
-              <p>Crowfunding And Vested</p>
-              <p>API for payment solution</p>
-            </div>
+            <p className='footer__title'>Solution</p>
+            <p className='footer__item'>Customer Loyalty</p>
+            <p className='footer__item'>Crowfunding And Vested</p>
+            <p className='footer__item'>API for payment solution</p>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <p className='font-29 font-bold'>Developers</p>
-            <div className='font-22 text-gray'>
-              <a href='https://github.com/selendra/indracore/wiki' target='blank'>
-                <p className='text-gray'>Documentation</p>
-              </a>
-              <a href='https://github.com/selendra' target='blank'>
-                <p className='text-gray'>GitHub</p>
-              </a>
-            </div>
+            <p className='footer__title'>Developers</p>
+            <a href='https://github.com/selendra/indracore/wiki' target='blank'>
+              <p className='footer__item'>Documentation</p>
+            </a>
+            <a href='https://github.com/selendra' target='blank'>
+              <p className='footer__item'>GitHub</p>
+            </a>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <p className='font-29 font-bold'>Connect with us</p>
+          <p className='footer__title'>Connect with us</p>
             <Row>
               <Col span={7}>
                 <a href='https://www.facebook.com/selendraio' target='blank'>
-                  <Facebook className='footer-icon'/>
+                  <Facebook />
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://t.me/selendra_sel' target='blank'>
-                  <Telegram className='footer-icon'/>
+                  <Telegram />
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://twitter.com/selendraio' target='blank'>
-                  <Twitter className='footer-icon'/>
+                  <Twitter />
                 </a>
               </Col>
             </Row>
@@ -68,12 +62,12 @@ function Footer() {
             <Row>
               <Col span={7}>
                 <a href='https://medium.com/selendra' target='blank'>
-                  <Medium className='footer-icon'/>
+                  <Medium />
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://www.linkedin.com/company/selendra' target='blank'>
-                  <Linkedin className='footer-icon'/>
+                  <Linkedin />
                 </a>
               </Col>
             </Row>
@@ -83,5 +77,3 @@ function Footer() {
     </div>
   )
 }
-
-export default Footer;

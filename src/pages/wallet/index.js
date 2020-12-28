@@ -1,60 +1,69 @@
-import { Button, Col, Row } from 'antd';
 import React from 'react';
-import logo from '../../assets/selendra.png';
-import promo from '../../assets/promo.png';
-import { ReactComponent as Android } from '../../assets/android.svg';
-import { Link } from 'react-scroll';
+import { Row, Col, Button, Carousel } from 'antd';
+import './styles/wallet.css';
+import selendra from '../../assets/selendra.png';
+import phone from '../../assets/wallet-phone.png';
+import laptop from '../../assets/laptop-wallet.png';
 
-function Wallet() {
+export default function Wallet() {
   return (
-    <Row justify='center'>
-      <div className='container'>
-        <div className='wallet'>
-          <Row className='full-height' align='middle'>
-            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-              <Row>
-                <div>
-                  <Row justify='center' align='middle'>
-                    <img src={logo} alt="logo" className='home_logo'></img>
-                    <span className='font-45 font-bold'>
-                      SELENDRA
-                    </span>
-                  </Row>
-                  <Row justify='center'>
-                    <span className='font-45 font-bold'>Wallet App</span>
-                  </Row>
-                  <Row>
-                    <p className='font-29 text-gray'>Available both Mobile and
-                      WebApp
-                    </p>
-                  </Row>
-                  <Row>
-                    <Col span={12}>
-                      <Link to="notify__tab" smooth={true} duration={1000}>
-                        <Button className='btn' block>Sign Up</Button>
-                      </Link>
-                    </Col>
-                    <Col span={12}>
-                      <Button type='ghost' className='text-white r-6 ml-2'>
-                        <Row>
-                          Get APK <Android/>
-                        </Row>
-                      </Button>
-                    </Col>
-                  </Row>
-                </div>
-              </Row>
-            </Col>
-            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+    <div className='wallet'>
+      <div className='wallet__bg'>
+        <div className='wallet__container'>
+          <Row>
+            <Col xs={24} sm={24} md={12} lg={10} xl={10}>
               <Row align='middle'>
-                <img src={promo} alt="promo" className='wallet-promo'/>
+                <img src={selendra} alt='selendra'/>
+                <p className='wallet__title'>SELENDRA</p>
+              </Row>
+              <p className='wallet__title'>WALLET</p>
+              <p className='wallet__description'>
+                A wallet to spend and earn SEL token and other assets of Selendra blockchain echo system.
+              </p>
+              <Row className='wallet__btn'>
+                <Col span={12} className='wallet__btnSignup'>
+                  <Button>
+                    <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
+                  </Button>
+                </Col>
+                <Col span={12}>
+                  <Button type='ghost'>Get APK</Button>
+                </Col>
               </Row>
             </Col>
+            <Col xs={24} sm={24} md={12} lg={{span: 10, offset: 2}} xl={{span: 10, offset: 2}}></Col>
           </Row>
         </div>
       </div>
-    </Row>
+      <div className='wallet__container'>
+        <Row>
+          <Col span={14}>
+            <Carousel autoplay>
+              <div>
+                <Row justify='center'>
+                  <img src={phone} alt='wallet-phone' className='wallet__phone'/>
+                </Row>
+              </div>
+              <div>
+                <img src={laptop} alt='wallet-phone' className='wallet__phone'/>
+              </div>
+            </Carousel>
+          </Col>
+          <Col span={10}>
+            <p className='wallet__phoneDescription'>Selendra Wallets are used to store and transact SEL tokens and multiple other cryptocoins. Wallets can be integrated into any application where a use case exists, connecting the application to the Selendra main chain.</p>
+            <Row>
+              <Col span={12} className='wallet__phoneBtn'>
+                <Button size='large'>Get APK</Button>
+              </Col>
+              <Col span={12} className='wallet__phoneBtn'>
+                <Button size='large'>
+                  <a href='https://wallet.selendra.com/login' target='blank'>Web Wallet</a>
+                </Button>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </div>
+    </div>
   )
 }
-
-export default Wallet;

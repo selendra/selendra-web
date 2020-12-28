@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { ReactComponent as Email} from '../../assets/email.svg';
-import {Row, Col, Input, Button, message} from 'antd';
+import { useState } from 'react';
+import { Row, Col, Input, message, Button } from 'antd';
+import './styles/notify.css';
 import axios from 'axios';
+import { ReactComponent as Email } from '../../assets/email.svg';
 
-function Notify() {
+export default function Notify() {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -20,17 +21,15 @@ function Notify() {
       })
     }
   }
-
+  
   return (
     <section id="notify__tab">
-    <div className='bg-gray-light justify-center notify'>
-      <div className='container'>
-        <Row className='py-2 bg-gray-light' align='middle'>
+    <div className='notify'>
+      <div className='notify__container'>
+        <Row align='middle'>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <p className='font-45 font-bold'>Sign Up For Update</p>
-            <p className='font-29'>
-              You will get update on project roadmap status, network launch, and token distribution.
-            </p>
+            <p className='notify__title'>Sign Up for Project Update</p>
+            <p className='notify__description'>You will get update on project roadmap status, network launch, and token distribution.</p>
           </Col>
           <Col xs={24} sm={24} md={{span: 10, offset:2}} lg={{span: 10, offset:2}} xl={{span: 10, offset:2}}>
             <Input 
@@ -42,7 +41,9 @@ function Notify() {
               size='large'
             ></Input>
             <div style={{padding: '1rem 0'}}></div>
-            <Button className="btn" block size='large' onClick={handleSignUp} loading={loading}>Sign Up</Button>
+            <div className='notify__btn'>
+              <Button block size='large' onClick={handleSignUp} loading={loading}>Sign Up</Button>
+            </div>
           </Col>
         </Row>
       </div>
@@ -50,5 +51,3 @@ function Notify() {
     </section>
   )
 }
-
-export default Notify;
