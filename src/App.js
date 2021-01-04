@@ -12,7 +12,7 @@ import {
   Header, 
   Notify, 
   Footer, 
-  MHeader
+  Navigation
 } from './components';
 import {
   BrowserRouter as
@@ -20,27 +20,25 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-// import ScrollToTop from './utils/scrollToTop';
 
 export default function App() {
   return (
     <div className="App">
       <Router>
-        {/* <ScrollToTop/> */}
-        <MHeader />
+        <Navigation />
         <Header />
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/wallet' exact component={Wallet} />
-            <Route path='/about' exact component={About} />
-            <Route path='/mkplace' exact component={MkPlace} />
-            <Route path='/privacy' exact component={Privacy} />
-            <Route path='/termofuse' exact component={TermOfUse} />
-            <Route path='/successfullyverified' exact component={Success} />
-            {/* 
-            <Route path='/failedverified' exact component={Failedverified} /> 
-            */}
-          </Switch>
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/wallet' exact component={Wallet} />
+          <Route path='/about' exact component={About} />
+          <Route path='/mkplace' exact component={MkPlace} />
+          <Route path='/privacy' exact component={Privacy} />
+          <Route path='/termofuse' exact component={TermOfUse} />
+          <Route path='/successfullyverified' exact component={Success} />
+          {/* 
+          <Route path='/failedverified' exact component={Failedverified} /> 
+          */}
+        </Switch>
         <Notify />
         <Footer />
       </Router>

@@ -223,4 +223,7 @@
     width: 120px;
     height: auto;
   }
+  .home__btnScroll {
+    display: none;
+  }
 }

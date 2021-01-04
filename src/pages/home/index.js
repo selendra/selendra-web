@@ -1,5 +1,4 @@
-import { Row, Col, Button, Dropdown, Card } from 'antd';
-import { ReactComponent as PP } from '../../assets/2pp.svg';
+import { Row, Col, Button, Card } from 'antd';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as OnChain } from '../../assets/on-chain.svg';
 import { ReactComponent as WASM } from '../../assets/wasm.svg';
@@ -19,40 +18,6 @@ import ipfs from '../../assets/ipfs.png';
 import './styles/home.css';
 
 export default function Home() {
-  const koompi_overlay = (
-    <Card className='home__card'>
-      <Row>
-        <p>
-          Wifi Hotspot services at schools and communities
-          KOOMPI Online schools sala.koompi.com
-          KOOMPI Appstore and others service applications
-        </p>
-      </Row>
-    </Card>
-  )
-  const va_overlay = (
-    <Card className='home__card'>
-      <Row>
-        <p>
-          Real Estate Investment Trust
-          Cropland Investment
-          Carbon Credit Trading
-          Real World Asset Management Programs
-        </p>
-      </Row>
-    </Card>
-  )
-  const grood_overlay = (
-    <Card className='home__card'>
-      <Row>
-        <p>
-          Rental & Ride sharing
-          Power/battery swapping program
-          Incentivized for behavioral change
-        </p>
-      </Row>
-    </Card>
-  )
   return (
     <div className='home'>
       <div>
@@ -76,7 +41,7 @@ export default function Home() {
                         <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
                       </Button>
                     </Col>
-                    <Col span={12}>
+                    <Col span={11} offset={1}>
                       <Button type='ghost'>
                         <a href='https://github.com/selendra' target='blank'>
                           <Row justify='center'>
@@ -92,7 +57,7 @@ export default function Home() {
             <Col></Col>
           </Row>
           <Row justify='center'>
-            <Col xs={0} sm={0} md={0} lg={24} xl={24}>
+            <Col>
               <div className='home__btnScroll'>
                 <ScrollTo to='feature__tab' smooth={true} duration={1000}>
                   <Down />
