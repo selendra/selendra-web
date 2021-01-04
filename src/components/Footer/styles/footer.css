@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   height: 100%;
+  background-color: #000733;
 }
 
 .footer__container {
@@ -18,4 +19,20 @@
 .footer__item {
   color: #585D86;
   font-size: 24px;
+}
+
+@media only screen  and (max-width: 991px) {
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__item {
+    font-size: 16px;
+  }
+  .footer__icon {
+    width: 32px;
+    height: 32px;
+  }
+  .footer__container {
+    padding: 20px;
+  }
 }

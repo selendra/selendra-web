@@ -32,12 +32,12 @@ export default function Notify() {
             <p className='notify__description'>You will get update on project roadmap status, network launch, and token distribution.</p>
           </Col>
           <Col xs={24} sm={24} md={{span: 10, offset:2}} lg={{span: 10, offset:2}} xl={{span: 10, offset:2}}>
-            <Input 
+            <Input
               type='text'
               value={email}
-              onChange={ e => setEmail(e.target.value) } 
-              prefix={<Email className="email_icon"/>} 
-              placeholder='Email' 
+              onChange={ e => setEmail(e.target.value) }
+              prefix={<Email className="email_icon"/>}
+              placeholder='Email'
               size='large'
             ></Input>
             <div style={{padding: '1rem 0'}}></div>
