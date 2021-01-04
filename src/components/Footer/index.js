@@ -44,17 +44,17 @@ export default function Footer() {
             <Row>
               <Col span={7}>
                 <a href='https://www.facebook.com/selendraio' target='blank'>
-                  <Facebook />
+                  <Facebook className='footer__icon'/>
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://t.me/selendra_sel' target='blank'>
-                  <Telegram />
+                  <Telegram className='footer__icon'/>
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://twitter.com/selendraio' target='blank'>
-                  <Twitter />
+                  <Twitter className='footer__icon'/>
                 </a>
               </Col>
             </Row>
@@ -62,12 +62,12 @@ export default function Footer() {
             <Row>
               <Col span={7}>
                 <a href='https://medium.com/selendra' target='blank'>
-                  <Medium />
+                  <Medium className='footer__icon'/>
                 </a>
               </Col>
               <Col span={7}>
                 <a href='https://www.linkedin.com/company/selendra' target='blank'>
-                  <Linkedin />
+                  <Linkedin className='footer__icon'/>
                 </a>
               </Col>
             </Row>

@@ -24,3 +24,10 @@
 .termofuse__title {
   font-size: 32px;
 }
+
+
+@media only screen  and (max-width: 991px) {
+  .termofuse__container {
+    padding: 20px;
+  }
+}

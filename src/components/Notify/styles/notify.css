@@ -1,7 +1,7 @@
 .notify {
   width: 100%;
   height: 100%;
-  background-color: #353855;
+  background-color: #090742;
 }
 
 .notify__container {
@@ -38,4 +38,17 @@
   background: #08B952!important;
   border: 0!important;
   color: #fff!important;
+}
+
+@media only screen and (max-width: 991px) {
+  .notify__title {
+    font-size: 24px;
+  }
+  .notify__description {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .notify__container {
+    padding: 20px;
+  }
 }

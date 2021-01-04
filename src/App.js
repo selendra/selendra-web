@@ -11,7 +11,8 @@ import {
 import { 
   Header, 
   Notify, 
-  Footer 
+  Footer, 
+  MHeader
 } from './components';
 import {
   BrowserRouter as
@@ -19,11 +20,14 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import ScrollToTop from './utils/scrollToTop';
 
 export default function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop/>
+        <MHeader />
         <Header />
           <Switch>
             <Route path='/' exact component={Home} />

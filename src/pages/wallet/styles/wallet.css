@@ -6,7 +6,7 @@
 .wallet__bg {
   width: 100%;
   min-height: 100vh;
-
+  
   background: url(../../../assets/wallet-bg.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,7 +16,6 @@
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
-  
 }
 
 .wallet__container {
@@ -64,4 +63,30 @@
   font-weight: 500;
   color: #585D86;
   margin-top: 4%;
+}
+
+@media only screen  and (max-width: 991px) {
+  .wallet__selLogo {
+    width: 44px;
+    height: auto;
+  }
+  .wallet__title {
+    font-size: 32px;
+  }
+  .wallet__description {
+    font-size: 18px;
+  }
+  .wallet__container {
+    padding: 20px;
+  }
+  .wallet__bg {
+    min-height: 80vh;
+  }
+  .wallet__phone {
+    width: 200px;
+    height: auto;
+  }
+  .wallet__phoneDescription {
+    font-size: 16px;
+  }
 }

@@ -1,3 +1,4 @@
+import product from '../../assets/wallet.png';
 import { Row, Col, Button, Carousel } from 'antd';
 import './styles/wallet.css';
 import selendra from '../../assets/selendra.png';
@@ -12,7 +13,7 @@ export default function Wallet() {
           <Row>
             <Col xs={24} sm={24} md={12} lg={10} xl={10}>
               <Row align='middle'>
-                <img src={selendra} alt='selendra'/>
+                <img src={selendra} alt='selendra' className='wallet__selLogo'/>
                 <p className='wallet__title'>SELENDRA</p>
               </Row>
               <p className='wallet__title'>WALLET</p>
@@ -36,7 +37,7 @@ export default function Wallet() {
       </div>
       <div className='wallet__container'>
         <Row>
-          <Col span={14}>
+          <Col xs={24} sm={24} md={24} lg={14} xl={14}>
             <Carousel autoplay>
               <div>
                 <Row justify='center'>
@@ -44,11 +45,13 @@ export default function Wallet() {
                 </Row>
               </div>
               <div>
-                <img src={laptop} alt='wallet-phone' className='wallet__phone'/>
+                <Row justify='center' align='middle' style={{height: '100%'}}>
+                  <img src={laptop} alt='wallet-phone' className='wallet__phone'/>
+                </Row>
               </div>
             </Carousel>
           </Col>
-          <Col span={10}>
+          <Col xs={24} sm={24} md={24} lg={10} xl={10}>
             <p className='wallet__phoneDescription'>Selendra Wallets are used to store and transact SEL tokens and multiple other cryptocoins. Wallets can be integrated into any application where a use case exists, connecting the application to the Selendra main chain.</p>
             <Row>
               <Col span={12} className='wallet__phoneBtn'>

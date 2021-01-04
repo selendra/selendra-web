@@ -2,4 +2,5 @@
   width: 100vw;
   min-height: 100vh;
   background-color: #090D28;
+  overflow-x: hidden;
 }

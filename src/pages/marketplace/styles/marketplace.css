@@ -3,6 +3,19 @@
   height: 100%;
 }
 
+.mkplace__bg {
+  position: absolute;
+  background: url(../../../assets/mkplace.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: background-image 5s;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+}
+
 .mkplace__container {
   max-width: 76rem;
   margin: 0 auto;
@@ -43,4 +56,39 @@
 .mkplace__proDescription {
   font-size: 24px;
   color: #585D86;
+}
+.mkplace__product {
+  width: 520px;
+  height: auto;
+}
+
+@media only screen  and (max-width: 991px) {
+  .mkplace__container {
+    padding: 20px;
+  }
+  .mkplace__title {
+    font-size: 32px;
+  }
+  .mkplace__selLogo {
+    width: 44px;
+    height: auto;
+  }
+  .mkplace__description {
+    color: #fff;
+    font-size: 16px;
+    max-width: 340px;
+  }
+  .mkplace__product {
+    width: 166px;
+    height: auto;
+  }
+  .mkplace__proTitle {
+    font-size: 18px;
+  }
+  .mkplace__proDescription {
+    font-size: 14px;
+  }
+  .mkplace__btnGetAPK > Button {
+    width: 140px;
+  }
 }

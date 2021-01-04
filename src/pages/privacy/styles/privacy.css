@@ -24,3 +24,9 @@
 .privacy__title {
   font-size: 32px;
 }
+
+@media only screen  and (max-width: 991px) {
+  .privacy__container {
+    padding: 20px;
+  }
+}
