@@ -20,13 +20,13 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import ScrollToTop from './utils/scrollToTop';
+// import ScrollToTop from './utils/scrollToTop';
 
 export default function App() {
   return (
     <div className="App">
       <Router>
-        <ScrollToTop/>
+        {/* <ScrollToTop/> */}
         <MHeader />
         <Header />
           <Switch>
