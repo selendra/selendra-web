@@ -64,7 +64,7 @@
   margin-top: 4%;
 }
 
-@media only screen  and (max-width: 991px) {
+@media only screen  and (max-width: 768px) {
   .wallet__container {
     padding-top: 40%!important;
   }
@@ -85,11 +85,14 @@
     min-height: 80vh;
   }
   .wallet__phone {
-    width: 200px;
+    width: 200px!important;
     height: 100%;
   }
   .wallet__phoneDescription {
     font-size: 16px;
+  }
+  .wallet__btn Button {
+    width: 100%;
   }
 }
 

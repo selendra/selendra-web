@@ -26,7 +26,7 @@ export default function Wallet() {
                     <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
                   </Button>
                 </Col>
-                <Col span={12}>
+                <Col span={11} offset={1}>
                   <Button size='large' type='ghost'>Get APK</Button>
                 </Col>
               </Row>
