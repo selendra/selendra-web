@@ -22,12 +22,12 @@ export default function Wallet() {
               </p>
               <Row className='wallet__btn'>
                 <Col span={12} className='wallet__btnSignup'>
-                  <Button>
+                  <Button size='large'>
                     <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
                   </Button>
                 </Col>
                 <Col span={12}>
-                  <Button type='ghost'>Get APK</Button>
+                  <Button size='large' type='ghost'>Get APK</Button>
                 </Col>
               </Row>
             </Col>

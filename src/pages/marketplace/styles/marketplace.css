@@ -30,8 +30,9 @@
 }
 
 .mkplace__description {
-  font-size: 24px;
-  color: #585D86;
+  font-size: 32px;
+  font-weight: 500;
+  color: #8488AE;
 }
 
 .mkplace__btn > Button {
@@ -64,7 +65,7 @@
 
 @media only screen  and (max-width: 991px) {
   .mkplace__container {
-    padding: 20px;
+    padding: 10% 20px;
   }
   .mkplace__title {
     font-size: 32px;
