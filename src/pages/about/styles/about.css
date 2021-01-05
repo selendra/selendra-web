@@ -54,3 +54,9 @@
     font-size: 18px;
   }
 }
+
+@media only screen  and (max-width: 1200px) {
+  .about__container {
+    padding: 10% 20px;
+  }
+}

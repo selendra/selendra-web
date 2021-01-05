@@ -7,6 +7,9 @@
   margin: 0 auto;
   max-width: 76rem;
 }
+.home__handleRes {
+  height: 100vh;
+}
 .home__image {
   width: 100%;
   position: absolute;
@@ -178,7 +181,7 @@
   margin: 4% 0;
 }
 
-@media only screen  and (max-width: 991px) {
+@media only screen  and (max-width: 768px) {
   .home__container {
     padding: 0 20px;
   }
@@ -229,5 +232,14 @@
   }
   .home__right Button {
     width: 120px;
+  }
+}
+
+@media only screen  and (max-width: 1200px) {
+  .home__container {
+    padding: 0 20px;
+  }
+  .home__handleRes {
+    height: 50vh;
   }
 }

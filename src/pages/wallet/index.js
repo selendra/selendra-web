@@ -11,7 +11,7 @@ export default function Wallet() {
       <div className='wallet__bg'>
         <div className='wallet__container'>
           <Row>
-            <Col xs={24} sm={24} md={12} lg={10} xl={10}>
+            <Col xs={24} sm={24} md={12} lg={12} xl={10}>
               <Row align='middle'>
                 <img src={selendra} alt='selendra' className='wallet__selLogo'/>
                 <p className='wallet__title'>SELENDRA</p>
