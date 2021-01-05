@@ -23,8 +23,8 @@ export default function Home() {
       <div>
         <HomeImage className='home__image'/>
         <div className='home__container'>
-          <Row align='middle' style={{height: '90vh'}}>
-            <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+          <Row align='middle' style={{height: '100vh'}}>
+            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               <Row justify='start'>
                 <div className='home__right'>
                   <Row align='middle'>
@@ -32,17 +32,16 @@ export default function Home() {
                     <p className='home__title'>SELENDRA</p>
                   </Row>
                   <p className='home__description'>
-                    A multi-use cases blockchain
-                    super-app for the Internet 2.0
+                    Selendra is a platform for building, deploy, and employ decentralized, peer-2-peer applications, as simple as the web and mobile applications we use today.
                   </p>
                   <Row>
                     <Col span={12} className='home__btn'>
-                      <Button>
+                      <Button size='large'>
                         <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
                       </Button>
                     </Col>
                     <Col span={11} offset={1}>
-                      <Button type='ghost'>
+                      <Button size='large' type='ghost'>
                         <a href='https://github.com/selendra' target='blank'>
                           <Row justify='center'>
                             GitHub <Github/>
@@ -73,7 +72,7 @@ export default function Home() {
                 <p className='home__mainFeature'>Features</p>
               </Row>
               <Row style={{width: '100%'}}>
-                <Col className='home__featureCard' xs={24} sm={24} md={24} lg={{span: 8, offset: 0}} xl={{span: 8, offset: 0}}>
+                <Col className='home__featureCard' xs={24} sm={24} md={24} lg={{span: 7, offset: 0}} xl={{span: 7, offset: 0}}>
                   <OnChain />
                   <p className='home__featureTitle'>On-Chain-Governance</p>
                   <p className='home__feature'>A system for managing and implementing changes to the blockchain where rules are encoded into the blockchain protocol. </p>

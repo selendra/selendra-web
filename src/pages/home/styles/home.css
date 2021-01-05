@@ -28,14 +28,15 @@
 }
 
 .home__description {
-  color: #585D86;
-  font-size: 24px;
+  color: #E0E1EB;
+  font-size: 32px;
   font-weight: 500;
+  padding: 4% 0;
 }
 
 .home__right Button {
   color: #fff;
-  width: 140px;
+  width: 100%;
 }
 
 .home__btn > Button {
@@ -66,7 +67,7 @@
 }
 .home__feature {
   font-size: 24px;
-  color: #E9E9FD;
+  color: #8488AE;
   transition: color 1s;
 }
 
@@ -130,7 +131,7 @@
 
 .home__partnerDes {
   font-size: 24px;
-  color: #585D86;
+  color: #8488AE;
   font-weight: 600;
 }
 
@@ -200,7 +201,6 @@
     width: 60px;
     height: 60px;
   }
-  
   .home__feature,
   .home__technologyLangDes,
   .home__partnerDes {
@@ -215,6 +215,7 @@
   .home__roadmap {
     font-size: 24px;
   }
+  .home__description, 
   .home__featureTitle,
   .home__technologyLang {
     font-size: 18px;
@@ -225,5 +226,8 @@
   }
   .home__btnScroll {
     display: none;
+  }
+  .home__right Button {
+    width: 120px;
   }
 }

@@ -18,7 +18,7 @@ export default function MKPlace() {
               <img src={selendra} alt={selendra} className='mkplace__selLogo'/>
               <p className='mkplace__title'>SELENDRA</p>
             </Row>
-            <p className='mkplace__title'>MKPlace</p>
+            <p className='mkplace__title'>Market Place</p>
             <p className='mkplace__description'>
               A Decentralized Marketplace that connect community of users together to trade and exchange goods and services freely, securely and fairly. Powered by Selendra Public Blockchain built with Substrates. 
             </p>

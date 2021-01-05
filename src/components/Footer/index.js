@@ -21,14 +21,14 @@ export default function Footer() {
               <p className='footer__item'>Privacy & Policy</p>
             </Link>
             <Link to='/termofuse'>
-              <p className='footer__item'>Term of use</p>
+              <p className='footer__item'>Term Of Use</p>
             </Link>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className='footer__title'>Solution</p>
             <p className='footer__item'>Customer Loyalty</p>
             <p className='footer__item'>Crowfunding And Vested</p>
-            <p className='footer__item'>API for payment solution</p>
+            <p className='footer__item'>API For Payment Solution</p>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <p className='footer__title'>Developers</p>
@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-          <p className='footer__title'>Connect with us</p>
+          <p className='footer__title'>Connect With Us</p>
             <Row>
               <Col span={7}>
                 <a href='https://www.facebook.com/selendraio' target='blank'>
