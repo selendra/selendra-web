@@ -14,7 +14,7 @@ export default function Header() {
           <p className='header__cardTitle'>Consumer App</p>
           <a href='/wallet'>
             <Row align='middle'>
-              <img src={selendra} alt="logo" className='header__cardImg'></img>
+              <img src={selendra} alt="logo" className='header__cardImg header__cardImgBg'></img>
               <span className='header__cardItem'>
                 Wallet
               </span>
