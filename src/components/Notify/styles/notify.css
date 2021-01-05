@@ -52,3 +52,9 @@
     padding: 20px;
   }
 }
+
+@media only screen  and (max-width: 1200px) {
+  .notify__container {
+    padding: 20px;
+  }
+}

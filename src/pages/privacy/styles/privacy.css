@@ -30,3 +30,9 @@
     padding: 20px;
   }
 }
+
+@media only screen  and (max-width: 1200px) {
+  .privacy__container {
+    padding: 10% 20px;
+  }
+}

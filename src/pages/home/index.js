@@ -23,8 +23,8 @@ export default function Home() {
       <div>
         <HomeImage className='home__image'/>
         <div className='home__container'>
-          <Row align='middle' style={{height: '100vh'}}>
-            <Col xs={24} sm={24} md={24} lg={12} xl={12}>
+          <Row align='middle' className='home__handleRes'>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <Row justify='start'>
                 <div className='home__right'>
                   <Row align='middle'>
@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
               </Row>
             </Col>
-            <Col></Col>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}></Col>
           </Row>
           <Row justify='center'>
             <Col>
@@ -112,7 +112,7 @@ export default function Home() {
               <p className='home__technologyLang'>Substrate</p>
             </Row>
           </Col>
-          <Col>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <Program />
           </Col>
         </Row>
