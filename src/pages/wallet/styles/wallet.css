@@ -6,7 +6,6 @@
 .wallet__bg {
   width: 100%;
   min-height: 100vh;
-  
   background: url(../../../assets/wallet-bg.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,9 +31,9 @@
 }
 
 .wallet__description {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
-  color: #585D86;
+  color: #E0E1EB;
 }
 
 .wallet__btn Button {
@@ -61,13 +60,13 @@
 .wallet__phoneDescription {
   font-size: 24px;
   font-weight: 500;
-  color: #585D86;
+  color: #8488AE;
   margin-top: 4%;
 }
 
 @media only screen  and (max-width: 991px) {
   .wallet__container {
-    margin-top: 20%;
+    padding-top: 40%!important;
   }
   .wallet__selLogo {
     width: 44px;
