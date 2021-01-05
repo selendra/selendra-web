@@ -76,21 +76,21 @@
   }
   .mkplace__description {
     color: #fff;
-    font-size: 16px;
+    font-size: 16px!important;
     max-width: 340px;
   }
   .mkplace__product {
-    width: 166px;
+    width: 166px!important;
     height: auto;
   }
   .mkplace__proTitle {
-    font-size: 18px;
+    font-size: 18px!important;
   }
   .mkplace__proDescription {
     font-size: 14px;
   }
   .mkplace__btnGetAPK > Button {
-    width: 140px;
+    width: 140px!important;
   }
 }
 
