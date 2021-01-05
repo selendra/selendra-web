@@ -21,7 +21,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import ScrollToTop from './utils/scrollToTop';
+import ScrollToTop from './scrollToTop';
 
 export default function App() {
   return (
