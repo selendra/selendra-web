@@ -54,6 +54,7 @@
 .header__cardImg {
   width: 28px;
   height: 28px;
+  margin-right: 10px;
 }
 
 .header__item,
@@ -69,6 +70,11 @@
 
 a {
   color: #fff!important;
+}
+
+.header__cardImgBg {
+  background-color: #000;
+  border-radius: 6px;
 }
 
 @media only screen  and (max-width: 991px) {
