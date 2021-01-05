@@ -13,6 +13,7 @@ ul {
 a {
   color: #fefefe!important;
   text-decoration: none;
+  font-size: 18px;
 }
 a:hover, a.router-link-exact-active {
   text-decoration: underline;

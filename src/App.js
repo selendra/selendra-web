@@ -6,7 +6,8 @@ import {
   MkPlace, 
   Privacy, 
   TermOfUse, 
-  Success 
+  Success,
+  Failedverified
 } from './pages';
 import { 
   Header, 
@@ -18,7 +19,7 @@ import {
   BrowserRouter as
   Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 
 export default function App() {
@@ -35,9 +36,7 @@ export default function App() {
           <Route path='/privacy' exact component={Privacy} />
           <Route path='/termofuse' exact component={TermOfUse} />
           <Route path='/successfullyverified' exact component={Success} />
-          {/* 
           <Route path='/failedverified' exact component={Failedverified} /> 
-          */}
         </Switch>
         <Notify />
         <Footer />

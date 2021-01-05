@@ -6,6 +6,7 @@ import yuth from '../../assets/our-team/sokhomoliyuth-tea.png';
 import daveat from '../../assets/our-team/daveat.png';
 import nath from '../../assets/our-team/nath.png';
 import piset from '../../assets/our-team/piset.png';
+import chay from '../../assets/our-team/bunchay.png';
 
 export default function About() {
   return (
@@ -17,13 +18,11 @@ export default function About() {
           </Col>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <p className='about__description'>
-              Selendra is a new generation of trusted global solutions for creating a digital asset. 
-              Customer Loyalty, Real Estate, Vested Shares and Payment Solution based on blockchain.
+              The Selendra platform is used to build, deploy, and employ decentralized, peer-2-peer applications, as simple as the web and mobile applications we use today.
             </p>
             <hr />
             <p className='about__description'>
-              The platform is designed to bring collectively a set of logistics, private equity, food, and hospitality transaction more efficiency. We have built a risk-free infrastructure established for security/utility token offerings on Selendra to maximize the safety and security of transactions on the Platform.
-              Selendra Platform currently built on top of the Stellar network and engages with advanced blockchain technology to extended capabilities as fast transaction processing at low cost, enhanced the security of all processes-from issuance to storage to transfers of tokens for swap, trading on the market.
+              Selendra presents an innovative solution to the problem of mass-user adoption in blockchain applications.We are rethinking the nature of web and mobile application development, incorporating blockchain for both developer and user benefit.The coming digital economy will be profoundly molded and impacted by the great recent innovation of blockchain technology.Selendra is built upon blockchain technology as an add-on feature to KOOMPI, forming a new economic micro-community. Selendra leverages the power and scope of KOOMPI, while KOOMPI leverages the power and scope of Selendra to form a positive feedback loop.
             </p>
           </Col>
         </Row>
@@ -55,21 +54,28 @@ export default function About() {
             </Row>
             <br />
             <Row justify='space-between'>
-              <Col xs={24} sm={24} md={24} lg={6} xl={6}>
+              <Col xs={24} sm={24} md={24} lg={{span:5, offset:0}} xl={{span:5, offset:0}}>
                 <Card className='about__card'>
                   <img src={nath} alt='saing-sab' />
                   <p className='about__cardName'>Nath Lay</p>
                   <p className='about__cardP'>Blockchain Developer</p>
                 </Card>
               </Col>
-              <Col xs={24} sm={24} md={24} lg={6} xl={6}>
+              <Col xs={24} sm={24} md={24} lg={{span:5, offset:1}} xl={{span:5, offset:1}}>
                 <Card className='about__card'>
                   <img src={daveat} alt='saing-sab' />
                   <p className='about__cardName'>Daveat Corn</p>
                   <p className='about__cardP'>Mobile Developer</p>
                 </Card>
               </Col>
-              <Col xs={24} sm={24} md={24} lg={6} xl={6}>
+              <Col xs={24} sm={24} md={24} lg={{span:5, offset:1}} xl={{span:5, offset:1}}>
+                <Card className='about__card'>
+                  <img src={chay} alt='saing-sab' />
+                  <p className='about__cardName'>Bunchay Ouk</p>
+                  <p className='about__cardP'>Mobile Developer</p>
+                </Card>
+              </Col>
+              <Col xs={24} sm={24} md={24} lg={{span:5, offset:1}} xl={{span:5, offset:1}}>
                 <Card className='about__card'>
                   <img src={piset} alt='saing-sab' />
                   <p className='about__cardName'>Piset Heang</p>

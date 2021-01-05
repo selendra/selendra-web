@@ -13,12 +13,12 @@
 }
 
 .header__logo {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
 }
 
 .header__title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -27,6 +27,9 @@
   border: 0!important;
   color: #fff!important;
   width: 180px;
+  font-size: 24px;
+  font-weight: 600;
+  height: 50px;
 }
 
 .header__card {
@@ -51,6 +54,12 @@
 .header__cardImg {
   width: 28px;
   height: 28px;
+}
+
+.header__item,
+.header__item a {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .header__item:hover,

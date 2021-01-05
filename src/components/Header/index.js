@@ -66,7 +66,7 @@ export default function Header() {
                 <a href='https://wallet.selendra.com/login' target='blank'>Login</a>
               </Button>
               <div className='header__btn'>
-                <Button>
+                <Button size='large'>
                   <a href='https://wallet.selendra.com/signup' target='blank'>Sign Up</a>
                 </Button>
               </div>
