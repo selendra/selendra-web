@@ -235,6 +235,22 @@
   }
 }
 
+#Box,
+#Box_1,
+#Box_2,
+#Box_3 {
+  animation: updown 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes updown {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(18deg);
+  }
+}
+
 @media only screen  and (max-width: 1200px) {
   .home__container {
     padding: 0 20px;
