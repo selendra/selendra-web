@@ -1,4 +1,4 @@
-import { Row, Col, Button, Card } from 'antd';
+import { Row, Col, Button } from 'antd';
 import { ReactComponent as Github } from '../../assets/github.svg';
 import { ReactComponent as OnChain } from '../../assets/on-chain.svg';
 import { ReactComponent as WASM } from '../../assets/wasm.svg';
@@ -16,8 +16,14 @@ import rust from '../../assets/rust.png';
 import substrate from '../../assets/substrate.png';
 import ipfs from '../../assets/ipfs.png';
 import './styles/home.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({})
+  }, [])
   return (
     <div className='home'>
       <div>
@@ -72,20 +78,47 @@ export default function Home() {
                 <p className='home__mainFeature'>Features</p>
               </Row>
               <Row style={{width: '100%'}}>
-                <Col className='home__featureCard' xs={24} sm={24} md={24} lg={{span: 7, offset: 0}} xl={{span: 7, offset: 0}}>
-                  <OnChain />
-                  <p className='home__featureTitle'>On-Chain-Governance</p>
-                  <p className='home__feature'>A system for managing and implementing changes to the blockchain where rules are encoded into the blockchain protocol. </p>
+                <Col xs={24} sm={24} md={24} lg={{span: 7, offset: 0}} xl={{span: 7, offset: 0}}>
+                  <div
+                    className='home__featureCard' 
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <OnChain />
+                    <p className='home__featureTitle'>On-Chain-Governance</p>
+                    <p className='home__feature'>A system for managing and implementing changes to the blockchain where rules are encoded into the blockchain protocol. </p>
+                  </div>
                 </Col>
-                <Col className='home__featureCard' xs={24} sm={24} md={24} lg={{span: 7, offset: 1}} xl={{span: 7, offset: 1}}>
-                  <WASM />
-                  <p className='home__featureTitle'>WASM Smart Contract Runtime</p>
-                  <p className='home__feature'>Allows developers to deploy decentralized applications into the blockchain using a multitude of languages.</p>
+                <Col xs={24} sm={24} md={24} lg={{span: 7, offset: 1}} xl={{span: 7, offset: 1}}>
+                  <div
+                    className='home__featureCard' 
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <WASM />
+                    <p className='home__featureTitle'>WASM Smart Contract Runtime</p>
+                    <p className='home__feature'>Allows developers to deploy decentralized applications into the blockchain using a multitude of languages.</p>
+                  </div>
                 </Col>
-                <Col className='home__featureCard' xs={24} sm={24} md={24} lg={{span: 7, offset: 1}} xl={{span: 7, offset: 1}}>
-                  <POS />
-                  <p className='home__featureTitle'>Proof-of-Stake (PoS)</p>
-                  <p className='home__feature'>Provides unique revenue generating capabilities to incentivize the community without the need for high computational resources and electricity costs.</p>
+                <Col xs={24} sm={24} md={24} lg={{span: 7, offset: 1}} xl={{span: 7, offset: 1}}>
+                  <div
+                    className='home__featureCard' 
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <POS />
+                    <p className='home__featureTitle'>Proof-of-Stake (PoS)</p>
+                    <p className='home__feature'>Provides unique revenue generating capabilities to incentivize the community without the need for high computational resources and electricity costs.</p>
+                  </div>
                 </Col>
               </Row>
             </Row>
@@ -127,7 +160,14 @@ export default function Home() {
                   <Col>
                     <img src={Koompi} alt='koompi' className='home__partnerImg'/>
                   </Col>
-                  <Col xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}>
+                  <Col 
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" 
+                    xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}
+                  >
                     <p className='home__partnerDes'>Wifi Hotspot services at schools and communities KOOMPI Online schools sala.koompi.com KOOMPI Appstore and others service applications</p>
                   </Col>
                 </Row>
@@ -135,7 +175,14 @@ export default function Home() {
                   <Col>
                     <img src={va} alt='va' className='home__partnerImg'/>
                   </Col>
-                  <Col xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}>
+                  <Col 
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out" 
+                    xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}
+                  >
                     <p className='home__partnerDes'>Real Estate Investment Trust Cropland Investment Carbon Credit Trading Real World Asset Management Programs</p>
                   </Col>
                 </Row>
@@ -143,7 +190,14 @@ export default function Home() {
                   <Col>
                     <img src={grood} alt='grood' className='home__partnerImg'/>
                   </Col>
-                  <Col xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}>
+                  <Col 
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1400"
+                    data-aos-easing="ease-in-out" 
+                    xs={24} sm={24} md={24} lg={{span: 12, offset: 2}} xl={{span: 12, offset: 2}}
+                  >
                     <p className='home__partnerDes'>Rental & Ride sharing Power/battery swapping program Incentivized for behavioral change</p>
                   </Col>
                 </Row>
