@@ -1,5 +1,4 @@
 import { Row, Col, Button } from 'antd';
-import { ReactComponent as MK } from '../../assets/mkplace.svg';
 import selendra from '../../assets/selendra.png';
 import './styles/marketplace.css';
 import { ReactComponent as GitHub } from '../../assets/github.svg';
