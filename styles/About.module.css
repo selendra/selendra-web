@@ -1,0 +1,124 @@
+.about__container {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+.about__section {
+  padding: 100px 0;
+}
+.about__section h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+.about__section p {
+  text-align: center;
+}
+.team h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+.mission__vision {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+.mission__vision h4 {
+  color: #ED1576;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: -8px;
+}
+.mission__vision h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.mission__vision p {
+  color: #000;
+}
+.register__faq h4 {
+  color: #ED1576;
+  font-weight: 600;
+  font-size: 16px; 
+  margin-bottom: -8px;
+}
+.register__faq h1 { 
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+}
+.faq__left {
+  background: #4609D6;
+  padding: 40px;
+}
+.faq__right {
+  padding: 40px;
+}
+.faq__left Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #4609D6;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.faq__right Button { 
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03A2E9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.joinTelegram {
+  background-color: #f5f5f5;
+  padding: 200px 0;
+  background-image: url('../public/images/worldmap.png');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.joinTelegram h4 {
+  color: #ED1576;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.joinTelegram h1 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+.joinTelegram Button {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.29);
+  -webkit-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.29);
+  -moz-box-shadow: 4px 5px 5px -1px rgba(0,0,0,0.29);
+  color: #03A2E9;
+}
+@media only screen and (max-width: 76rem) {
+  .about__container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about__section {
+    padding: 60px 0;
+  }
+  .joinTelegram { 
+    padding: 40px;
+  }
+  .joinTelegram h1 {
+    line-height: 40px;
+  }
+}

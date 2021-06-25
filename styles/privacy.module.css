@@ -1,0 +1,40 @@
+.privacy__container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.privacy__container h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: -10px;
+}
+.privacy__container h2 { 
+  font-size: 36px;
+  font-weight: 600;
+  color: #D65B09;
+}
+.privacy__container p {
+  margin-left: 40px;
+} 
+@media only screen and (max-width: 76rem) {
+  .privacy__container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacy__container { 
+    padding: 40px 10px;
+  }
+  .privacy__container h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: -10px;
+  }
+  .privacy__container h2 { 
+    font-size: 20px;
+    font-weight: 600;
+    color: #D65B09;
+  }
+}

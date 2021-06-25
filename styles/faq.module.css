@@ -1,0 +1,43 @@
+.faq__container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.faq__container h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: -40px;
+}
+.faq__container h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ED1576;
+  margin: 40px 0;
+}
+.faq__container h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D65B09;
+}
+.faq__container p { 
+  margin-left: 30px;
+}
+@media only screen and (max-width: 76rem) {
+  .faq__container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .faq__container {
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 40px 10px;
+  }
+  .faq__container h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: -40px;
+  }
+}

@@ -1,0 +1,138 @@
+.product__container {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+.product__section {
+  height: 600px;
+}
+.product__section h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.product__section Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03A2E9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.bitriel__promo1 {
+  height: 480px;
+  width: auto;
+}
+.wallet__detail {
+  background-color: #f5f5f5;
+  padding: 100px 0 0 0;
+}
+.wallet__detail h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.wallet__detail p {
+  color: #000;
+  font-weight: 600;
+}
+.wallet__detail Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03A2E9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.albazaar {
+  padding: 100px 0 0 0;
+}
+.albazaar h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+}
+.albazaar p {
+  font-weight: 600;
+}
+.albazaar Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03A2E9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.albazaar__detail {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+.albazaar__detail h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.albazaar__detail p {
+  color: #000;
+  font-weight: 600;
+}
+.albazaar__detail Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03A2E9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.albazaar__detail img[src="/images/albazaar-logo.png"] {
+  width: 78px;
+  height: auto;
+}
+@media only screen and (max-width: 76rem) {
+  .product__container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .product__section {
+    height: 100%;
+    padding: 40px 0;
+  }
+  .product__section h1 {
+    font-size: 36px;
+  }
+  .product__section Button {
+    width: 100%;
+  }
+  .albazaar {
+    padding: 40px 0 0 0;
+  }
+  .albazaar img { 
+    width: 100%;
+    padding-top: 20px;
+  }
+  .albazaar Button,
+  .albazaar__detail Button {
+    width: 100%;
+  }
+  .albazaar__detail {
+    padding: 40px 0;
+  }
+  .albazaar__detail img[src="/images/albazaar-promo2.png"] {
+    width: 80%;
+    padding-top: 20px;
+  }
+  .wallet__detail Button {
+    width: 100%;
+  }
+}

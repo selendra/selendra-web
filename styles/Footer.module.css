@@ -1,0 +1,36 @@
+.footer {
+  width: 100vw;
+  background-color: #1A2F3B;
+  padding: 80px 0;
+}
+.footer h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer p,
+.footer a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.footer__container {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 76rem) {
+  .footer__container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 0;
+  }
+  .footer h1 {
+    padding: 20px 0 0 0;
+  }
+}
