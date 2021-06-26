@@ -22,3 +22,40 @@
   color: #fff;
   margin: 0;
 }
+.menu__container {
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.menu__container img {
+  width: 36px;
+  height: auto;
+}
+.menu__container span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+} 
+.drawer__product h1 {
+  color: #fff;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.drawer__product p {
+  font-weight: 600;
+}
+.drawer__company p {
+  font-weight: 600;
+}
+.drawer__company h1 {
+  color: #fff;
+  font-weight: 600;
+}
+.drawer__btn Button {
+  color: #fff;
+  background-color: #03A2E9;
+  border-radius: 8px;
+  height: 39px;
+  width: 100%;
+  border: none;
+}

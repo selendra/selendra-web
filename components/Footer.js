@@ -23,60 +23,60 @@ export default function Footer() {
           </Col>
           <Col xs={12} sm={12} md={4} lg={3} xl={3}>
             <h1>Developers</h1>
-            <a href='/product'>Documentation</a>
-            <a href='/product'>GitHub</a>
+            <a href='https://docs.selendra.org'>Documentation</a>
+            <a href='https://github.com/selendra'>GitHub</a>
           </Col>
           <Col xs={12} sm={12} md={4} lg={3} xl={3}>
             <h1>Support</h1>
             <Link href='/product'><p>FAQs</p></Link>
-            <Link href='/product'><p>Contact Us</p></Link>
-            <Link href='/product'><p>Telegram Community</p></Link>
+            {/* <Link href='/product'><p>Contact Us</p></Link> */}
+            <a href='https://t.me/selendraorg'><p>Telegram Community</p></a>
           </Col>
           <Col xs={0} sm={0} md={4} lg={4} xl={4}>
             <Row justify='end'>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Link href=''><img src='/images/facebook.png' alt='facebook'/></Link>
+                <a href='https://www.facebook.com/selendraio'><img src='/images/facebook.png' alt='facebook'/></a>
               </Col>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Link href=''><img src='/images/twitter.png' alt='twitter'/></Link>
+                <a href='https://twitter.com/selendraorg'><img src='/images/twitter.png' alt='twitter'/></a>
               </Col>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Link href=''><img src='/images/medium.png' alt='medium'/></Link>
+                <a href='https://medium.com/selendra'><img src='/images/medium.png' alt='medium'/></a>
               </Col>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Link href=''><img src='/images/telegram.png' alt='telegram'/></Link>
+                <a href='https://t.me/selendraorg'><img src='/images/telegram.png' alt='telegram'/></a>
               </Col>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                <Link href=''><img src='/images/linkedin.png' alt='linkedin'/></Link>
+                <a href='https://www.linkedin.com/company/selendra'><img src='/images/linkedin.png' alt='linkedin'/></a>
               </Col>
             </Row>
           </Col>
           <Col xs={24} sm={24} md={0} lg={0} xl={0} style={{paddingTop: '20px'}}>
             <Row justify='center'>
               <Col xs={4} sm={4}>
-                <Link href=''><img src='/images/facebook.png' alt='facebook'/></Link>
+                <a href='https://www.facebook.com/selendraio'><img src='/images/facebook.png' alt='facebook'/></a>
               </Col>
               <Col xs={4} sm={4}>
-                <Link href=''><img src='/images/twitter.png' alt='twitter'/></Link>
+                <a href='https://twitter.com/selendraorg'><img src='/images/twitter.png' alt='twitter'/></a>
               </Col>
               <Col xs={4} sm={4}>
-                <Link href=''><img src='/images/medium.png' alt='medium'/></Link>
+                <a href='https://medium.com/selendra'><img src='/images/medium.png' alt='medium'/></a>
               </Col>
               <Col xs={4} sm={4}>
-                <Link href=''><img src='/images/telegram.png' alt='telegram'/></Link>
+                <a href='https://t.me/selendraorg'><img src='/images/telegram.png' alt='telegram'/></a>
               </Col>
               <Col xs={4} sm={4}>
-                <Link href=''><img src='/images/linkedin.png' alt='linkedin'/></Link>
+                <a href='https://www.linkedin.com/company/selendra'><img src='/images/linkedin.png' alt='linkedin'/></a>
               </Col>
             </Row>
           </Col>
         </Row>
         <Row justify='space-between' style={{paddingTop: '40px'}}>
           <Col>
-            <p>© Selendra, Blockchain</p>
+            <span>© Selendra, Blockchain</span>
           </Col>
           <Col>
-            <p>info@selendra.org</p>
+            <span>info@selendra.org</span>
           </Col>
         </Row>
       </div>
