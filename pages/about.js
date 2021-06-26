@@ -30,7 +30,7 @@ export default function About() {
           <div className={styles.team}>
             <h1>Selendra Is Crafted And Built By These Friendly Folks</h1>
             <Row>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/rithy-thol.png' alt='rithy-thol' />
@@ -39,7 +39,7 @@ export default function About() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/saing-sab.png' alt='saing-sab' />
@@ -48,7 +48,7 @@ export default function About() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/nath.png' alt='nath' />
@@ -57,7 +57,7 @@ export default function About() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/daveat.png' alt='daveat' />
@@ -66,7 +66,7 @@ export default function About() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/bunchhay.png' alt='bunchhay' />
@@ -75,57 +75,12 @@ export default function About() {
                   </Col>
                 </Row>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={12} lg={8} xl={8}>
                 <Row justify='center'>
                   <Col className={styles.team__member}>
                     <img src='/images/teams/piset.png' alt='piset' />
                     <h2>Piset Heang</h2>
                     <h3>Full-stack webdev</h3>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <Row justify='center'>
-                  <Col className={styles.team__member}>
-                    <img src='/images/teams/hengsrun.png' alt='hengsrun' />
-                    <h2>Hengsrun Seang</h2>
-                    <h3>Technical Documentation</h3>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <Row justify='center'>
-                  <Col className={styles.team__member}>
-                    <img src='/images/teams/molika.png' alt='molika' />
-                    <h2>Mollika Chum</h2>
-                    <h3>Users’ Documentation</h3>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <Row justify='center'>
-                  <Col className={styles.team__member}>
-                    <img src='/images/teams/seavthean.png' alt='seavthean' />
-                    <h2>Siev Thean Thoun</h2>
-                    <h3>Designer</h3>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <Row justify='center'>
-                  <Col className={styles.team__member}>
-                    <img src='/images/teams/sreyneang.png' alt='sreyneang' />
-                    <h2>Sreyneang Oun</h2>
-                    <h3>Community</h3>
-                  </Col>
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <Row justify='center'>
-                  <Col className={styles.team__member}>
-                    <img src='/images/teams/sofy.png' alt='sofy' />
-                    <h2>Sofy Thy</h2>
-                    <h3>Community</h3>
                   </Col>
                 </Row>
               </Col>
@@ -140,14 +95,28 @@ export default function About() {
                 <h1>What is our mission?</h1>
                 <p>Our mission is to empower young developers throughout the world to quickly and easily learn to create blockchain user-friendly applications for commerce, trade, education, entertainment, storing of data, decentralized computing, assets tokenization and much more.</p>
               </Col>
-              <Col xs={24} sm={24} md={12} lg={12} xl={12}></Col>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <Row justify='center'>
+                  <img src='/images/mission.png' alt='mission' />
+                </Row>
+              </Col>
             </Row>
+            <div style={{padding: '40px 0'}}/>
             <Row>
-              <Col xs={24} sm={24} md={12} lg={12} xl={12}></Col>
+              <Col xs={0} sm={0} md={12} lg={12} xl={12}>
+                <Row justify='center'>
+                  <img src='/images/vision.png' alt='vision' />
+                </Row>
+              </Col>
               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                 <h4>Vision</h4>
                 <h1>What is our vision?</h1>
                 <p>Our vision is Enhance the value of the Selendra (SEL) network over the long-term as we attract bright, young and progressive developers, forward-thinking investors, and user participants with combined interests toward achieving a common vision and goals.</p>
+              </Col>
+              <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+                <Row justify='center'>
+                  <img src='/images/vision.png' alt='vision' />
+                </Row>
               </Col>
             </Row>
           </div>
