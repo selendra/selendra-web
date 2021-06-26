@@ -17,22 +17,22 @@ export default function Header() {
     background: '#1D3442'
   }
 
-  const products = (
-    <Menu className={styles.menu__container}>
-      <Menu.Item>
-        <img src='/images/bitriel-logo.png' alt='bitriel-logo' />
-        <Link href='/product'>
-          <span>Bitriel Wallet</span>
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <img src='/images/albazaar-logo.png' alt='albazaar-logo' />
-        <Link href='/product'>
-          <span>Albazaar</span>
-        </Link>
-      </Menu.Item>
-    </Menu>
-  )
+  // const products = (
+  //   <Menu className={styles.menu__container}>
+  //     <Menu.Item>
+  //       <img src='/images/bitriel-logo.png' alt='bitriel-logo' />
+  //       <Link href='/product'>
+  //         <span>Bitriel Wallet</span>
+  //       </Link>
+  //     </Menu.Item>
+  //     <Menu.Item>
+  //       <img src='/images/albazaar-logo.png' alt='albazaar-logo' />
+  //       <Link href='/product'>
+  //         <span>Albazaar</span>
+  //       </Link>
+  //     </Menu.Item>
+  //   </Menu>
+  // )
 
   return (
     <div className={styles.header}>
@@ -46,9 +46,9 @@ export default function Header() {
           <Col xs={0} sm={0} md={12} lg={12} xl={12}>
             <Row justify='end'>
               <Row justify='space-between' align='middle' style={{width: '400px'}}>
-                <Dropdown overlay={products}>
+                <Link href='/product'>
                   <p className={styles.header__item}>Products</p>
-                </Dropdown>
+                </Link>
                 <Link href='/about'>
                   <p className={styles.header__item}>Company</p>
                 </Link>

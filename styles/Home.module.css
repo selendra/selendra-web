@@ -49,6 +49,9 @@
   height: 160px;
   margin: 0;
 }
+.architecture__item {
+  padding: 20px 0;
+}
 .home__featureSectionTitle h1 {
   /* border: 1px solid red; */
   position: absolute;
@@ -91,7 +94,7 @@
   /* padding-top: 6rem; */
 }
 .featureImg > img {
-  height: 600px;
+  height: 520px;
   width: auto;
 }
 .home__card h2 {
@@ -160,6 +163,13 @@
   font-size: 52px;
   font-weight: 900;
   text-align: center;
+}
+.dualToken h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
 }
 .dualToken p {
   font-size: 16px;

@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       <div className={styles.feature__des}>
         <div className={styles.home__container}>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>Folkless Upgrades</h1>
@@ -53,7 +53,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/consensus.png' alt='consensus'/>
@@ -80,7 +80,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>Governance Roles</h1>
@@ -96,7 +96,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/reward.png' alt='reward'/>
@@ -116,7 +116,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>TransactionFees</h1>
@@ -131,7 +131,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className={styles.architecture__item}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/network.png' alt='network'/>
@@ -203,11 +203,11 @@ export default function Home() {
           <Row justify='space-around' align='middle'>
             <Col>
               <img src='/images/sel-coin.png' alt='sel-coin' />
-              <h1>SEL</h1>
+              <h2>SEL</h2>
             </Col>
             <Col>
               <img src='/images/rise-token.png' alt='rise-token' />
-              <h1>RISE</h1>
+              <h2>RISE</h2>
             </Col>
           </Row>
         </div>
