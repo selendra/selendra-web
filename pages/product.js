@@ -47,7 +47,7 @@ export default function Product() {
               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                 <h1>Albazaar Marketplace</h1>
                 <p>a planned virtual marketplace where goods and services can be exchanged through smart contracts in a peer-to-peer network, together with all the other added benefits blockchain technology has to offer. Buyers and sellers are empowered through the community where transactions can be negotiated with confidence.</p>
-                <Button>Get Android App</Button>
+                <Button>Coming soon...</Button>
               </Col>
               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                <Row justify='center'>
@@ -57,7 +57,7 @@ export default function Product() {
             </Row>
           </div>
         </div>
-        <div className={styles.albazaar__detail}>
+        {/* <div className={styles.albazaar__detail}>
           <div className={styles.product__container}>
             <Row>
               <Col xs={0} sm={0} md={12} lg={12} xl={12}>
@@ -69,7 +69,7 @@ export default function Product() {
                 <img src='/images/albazaar-logo.png' alt='albazaar-logo' />
                 <h1>Get Started with Albazaar</h1>
                 <p>a planned virtual marketplace where goods and services can be exchanged through smart contracts in a peer-to-peer network, together with all the other added benefits blockchain technology has to offer. Buyers and sellers are empowered through the community where transactions can be negotiated with confidence.</p>
-                <Button>Get Android App</Button>
+                <Button>Coming soon...</Button>
               </Col>
               <Col xs={24} sm={24} md={0} lg={0} xl={0}>
                 <Row justify='center'>
@@ -78,7 +78,7 @@ export default function Product() {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
