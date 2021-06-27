@@ -11,7 +11,7 @@ export default function Keepintouch() {
           <h2>Technology Roadmap</h2>
           <p>You will get update on project roadmap status, network launch, and token distribution.</p>
           <Input placeholder='Email' />
-          <Button>Register</Button>
+          <Button>Stay in touch</Button>
         </Col>
       </Row>
     </div>

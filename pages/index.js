@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { Row, Col, Button } from 'antd'
 import styles from '../styles/Home.module.css'
+import { GithubOutlined } from '@ant-design/icons';
 
 export default function Home() {
+
   return (
     <div>
       <div className={styles.home__container}>
@@ -12,10 +14,10 @@ export default function Home() {
             <p>a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants.</p>
             <Row justify='space-between'>
               <Col span={11}>
-                <Button type='primary' className={styles.home__btnReg}>Register</Button>
+                <Button type='primary' className={styles.home__btnReg}><a href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Register</a></Button>
               </Col>
               <Col span={11}>
-                <Button type='ghost' className={styles.home__btnGit}>GitHub</Button>
+                <Button type='ghost' className={styles.home__btnGit}><a href='https://github.com/selendra'><GithubOutlined style={{paddingRight: '6px'}}/>GitHub</a></Button>
               </Col>
             </Row>
           </Col>
@@ -179,7 +181,7 @@ export default function Home() {
               <p>a hotspot mesh network with local contents cached that provides internet access to villagers, one village at a time. Mesh networks offer options for local internet that help bring down the cost of data. Incentives users to browse useful contents or relative ads, while internet fees are paid via RISE or SEL.</p>
             </Col>
             <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.potential__item}>
-              <img src='/images/sala-logo-black.png' alt='koompi sala' />
+              <img src='/images/sala.png' alt='koompi sala' />
               <p>a virtual school that incentivized teachers to create good quality video contents and students to fairly rate the cause they learned. Anyone can open a school, similar to a personal Facebook page, but focus on video education. SALA KOOMPI believes that anyone has some good to share and enlighten the world, if incentives are fairly and openly distributed.</p>
             </Col>
             <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.potential__item}>
