@@ -7,28 +7,16 @@ export default function Keepintouch() {
   const [email, setEmail] = useState('');
 
   const onSubmit = async() => {
-    const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID;
-    const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID;
-    const CLIENT_EMAIL = process.env.NEXT_PUBLIC_CLIENT_EMAIL;
-    const PRIVATE_KEY = process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, '\n');
-
-    var values = [
-      [
-        'Email'
-      ],
-    ];
-    var body = {
-      values: values
-    };
-    gapi.client.sheets.spreadsheets.values.update({
-       spreadsheetId: spreadsheetId,
-       range: range,
-       valueInputOption: valueInputOption,
-       resource: body
-    }).then((response) => {
-      var result = response.result;
-      console.log(`${result.updatedCells} cells updated.`);
-    });
+    await fetch(`http://localhost:3000/api/writeData`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email
+      })
+    })
+    console.log(email)
   }
 
   return (
