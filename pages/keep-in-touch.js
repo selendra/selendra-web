@@ -1,6 +1,5 @@
 import styles from '../styles/keepintouch.module.css'
 import { Input, Row, Button, Col, message } from 'antd'
-// import { GoogleSpreadsheet } from "google-spreadsheet"
 import { useState } from 'react'
 
 export default function Keepintouch() {
@@ -13,27 +12,23 @@ export default function Keepintouch() {
     const CLIENT_EMAIL = process.env.NEXT_PUBLIC_CLIENT_EMAIL;
     const PRIVATE_KEY = process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, '\n');
 
-    const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
-    setLoading(true);
-    await doc.useServiceAccountAuth({
-      client_email: CLIENT_EMAIL,
-      private_key: PRIVATE_KEY,
+    var values = [
+      [
+        'Email'
+      ],
+    ];
+    var body = {
+      values: values
+    };
+    gapi.client.sheets.spreadsheets.values.update({
+       spreadsheetId: spreadsheetId,
+       range: range,
+       valueInputOption: valueInputOption,
+       resource: body
+    }).then((response) => {
+      var result = response.result;
+      console.log(`${result.updatedCells} cells updated.`);
     });
-    // loads document properties and worksheets
-    await doc.loadInfo();
-
-    const sheet = doc.sheetsById[SHEET_ID];
-    await sheet.addRow({
-      Email: email, 
-    })
-    .then(_=> {
-      message.success('successfully submit!')
-      setLoading(false);
-    })
-    .catch(err => {
-      console.error('Error: ', err);
-      setLoading(false);
-    })
   }
 
   return (
