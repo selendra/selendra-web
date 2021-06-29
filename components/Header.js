@@ -52,6 +52,9 @@ export default function Header() {
                 <Link href='/about'>
                   <p className={styles.header__item}>Company</p>
                 </Link>
+                <Link href='/faqs'>
+                  <p className={styles.header__item}>FAQs</p>
+                </Link>
                 <Button type='primary' className={styles.header__btn}>
                   <Link href='/keep-in-touch'>Stay in touch</Link>
                 </Button>
@@ -85,6 +88,7 @@ export default function Header() {
               <div className={styles.drawer__company}>
                 <h1>Company</h1>
                 <Link href='/about'><p>About Us</p></Link>
+                <Link href='/faqs'><p>FAQs</p></Link>
                 <Link href='/privacy-policy'><p>Privacy & Policy</p></Link>
                 <Link href='/term-of-use'><p>Term Of Use</p></Link>
               </div>
