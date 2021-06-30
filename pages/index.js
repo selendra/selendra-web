@@ -14,7 +14,7 @@ export default function Home() {
             <p>a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants.</p>
             <Row justify='space-between'>
               <Col span={11}>
-                <Button type='primary' className={styles.home__btnReg}><a href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Register</a></Button>
+                <Button type='primary' className={styles.home__btnReg}><Link href='/product'>On-boarding</Link></Button>
               </Col>
               <Col span={11}>
                 <Button type='ghost' className={styles.home__btnGit}><a href='https://github.com/selendra'><GithubOutlined style={{paddingRight: '6px'}}/>GitHub</a></Button>
