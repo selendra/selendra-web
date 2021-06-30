@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Row, Col, Button } from 'antd'
 import styles from '../styles/Home.module.css'
 import { GithubOutlined } from '@ant-design/icons';
+import Link from 'next/link'
 
 export default function Home() {
 
