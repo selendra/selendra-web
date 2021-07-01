@@ -1,4 +1,4 @@
-import { Row, Col, Button, Dropdown, Menu, Drawer } from 'antd'
+import { Row, Col, Button, Drawer } from 'antd'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
@@ -17,26 +17,9 @@ export default function Header() {
     background: '#1D3442'
   }
 
-  // const products = (
-  //   <Menu className={styles.menu__container}>
-  //     <Menu.Item>
-  //       <img src='/images/bitriel-logo.png' alt='bitriel-logo' />
-  //       <Link href='/product'>
-  //         <span>Bitriel Wallet</span>
-  //       </Link>
-  //     </Menu.Item>
-  //     <Menu.Item>
-  //       <img src='/images/albazaar-logo.png' alt='albazaar-logo' />
-  //       <Link href='/product'>
-  //         <span>Albazaar</span>
-  //       </Link>
-  //     </Menu.Item>
-  //   </Menu>
-  // )
-
   return (
     <div className={styles.header}>
-      <div className={styles.header__container}>
+      <div className={styles.container}>
         <Row justify='space-between' align='middle'>
           <Col xs={12} sm={12} md={12} lg={12} xl={12}>
             <Link href='/'> 

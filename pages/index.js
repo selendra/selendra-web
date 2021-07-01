@@ -1,49 +1,49 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { Row, Col, Button } from 'antd'
 import styles from '../styles/Home.module.css'
-import { GithubOutlined } from '@ant-design/icons';
-import Link from 'next/link'
 
 export default function Home() {
-
   return (
     <div>
-      <div className={styles.home__container}>
-        <Row className={styles.home__section} align='middle'>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <h1>SELENDRA Blockchain</h1>
-            <p>a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants.</p>
-            <Row justify='space-between'>
-              <Col span={11}>
-                <Button type='primary' className={styles.home__btnReg}><Link href='/product'>On-boarding</Link></Button>
+      <div className={styles.home}>
+        <div className={styles.container}>
+          <div className={styles.selendra}>
+            <Row align='middle' style={{height: '100%'}}>
+              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                <h1>SELENDRA Blockchain</h1>
+                <p>a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants.</p>
+                <Row justify='space-between'>
+                  <Col xs={0} sm={0} md={14} lg={14} xl={14}>
+                    <Button type='primary' className={styles.btnOnBoard}><Link href='/product'>On-boarding</Link></Button>
+                  </Col>
+                  <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+                    <Button type='primary' className={styles.btnOnBoard}><Link href='/product'>On-boarding</Link></Button>
+                  </Col>
+                </Row>
               </Col>
-              <Col span={11}>
-                <Button type='ghost' className={styles.home__btnGit}><a href='https://github.com/selendra'><GithubOutlined style={{paddingRight: '6px'}}/>GitHub</a></Button>
+              <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+                <img src='/images/sel-bg-small.png' alt='selendra-bg' />
               </Col>
             </Row>
-          </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <Row justify='center'>
-              <img src='/images/world.png' alt='sel-world' />
-            </Row>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
-      <div className={styles.home__featureSection}>
-        <div className={styles.home__container}>
-          <div className={styles.home__featureSectionTitle}>
+      <div className={styles.feature}>
+        <div className={styles.container}>
+          <div className={styles.featureTitle}>
             <h1>SELENDRA</h1>
             <h4>Feature</h4>
           </div>
           <p>Designed to work natively with real world internet data</p>
-          <Row justify='center' align='middle' className={styles.featureImg}>
+          <Row justify='center' align='middle'>
             <img src='/images/feature.png' alt='feature' />
           </Row>
         </div>
       </div>
-      <div className={styles.feature__des}>
-        <div className={styles.home__container}>
-          <Row className={styles.architecture__item}>
+      <div className={styles.architecture}>
+        <div className={styles.container}>
+          <Row className={styles.architectureItem}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>Folkless Upgrades</h1>
@@ -56,7 +56,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row className={styles.architecture__item}>
+          <Row className={styles.architectureItem}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/consensus.png' alt='consensus'/>
@@ -83,7 +83,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row className={styles.architecture__item}>
+          <Row className={styles.architectureItem}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>Governance Roles</h1>
@@ -99,7 +99,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row className={styles.architecture__item}>
+          <Row className={styles.architectureItem}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/reward.png' alt='reward'/>
@@ -119,7 +119,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row className={styles.architecture__item}>
+          <Row className={styles.architectureItem}>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Architecture</h4>
               <h1>TransactionFees</h1>
@@ -134,7 +134,7 @@ export default function Home() {
               </Row>
             </Col>
           </Row>
-          <Row className={styles.architecture__item}>
+          <Row className={styles.architectureItem}>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <Row justify='center' align='middle' style={{height: '100%'}}>
                 <img src='/images/network.png' alt='network'/>
@@ -156,8 +156,8 @@ export default function Home() {
           </Row>
         </div>
       </div>
-      <div className={styles.home__benefit}>
-        <div className={styles.home__container}>
+      <div className={styles.benefit}>
+        <div className={styles.container}>
           <Row align='middle'>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>SELENDRA</h4>
@@ -166,30 +166,30 @@ export default function Home() {
               <p>The Selendra community benefits through receiving access to a broad range of services available within a single user-friendly development environment that is compatible with Ethereum, Polkadot, Cosmos, other blockchain networks, and non-native network nodes.</p>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-              <Row justify='center' align='middle' className={styles.featureImg}>
+              <Row justify='center' align='middle'>
                 <img src='/images/benefit.png' alt='benefit' />
               </Row>
             </Col>
           </Row>
         </div>
       </div>
-      <div className={styles.potential}>
-        <div className={styles.home__container}>
+      <div className={styles.usecase}>
+        <div className={styles.container}>
           <h1>Use Cases</h1>
           <Row justify='space-between'>
-            <Col xs={24} sm={24} md={10} lg={10} xl={10}>
+            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.usecaseItem}>
               <img src='/images/koompififi.png' alt='koompififi' />
               <p>a hotspot mesh network with local contents cached that provides internet access to villagers, one village at a time. Mesh networks offer options for local internet that help bring down the cost of data. Incentives users to browse useful contents or relative ads, while internet fees are paid via RISE or SEL.</p>
             </Col>
-            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.potential__item}>
+            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.usecaseItem}>
               <img src='/images/sala.png' alt='koompi sala' />
               <p>a virtual school that incentivized teachers to create good quality video contents and students to fairly rate the cause they learned. Anyone can open a school, similar to a personal Facebook page, but focus on video education. SALA KOOMPI believes that anyone has some good to share and enlighten the world, if incentives are fairly and openly distributed.</p>
             </Col>
-            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.potential__item}>
+            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.usecaseItem}>
               <img src='/images/vitaminair.png' alt='vitamin air' />
               <p>is a catalyst for a global movement to reforest the rainforest and regenerate our ecosystem through platforms and models that incorporate technology and designs inspired by nature. In the process, we're growing a community of people engaging in social, cultural, ecological and economic regeneration.</p>
             </Col>
-            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.potential__item}>
+            <Col xs={24} sm={24} md={10} lg={10} xl={10} className={styles.usecaseItem}>
               <img src='/images/albazaar.png' alt='albazaar' />
               <p>a planned virtual marketplace where goods and services can be exchanged through smart contracts in a peer-to-peer network, together with all the other added benefits blockchain technology has to offer. Buyers and sellers are empowered through the community where transactions can be negotiated with confidence.</p>
             </Col>
@@ -197,7 +197,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.dualToken}>
-        <div className={styles.home__container}>
+        <div className={styles.container}>
           <h1>Dual Tokens System</h1>
           <p>
             Selendra offers a dual token program; the utility token (SEL), and the stable token (RISE). 
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.totalSupply}>
-        <div className={styles.home__container}>
+        <div className={styles.container}>
           <h1>Token Supply and Allocation</h1>
           <Row align='middle' justify='space-around'>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -239,7 +239,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.riseToken}>
-        <div className={styles.home__container}>
+        <div className={styles.container}>
           <h1>RISE Stabletoken</h1>
           <Row align='middle'>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -259,7 +259,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.roadmap}>
-        <div className={styles.home__container}>
+        <div className={styles.container}>
 
         </div>
       </div>

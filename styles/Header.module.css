@@ -6,8 +6,8 @@
 .header {
   cursor: pointer;
 }
-.header__container {
-  max-width: 76rem;
+.container {
+  max-width: 1216px;
   margin: 0 auto;
 }
 .header__btn {

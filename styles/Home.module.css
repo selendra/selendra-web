@@ -1,23 +1,26 @@
-.home {
-  width: 100vw;
-}
-.home__container {
-  max-width: 76rem;
+.container {
+  max-width: 1216px;
   margin: 0 auto;
 }
-.home__section {
-  height: 600px;
+.selendra {
+  height: 800px;
 }
-.home__section h1 {
+.home {
+  height: 900px;
+  background-image: url('../public/images/sel-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home h1 {
   color: #fff;
   font-size: 52px;
   font-weight: 900;
 }
-.home__section p {
-  font-size: 20px;
+.home p {
   font-weight: 600;
 }
-.home__btnReg {
+.btnOnBoard {
   width: 100%;
   height: 63px;
   border-radius: 8px;
@@ -25,34 +28,22 @@
   font-size: 16px;
   font-weight: 600;
 }
-.home__btnGit {
-  width: 100%;
-  height: 63px;
-  border-radius: 8px;
-  border: 4px solid #03A2E9;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-}
-.home__featureSection {
+.feature {
   background-color: #f5f5f5;
   padding: 50px 0 100px 0;
 }
-.home__featureSection p {
+.feature p {
   padding-top: 40px;
   font-size: 20px;
   color: #335C74;
   text-align: center;
 }
-.home__featureSectionTitle {
+.featureTitle {
   position: relative;
   height: 160px;
   margin: 0;
 }
-.architecture__item {
-  padding: 20px 0;
-}
-.home__featureSectionTitle h1 {
+.featureTitle h1 {
   /* border: 1px solid red; */
   position: absolute;
   z-index: 1;
@@ -66,7 +57,7 @@
   left: 0;
   margin: 0;
 }
-.home__featureSectionTitle h4 {
+.featureTitle h4 {
   /* border: 1px solid blue; */
   position: absolute;
   z-index: 2;
@@ -82,74 +73,62 @@
   align-items: center;
   justify-content: center;
 }
-.home__card {
-  text-align: center;
-  max-width: 350px;
-  border-radius: 8px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
-}
-.featureImg {
-  /* padding-top: 6rem; */
-}
-.featureImg > img {
+.feature img {
   height: 520px;
   width: auto;
 }
-.home__card h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-.home__card p {
- font-size: 24px;
- font-weight: 300;
-}
-.feature__des {
+.architecture {
   padding: 80px 0;
 }
-.feature__des h4 {
+.architecture h4 {
   font-size: 16px;
   font-weight: 600;
   color: #ED1576;
   margin-bottom: -8px;
 }
-.feature__des h1 {
+.architecture h1 {
   font-size: 36px;
   font-weight: 600;
   color: #fff;
 }
-.home__benefit {
+.architectureItem {
+  padding: 40px 0;
+}
+.architectureItem img {
+  width: 80%;
+  height: auto;  
+}
+.benefit {
   background-color: #f5f5f5;
   padding: 80px 0;
 }
-.home__benefit h4 {
+.benefit h4 {
   font-size: 16px;
   font-weight: 900;
   color: #ED1576;
   margin-bottom: -8px;
 }
-.home__benefit h1 {
+.benefit h1 {
   font-size: 52px;
   font-weight: 900;
 }
-.home__benefit p {
+.benefit p {
   color: #000;
   font-weight: 600;
 }
-.home__benefit img {
-  height: 388px;
-  width: auto;
+.benefit img {
+  width: 100%;
+  height: auto;
 }
-.potential {
+.usecase {
   padding: 100px 0;
 }
-.potential img {
+.usecase img {
   height: 49px;
   width: auto;
   margin-bottom: 20px;
 }
-.potential h1 {
+.usecase h1 {
   font-size: 52px;
   font-weight: 600;
   color: #fff;
@@ -223,65 +202,74 @@
 }
 
 @media only screen and (max-width: 76rem) {
-  .home__container {
+  .container {
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .home__section h1 {
+  .selendra {
+    height: 100%;
+  }
+  .home {
+    height: 100%;
+    padding: 40px 0;
+    background-image: none;
+  }
+  .home h1 {
     font-size: 36px;
   }
-  .home__section p {
+  .home p {
     font-size: 20px;
     font-weight: 600;
   }
-  .home__section {
-    height: 100%;
-    padding: 40px 0;
-  }
-  .home__section img {
+  .home img {
     width: 100%;
     height: auto;
     padding: 20px 0 0 0;
   }
-  .home__featureSectionTitle {
+  .featureTitle {
     height: 60px;
   }
-  .home__featureSectionTitle h1 {
+  .featureTitle h1 {
     font-size: 52px;
     height: 60px;
   }
-  .home__featureSectionTitle h4 {
+  .featureTitle h4 {
     font-size: 20px;
     height: 75px;
   }
-  .feature__des img {
+  .architecture img,
+  .feature img {
     width: 80%;
     height: auto;
   }
-  .home__benefit,
-  .potential,
+  .benefit,
+  .usecase,
   .dualToken,
   .totalSupply,
   .riseToken {
     padding: 40px 0;
   }
-  .featureImg img {
+  .benefit img {
     width: 100%;
     height: auto;
     padding-top: 20px;
   }
-  .potential h1,
+  .usecase h1,
   .dualToken h1,
   .totalSupply h1,
   .riseToken h1 {
     font-size: 36px;
   }
-  .potential .potential__item {
+  .usecase .usecaseItem {
     padding: 20px 0 0 0;
   }
   .totalSupply img,
   .riseToken img {
     padding-bottom: 20px;
+  }
+  .dualToken img {
+    width: 200px;
+    height: auto;
   }
 }

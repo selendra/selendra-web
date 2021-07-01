@@ -3,7 +3,7 @@ import styles from '../styles/faq.module.css'
 export default function Faq() {
   return (
     <div className={styles.faq}>
-      <div className={styles.faq__container}>
+      <div className={styles.container}>
         <h1>Frequently Asked Questions</h1>
         <h4>a. General FAQ for Token Investors</h4>
         <h6>1. Is there a minimum or maximum limit for investing in Selendra (SEL)?</h6>
