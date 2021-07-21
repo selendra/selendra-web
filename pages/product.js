@@ -1,9 +1,13 @@
 import { Row, Col, Button } from "antd"
 import styles from "../styles/product.module.css"
+import Head from 'next/head'
 
 export default function Product() {
   return (
     <div>
+      <Head>
+        <title>Product</title>
+      </Head>
       <div className={styles.container}>
         <Row align='middle' className={styles.bitriel}>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>

@@ -6,6 +6,10 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Selendra</title>
+        <meta name="description" content="a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants" />
+      </Head>
       <div className={styles.home}>
         <div className={styles.container}>
           <div className={styles.selendra}>

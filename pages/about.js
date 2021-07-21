@@ -9,6 +9,9 @@ export default function About() {
 
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
       <div className={styles.container}>
         <div className={styles.about}>
           <h1>ABOUT US</h1>
