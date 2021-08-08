@@ -25,6 +25,7 @@ export default function Footer() {
             <h1>Developers</h1>
             <a href='https://docs.selendra.org'>Documentation</a>
             <a href='https://github.com/selendra'>GitHub</a>
+            <a href='/pdf/Selendra-Economic-Paper-v1.0.pdf' download>Whitepaper</a>
           </Col>
           <Col xs={12} sm={12} md={4} lg={3} xl={3}>
             <h1>Support</h1>

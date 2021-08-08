@@ -18,10 +18,12 @@ export default function Home() {
                 <h1>SELENDRA Blockchain</h1>
                 <p>a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants.</p>
                 <Row justify='space-between'>
-                  <Col xs={0} sm={0} md={14} lg={14} xl={14}>
-                    <Button type='primary' className={styles.btnOnBoard}><Link href='/product'>On-boarding</Link></Button>
+                  <Col xs={24} sm={24} md={11} lg={11} xl={11}>
+                    <Button type='ghost' className={styles.btnWhitePaper}>
+                      <a href='/pdf/Selendra-Economic-Paper-v1.0.pdf' download>Whitepaper</a>
+                    </Button>
                   </Col>
-                  <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+                  <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                     <Button type='primary' className={styles.btnOnBoard}><Link href='/product'>On-boarding</Link></Button>
                   </Col>
                 </Row>
