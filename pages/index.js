@@ -20,7 +20,7 @@ export default function Home() {
                 <Row justify='space-between'>
                   <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                     <Button type='ghost' className={styles.btnWhitePaper}>
-                      <a href='/pdf/Selendra-Economic-Paper-v1.0.pdf' download>Whitepaper</a>
+                      <a href='/pdf/Selendra-Economic-Paper-v1.2.pdf' download>Whitepaper</a>
                     </Button>
                   </Col>
                   <Col xs={24} sm={24} md={11} lg={11} xl={11}>
