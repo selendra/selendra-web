@@ -1,5 +1,5 @@
 # About
-Selendra is a blockchain network built with Substrate framework that support the building of business use-cases with developability and interoperability for developers to launch their applications in a decentralized manner with minimal learning curve. Developers can use tools they love to build business logic, user-friendly interfaces and take full advantage of tokeneconomic for their platform ecosystem and users’ expansion.
+Selendra is a special purpose multi-chains nominated proof-of-stake network built with the Polkadot Substrate Framework to facilitate micro-economic transactions. It is designed to be interoperable with other open blockchains and developable by developers and students with very minimal learning curve, and ease of use for end-users to interact and benefits from blockchain technology. 
 
 Our mission is to empower developers to create blockchain user-friendly applications for general users in asset tokenization, contents storage and computing, identity and governance, vote and other internet based microtransactions.
 
