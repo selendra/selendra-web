@@ -3,14 +3,17 @@
   margin: 0 auto;
 }
 .selendra {
-  height: 800px;
+  height: 95vh;
 }
-.home {
-  height: 900px;
-  background-image: url('../public/images/sel-bg.png');
+/* .home {
+  height: 00px;
+  background-image: url('../public/images/sel-bg-small.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+.home {
+  background-color: #1a2f3b;
 }
 .home h1 {
   color: #fff;
@@ -23,24 +26,21 @@
 .btnOnBoard {
   width: 100%;
   height: 63px;
-  border-radius: 8px;
-  background-color: #03A2E9;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 12px;
+  background-color: #03a2e9;
+  font-size: 18px;
+  font-weight: 700;
   margin-top: 8px;
 }
 .btnWhitePaper {
-  color: #F0C90A;
-  border: #F0C90A 2px solid;
-  border-radius: 8px;
+  color: #03a2e9;
+  border: #03a2e9 3px solid;
+  border-radius: 12px;
   width: 100%;
   height: 63px;
   margin-top: 8px;
-
-}
-.btnWhitePaper:hover {
-  color: #D65B09;
-  border: #D65B09 2px solid;
+  font-size: 18px;
+  font-weight: 700;
 }
 .feature {
   background-color: #f5f5f5;
@@ -49,7 +49,7 @@
 .feature p {
   padding-top: 40px;
   font-size: 20px;
-  color: #335C74;
+  color: #335c74;
   text-align: center;
 }
 .featureTitle {
@@ -64,7 +64,7 @@
   width: 100%;
   height: 200px;
   text-align: center;
-  color: #E8E7EC;
+  color: #e8e7ec;
   font-size: 152px;
   font-weight: 900;
   top: 0;
@@ -80,7 +80,7 @@
   color: #000;
   font-size: 52px;
   font-weight: 900;
-  top:0;
+  top: 0;
   left: 0;
   margin: 0;
   display: flex;
@@ -95,14 +95,14 @@
   padding: 80px 0;
 }
 .architecture h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
-  color: #ED1576;
+  color: #edce3f;
   margin-bottom: -8px;
 }
 .architecture h1 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 800;
   color: #fff;
 }
 .architectureItem {
@@ -110,7 +110,7 @@
 }
 .architectureItem img {
   width: 80%;
-  height: auto;  
+  height: auto;
 }
 .benefit {
   background-color: #f5f5f5;
@@ -119,7 +119,7 @@
 .benefit h4 {
   font-size: 16px;
   font-weight: 900;
-  color: #ED1576;
+  color: #ed1576;
   margin-bottom: -8px;
 }
 .benefit h1 {
@@ -165,7 +165,7 @@
   margin: 0;
 }
 .dualToken p {
-  color: #335C74;
+  color: #335c74;
   text-align: center;
 }
 .dualToken img {
@@ -174,32 +174,35 @@
 }
 .totalSupply {
   padding: 100px 0;
+  background-color: #fff;
 }
 .totalSupply h1 {
-  font-size: 52px;
-  color: #fff;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 700;
   text-align: center;
 }
+.totalSupply p {
+  color: #333;
+}
 .totalSupply p:nth-child(1) {
-  border-left: 14px solid #03A9F4;
-  padding-left: 4px;
+  border-left: 12px solid #03a9f4;
+  padding-left: 8px;
 }
 .totalSupply p:nth-child(2) {
-  border-left: 14px solid #F0C90A;
-  padding-left: 4px;
+  border-left: 12px solid #f0c90a;
+  padding-left: 8px;
 }
 .totalSupply p:nth-child(3) {
-  border-left: 14px solid #ED1576;
-  padding-left: 4px;
+  border-left: 12px solid #ed1576;
+  padding-left: 8px;
 }
 .totalSupply p:nth-child(4) {
-  border-left: 14px solid #D65B09;
-  padding-left: 4px;
+  border-left: 12px solid #d65b09;
+  padding-left: 8px;
 }
 .totalSupply p:nth-child(5) {
-  border-left: 14px solid #4609D6;
-  padding-left: 4px;
+  border-left: 12px solid #4609d6;
+  padding-left: 8px;
 }
 .riseToken {
   background-color: #f5f5f5;
@@ -215,6 +218,98 @@
   font-weight: 600;
 }
 
+.happendTitle {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.happenSection {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.happenFirstBack {
+  background: #ed1576;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+.happenFirstBack h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+}
+.happenSecondBack {
+  background: #00a3e0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+.happenSecondBack h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+}
+.roadmap {
+  padding: 40px 0px;
+}
+.roadmap h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+.roadmap p {
+  font-size: 16px;
+  color: #edce3f;
+  margin-bottom: 10px !important;
+}
+.roadmapLeft {
+  font-size: 18px;
+  text-align: right;
+  border-right: 2px solid #f5f5f5;
+  padding-right: 20px;
+}
+.roadmapLeft p {
+  margin-bottom: 0px;
+}
+.dot {
+  height: 18px !important;
+  width: 18px !important;
+  background-color: #f0c90a;
+  position: absolute;
+  right: -8px;
+  border-radius: 50%;
+}
+.roadmapRight {
+  font-size: 18px;
+  text-align: left;
+  border-left: 2px solid #f5f5f5;
+  padding-left: 20px;
+  position: relative;
+  right: 2px;
+}
+.roadmapRight p {
+  margin-bottom: 0px;
+}
+.dotRight {
+  height: 18px !important;
+  width: 18px !important;
+  background-color: #f0c90a;
+  position: absolute;
+  left: -10px;
+  border-radius: 50%;
+}
+.roadmapul ul {
+  list-style: none;
+  padding: 0px !important;
+  margin-bottom: 0px;
+}
+.roadmapul ul li {
+  margin-bottom: 8px;
+}
 @media only screen and (max-width: 76rem) {
   .container {
     padding: 0 10px;
