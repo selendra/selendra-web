@@ -28,12 +28,17 @@ export default function Home() {
                 <Row gutter={[12, 12]}>
                   <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                     <Button type="primary" className={styles.btnOnBoard}>
-                      <Link href="/product">Whitepaper</Link>
+                      <a
+                        download
+                        href="https://github.com/selendra/selendra-docs/blob/master/docs/Whitepaper/selendra-economic-paper-v1.3.pdf"
+                      >
+                        Whitepaper
+                      </a>
                     </Button>
                   </Col>
                   <Col xs={24} sm={24} md={11} lg={11} xl={11}>
                     <Button type="ghost" className={styles.btnWhitePaper}>
-                      <a href="/pdf/selendra-economic-paper-v1.2.pdf">Github</a>
+                      <a href="http://github.com/selendra">Github</a>
                     </Button>
                   </Col>
                 </Row>
