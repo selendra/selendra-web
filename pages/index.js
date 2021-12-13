@@ -62,23 +62,27 @@ export default function Home() {
           <Row gutter={[12, 12]}>
             <Col xs={24} sm={12} md={12}>
               <div className={styles.happenFirstBack}>
-                <h3>PRESALE</h3>
-                <p>
-                  Get discounted price before IDO and Exchange listings.
-                  Participate in Selendra Presale at{' '}
-                  <a href="https://dapp.bitriel.com">
-                    https://dapp.bitriel.com{' '}
-                  </a>
-                </p>
+                <a href="https://dapp.bitriel.com" style={{color: 'inherit'}}>
+                  <h3>PRESALE</h3>
+                  <p>
+                    Get discounted price before IDO and Exchange listings.
+                    Participate in Selendra Presale at{' '}
+                    <a href="https://dapp.bitriel.com">
+                      https://dapp.bitriel.com{' '}
+                    </a>
+                  </p>
+                </a>
               </div>
             </Col>
             <Col xs={24} sm={12} md={12}>
               <div className={styles.happenSecondBack}>
-                <h3>Bitriel Wallet</h3>
-                <p>
-                  Manage your crypto assets with ease. Full support for Selendra
-                  token and easily get free Airdrops.
-                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet" style={{color: 'inherit'}}>
+                  <h3>Bitriel Wallet</h3>
+                  <p>
+                    Manage your crypto assets with ease. Full support for Selendra
+                    token and easily get free Airdrops.
+                  </p>
+                </a>
               </div>
             </Col>
           </Row>

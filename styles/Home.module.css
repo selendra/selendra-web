@@ -236,6 +236,10 @@
   padding: 15px;
   border-radius: 12px;
   text-align: center;
+  cursor: pointer;
+}
+.happenFirstBack:hover {
+  opacity: 80%;
 }
 .happenFirstBack h3 {
   font-size: 28px;
@@ -247,6 +251,10 @@
   padding: 15px;
   border-radius: 12px;
   text-align: center;
+  cursor: pointer;
+}
+.happenSecondBack:hover {
+  opacity: 80%;
 }
 .happenSecondBack h3 {
   font-size: 28px;
