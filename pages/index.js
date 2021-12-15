@@ -459,7 +459,7 @@ export default function Home() {
           <center>
             <h2>Roadmap</h2>
           </center>
-          <Row>
+          {/* <Row>
             <Col span={12}>
               <div className={styles.roadmapLeft}>
                 <div className={styles.dot}></div>
@@ -478,15 +478,21 @@ export default function Home() {
               </div>
             </Col>
             <Col span={12}></Col>
-          </Row>
+          </Row> */}
           <Row>
-            <Col span={12}></Col>
             <Col span={12}>
-              <div className={styles.roadmapRight}>
-                <div className={styles.dotRight}></div>
+              <div className={styles.roadmapLeft}>
+                <div className={styles.dot}></div>
                 <p>Q1-2022</p>
                 <div className={styles.roadmapul}>
                   <ul>
+                    <li>Release Technical Document</li>
+                    <li>Mainnet launched</li>
+                    <li>Selendra Governance NPoS</li>
+                    <li>Proof-of-Existence pallet for NFTs and Tokenization</li>
+                    <li>DeFi Applications (Solidity Support)</li>
+                    <li>Documentation for applications</li>
+                    <li>Selendra chain block explorer with index</li>
                     <li>Bitriel wallet for iOS</li>
                     <li>Publish on Apple app store</li>
                     <li>EVM Playground UI with Remix</li>
@@ -498,11 +504,13 @@ export default function Home() {
                 </div>
               </div>
             </Col>
+            <Col span={12}></Col>
           </Row>
           <Row>
+            <Col span={12}></Col>
             <Col span={12}>
-              <div className={styles.roadmapLeft}>
-                <div className={styles.dot}></div>
+              <div className={styles.roadmapRight}>
+                <div className={styles.dotRight}></div>
                 <p> Q2-2022</p>
                 <div className={styles.roadmapul}>
                   <ul>
@@ -514,13 +522,11 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col span={12}></Col>
           </Row>
           <Row>
-            <Col span={12}></Col>
             <Col span={12}>
-              <div className={styles.roadmapRight}>
-                <div className={styles.dotRight}></div>
+              <div className={styles.roadmapLeft}>
+                <div className={styles.dot}></div>
                 <p>Q3-2022</p>
                 <div className={styles.roadmapul}>
                   <ul>
@@ -531,11 +537,13 @@ export default function Home() {
                 </div>
               </div>
             </Col>
+            <Col span={12}></Col>
           </Row>
           <Row>
+            <Col span={12}></Col>
             <Col span={12}>
-              <div className={styles.roadmapLeft}>
-                <div className={styles.dot}></div>
+              <div className={styles.roadmapRight}>
+                <div className={styles.dotRight}></div>
                 <p>Q4-2022</p>
                 <div className={styles.roadmapul}>
                   <ul>
@@ -546,7 +554,6 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col span={12}></Col>
           </Row>
         </div>
       </div>
