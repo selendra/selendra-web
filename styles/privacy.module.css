@@ -1,0 +1,40 @@
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.container h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: -10px;
+}
+.container h2 { 
+  font-size: 36px;
+  font-weight: 600;
+  color: #D65B09;
+}
+.container p {
+  margin-left: 40px;
+} 
+@media only screen and (max-width: 76rem) {
+  .container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container { 
+    padding: 40px 10px;
+  }
+  .container h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: -10px;
+  }
+  .container h2 { 
+    font-size: 20px;
+    font-weight: 600;
+    color: #D65B09;
+  }
+}

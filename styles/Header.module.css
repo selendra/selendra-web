@@ -1,0 +1,55 @@
+.header {
+  width: 100vw;
+  height: 80px !important;
+}
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+.header__btn {
+  background-color: #03a2e9;
+  border-radius: 8px;
+  height: 39px;
+  width: 120px;
+}
+.header__item {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a2f3b;
+  margin: 0;
+}
+
+.menu__container {
+  width: 320px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.menu__container img {
+  width: 36px;
+  height: auto;
+}
+.menu__container span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.drawer__product h1 {
+  padding-top: 20px;
+}
+.drawer__product h1,
+.drawer__company h1,
+.drawer__product a,
+.drawer__company a {
+  font-weight: 600;
+  color: #fff;
+}
+
+.drawer__btn Button {
+  color: #fff;
+  background-color: #03a2e9;
+  border-radius: 8px;
+  height: 39px;
+  width: 100%;
+  border: none;
+}

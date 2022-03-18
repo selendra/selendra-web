@@ -1,0 +1,20 @@
+{
+  "name": "selendra-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "antd": "^4.16.3",
+    "googleapis": "^78.0.0",
+    "html-react-parser": "^1.4.8",
+    "next": "10.0.7",
+    "nprogress": "^0.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-pdf": "^5.3.2"
+  }
+}

@@ -1,0 +1,194 @@
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+.about {
+  padding: 50px 0;
+  background-image: url("/images/about-back.png");
+}
+.about h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+.about p {
+  text-align: center;
+  padding: 0px 120px;
+  color: rgb(238, 238, 238);
+}
+.team {
+  padding-bottom: 80px;
+}
+.about .readMore {
+  color: rgb(238, 238, 238) !important;
+  font-size: 18px !important;
+  font-weight: bolder;
+}
+.team h1 {
+  color: #13242e;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 40px;
+  width: 600px;
+  margin: 0px auto;
+  margin-top: 80px !important;
+  line-height: 45px;
+}
+.team img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  background-color: #03a2e9;
+  padding: 10px;
+  border-radius: 50%;
+}
+.teamMember {
+  text-align: center;
+  padding: 1em 0;
+}
+.team .fullname {
+  color: #13242e;
+  font-size: 22px;
+  font-weight: 800;
+}
+.team .role {
+  color: #9b9b9b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ant-col-xl-5 {
+  display: block;
+  -moz-box-flex: 0;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.teamMember h2 {
+  padding-top: 0.5em;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.teamMember h3 {
+  color: #d2cfcf;
+  font-size: 20px;
+  font-weight: 600;
+}
+.missionVision {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+.missionVision img[src="/images/mission.png"] {
+  width: 80%;
+}
+.missionVision img[src="/images/vision.png"] {
+  width: 50%;
+}
+.missionVision h4 {
+  color: #ed1576;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: -8px;
+}
+.missionVision h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.missionVision p {
+  color: #000;
+}
+.registerFaq h4 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: -8px;
+}
+.registerFaq h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 900;
+}
+.faq__left {
+  background: #4609d6;
+  padding: 100px;
+}
+.faq__right {
+  padding: 40px;
+}
+.faq__left Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 50px;
+  color: #4609d6;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.faq__right Button {
+  width: 280px;
+  height: 63px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #03a2e9;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.joinTelegram {
+  background-color: #f5f5f5;
+  padding: 200px 0;
+  background-image: url("../public/images/worldmap.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.joinTelegram h4 {
+  color: #ed1576;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.joinTelegram h1 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+.joinTelegram Button {
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: #4609d6;
+  font-size: 20px;
+  height: 70px;
+  padding: 0px 40px;
+  font-weight: bold;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+.joinTelegram Button:hover {
+  color: #4609d6;
+  background-color: #4609d628;
+}
+@media only screen and (max-width: 76rem) {
+  .container {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  .joinTelegram {
+    padding: 40px;
+  }
+  .joinTelegram h1 {
+    line-height: 40px;
+  }
+}
