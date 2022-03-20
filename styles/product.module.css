@@ -10,9 +10,11 @@
   color: #fff;
   margin-bottom: 8px;
 }
-.bitriel Button {
+.bitriel Button,
+.walletDetail Button,
+.albazaar Button {
   width: 280px;
-  height: 63px;
+  height: 55px;
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -22,7 +24,9 @@
   margin-top: 40px;
   transition: 0.3s;
 }
-.bitriel Button:hover {
+.bitriel Button:hover,
+.walletDetail Button:hover,
+.albazaar Button:hover {
   color: #03a2e9;
   background-color: #e3f6ff;
 }
@@ -45,18 +49,7 @@
   color: #000;
   font-weight: 600;
 }
-.walletDetail Button {
-  width: 280px;
-  height: 63px;
-  border: none;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #03a2e9;
-  font-size: 16px;
-  font-weight: 800;
-  margin-top: 40px;
-  transition: 0.3s;
-}
+
 .walletDetail Button:hover {
   color: #ffffff;
   background-color: #51c8ff;
@@ -74,18 +67,7 @@
   font-weight: 600;
   color: #e3f6ff;
 }
-.albazaar Button {
-  width: 280px;
-  height: 63px;
-  border: none;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #03a2e9;
-  font-size: 16px;
-  font-weight: 800;
-  margin-top: 40px;
-  transition: 0.3s;
-}
+
 .albazaar Button:hover {
   color: #03a2e9;
   background-color: #e3f6ff;
@@ -123,6 +105,11 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .bitriel Button,
+  .walletDetail Button,
+  .albazaar Button {
+    margin-top: 20px;
+  }
   .bitriel {
     height: 100%;
     padding: 40px 0;
@@ -134,7 +121,7 @@
     width: 100%;
   }
   .albazaar {
-    padding: 40px 0 0 0;
+    padding: 40px 0;
   }
   .albazaar img {
     width: 100%;
@@ -155,6 +142,19 @@
     width: 100%;
   }
   .walletDetail {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bitriel Button,
+  .walletDetail Button,
+  .albazaar Button {
+    height: 45px;
+  }
+  .walletDetail {
     padding: 40px 0;
+  }
+  .albazaar {
+    padding: 40px 0 0 0;
   }
 }

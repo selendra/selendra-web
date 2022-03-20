@@ -63,11 +63,12 @@ export default function Header() {
           <Row>
             <Drawer
               title=""
-              placement="right"
+              placement="left"
               closable={false}
               onClose={onClose}
               visible={visible}
               bodyStyle={drawerStyle}
+              width={"70%"}
             >
               <div>
                 <Row>

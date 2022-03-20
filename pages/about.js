@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Row, Col, Button } from "antd";
 import styles from "../styles/About.module.css";
+import NextMetaTags from "../components/NextMetaTags";
 
 export default function About() {
   const [isReadmore, setIsReadmore] = useState(false);
@@ -18,6 +19,12 @@ export default function About() {
       name: "Saing SAB",
       role: "Co-founder & CTO",
     },
+    {
+      photo: "/images/teams/Ramesh.jpg",
+      name: "Belavadi N Ramesh",
+      role: "Blockchain developer",
+    },
+
     {
       photo: "/images/teams/nath.png",
       name: "Nat LAY",
@@ -67,12 +74,14 @@ export default function About() {
 
   return (
     <div>
-      <Head>
-        <title>About</title>
-      </Head>
+      <NextMetaTags
+        title="About"
+        url="https://www.selendra.com/about"
+        image="https://www.selendra.com/images/meta-images/about.png"
+      />
       <div>
         <div className={styles.about}>
-          <div className={styles.container}>
+          <div className="container">
             <h1>About Us</h1>
             <p>
               The Selendra platform is used to build, deploy, and employ
@@ -121,7 +130,7 @@ export default function About() {
               {members.map((member) => {
                 const { photo, name, role } = member;
                 return (
-                  <Col xs={24} sm={24} md={12} lg={8} xl={5}>
+                  <Col xs={12} sm={24} md={12} lg={8} xl={5}>
                     <Row justify="center">
                       <Col className={styles.teamMember}>
                         <img src={photo} alt={name} />
@@ -137,7 +146,7 @@ export default function About() {
         </div>
       </div>
       <div className={styles.missionVision}>
-        <div className={styles.container}>
+        <div className="container">
           <Row justify="center" align="middle">
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <h4>Mission</h4>
@@ -195,24 +204,10 @@ export default function About() {
               </center>
             </div>
           </Col>
-          {/* <Col
-            xs={24}
-            sm={24}
-            md={12}
-            lg={12}
-            xl={12}
-            className={styles.faq__right}
-          >
-            <h4>Anything you don't understand?</h4>
-            <h1>FAQs</h1>
-            <Button>
-              <Link href="/faqs">Visit</Link>
-            </Button>
-          </Col> */}
         </Row>
       </div>
       <div className={styles.joinTelegram}>
-        <div className={styles.about__container}>
+        <div className="container">
           <h4>Community</h4>
           <h1>Join Our Community</h1>
           <Row justify="center">

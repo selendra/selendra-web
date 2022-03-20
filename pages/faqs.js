@@ -1,12 +1,15 @@
 import styles from "../styles/faq.module.css";
 import Head from "next/head";
+import NextMetaTags from "../components/NextMetaTags";
 
 export default function Faq() {
   return (
     <div>
-      <Head>
-        <title>FAQs</title>
-      </Head>
+      <NextMetaTags
+        title="Home"
+        url="https://www.selendra.com/faqs"
+        image="https://www.selendra.com/images/meta-images/faq.png"
+      />
       <div className={styles.faq}>
         <div className="container">
           <h1>Frequently Asked Questions</h1>

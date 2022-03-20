@@ -34,15 +34,21 @@
   font-weight: 600;
   margin-left: 20px;
 }
-.drawer__product h1 {
-  padding-top: 20px;
-}
 .drawer__product h1,
-.drawer__company h1,
+.drawer__company h1 {
+  padding-top: 20px;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #fff;
+}
+.drawer__product p {
+  font-size: 18px !important;
+}
 .drawer__product a,
 .drawer__company a {
-  font-weight: 600;
-  color: #fff;
+  color: rgba(236, 236, 236, 0.698);
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .drawer__btn Button {

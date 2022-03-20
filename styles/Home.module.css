@@ -32,8 +32,8 @@
 }
 @media only screen and (max-width: 992px) {
   .btnOnBoard {
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 55px;
   }
 }
 .btnOnBoard:hover,
@@ -181,8 +181,7 @@
   height: auto;
 }
 .roadmapTitle {
-  font-size: 24px !important;
-  margin-bottom: 10px !important;
+  display: none;
 }
 .usecase {
   padding: 100px 0;
@@ -294,6 +293,24 @@
   font-weight: 800;
   color: white;
 }
+.roadmap .year {
+  font-size: 35px;
+  font-weight: 800;
+  color: white;
+}
+.year2023 {
+  position: relative;
+}
+.newDotRight {
+  height: 15px !important;
+  width: 15px !important;
+  /* background-color: #f0c90a; */
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  position: relative;
+  left: 15px;
+  margin-bottom: 10px;
+}
 .gradientColor2 {
   font-size: 60px !important;
   background: linear-gradient(92.26deg, #ff6faf 16.96%, #fb43ff 51.96%);
@@ -302,31 +319,18 @@
   font-weight: 800 !important;
 }
 .roadmap h3 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   color: #fff;
+  text-align: right;
+  position: relative;
+  right: 60px;
 }
 .roadmap .des {
   width: 85%;
   margin-bottom: 80px !important;
 }
-/* .roadmapLeft {
-  font-size: 18px;
-  text-align: right;
-  border-right: 2px solid #f5f5f5;
-  padding-right: 20px;
-}
-.roadmapLeft p {
-  margin-bottom: 0px;
-} */
-/* .dot {
-  height: 18px !important;
-  width: 18px !important;
-  background-color: #f0c90a;
-  position: absolute;
-  right: -8px;
-  border-radius: 50%;
-} */
+
 .roadmapRight {
   font-size: 18px;
   text-align: left;
@@ -418,13 +422,6 @@
     height: auto;
     padding-top: 20px;
   }
-  /* .usecase h1,
-  .dualToken h1,
-  .totalSupply h1,
-  .riseToken h1 {
-    font-size: 36px;
-  } */
-
   .totalSupply img,
   .riseToken img {
     padding-bottom: 20px;
@@ -437,9 +434,43 @@
   .totalSupply p {
     width: 100%;
   }
+  .roadmap h3 {
+    right: 0px;
+  }
+  .roadmap h3 {
+    text-align: left;
+  }
+  .roadmapTitle {
+    display: block;
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+  }
 }
 @media only screen and (max-width: 576px) {
   .downloadBitriel {
     background: none;
+  }
+  .architecture {
+    padding: 40px 0;
+  }
+  .roadmap {
+    padding: 40px 0px;
+  }
+  .roadmap h3 {
+    font-size: 20px;
+  }
+  .roadmapul ul {
+    padding-left: 0;
+  }
+  .roadmapul ul li {
+    font-size: 18px !important;
+  }
+  .roadmap .year {
+    font-size: 42px !important;
+    font-weight: 800;
+    color: white;
+  }
+  .newDotRight {
+    left: 0px;
   }
 }

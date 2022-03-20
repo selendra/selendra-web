@@ -7,16 +7,15 @@ import Feature from "../components/Feature";
 import UseCase from "../components/UseCase";
 import TotalSupply from "../components/TotalSupply";
 import Roadmap from "../components/Roadmap";
+import NextMetaTags from "../components/NextMetaTags";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Selendra</title>
-        <meta
-          name="description"
-          content="a micro-economic transactional system, a global network of people and organizations whose growth and success are made possible through the value-added contributions, deployment, and usage by and for network participants"
-        />
-      </Head>
+      <NextMetaTags
+        title="Home"
+        url="https://www.selendra.com/"
+        image="https://www.selendra.com/images/meta-images/home.png"
+      />
       <Banner styles={styles} />
       <Feature styles={styles} />
       <Benefit styles={styles} />

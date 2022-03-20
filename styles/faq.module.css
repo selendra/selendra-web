@@ -27,11 +27,11 @@
 .faq p {
   margin-left: 30px;
 }
-@media only screen and (max-width: 76rem) {
+/* @media only screen and (max-width: 76rem) {
   .faq {
     padding: 0 10px;
   }
-}
+} */
 @media only screen and (max-width: 768px) {
   .faq {
     max-width: 76rem;

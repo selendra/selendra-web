@@ -120,10 +120,14 @@ a {
 .img-responsive {
   width: 100% !important;
 }
-
+@media only screen and (max-width: 1440px) {
+  .container {
+    margin: 0 13%;
+  }
+}
 @media only screen and (max-width: 992px) {
   .container {
-    margin: 0 5%;
+    margin: 0 8%;
   }
 }
 @media only screen and (max-width: 76rem) {
@@ -134,7 +138,7 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .container {
-    margin: 0 2%;
+    margin: 0 8%;
   }
   h1 {
     font-size: 30px !important;

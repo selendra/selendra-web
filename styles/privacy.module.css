@@ -1,40 +1,41 @@
-.container {
-  max-width: 1216px;
-  margin: 0 auto;
-  padding: 80px 0;
+.privacy {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  padding: 50px 0px;
 }
-.container h1 {
-  font-size: 52px;
+.privacy h1 {
+  font-size: 40px;
   font-weight: 900;
   color: #fff;
   margin-bottom: -10px;
 }
-.container h2 { 
-  font-size: 36px;
-  font-weight: 600;
-  color: #D65B09;
+.privacy h4 {
+  font-weight: 800;
+  color: #d65b09;
+  margin-top: 15px;
 }
-.container p {
+.privacy p {
   margin-left: 40px;
-} 
+  color: #f5f5f5;
+}
 @media only screen and (max-width: 76rem) {
-  .container {
+  .privacy {
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container { 
+  .privacy {
     padding: 40px 10px;
   }
-  .container h1 {
+  .privacy h1 {
     font-size: 36px;
     font-weight: 900;
     color: #fff;
     margin-bottom: -10px;
   }
-  .container h2 { 
+  .privacy h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #D65B09;
+    color: #d65b09;
   }
 }

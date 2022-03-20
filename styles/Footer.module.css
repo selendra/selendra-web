@@ -16,6 +16,7 @@
   font-size: 17px;
   font-weight: 500;
   margin-bottom: 10px !important;
+  cursor: pointer;
 }
 .container {
   max-width: 1216px;

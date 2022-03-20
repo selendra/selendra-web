@@ -17,115 +17,93 @@ function Roadmap({ styles }) {
             the Next Generation of Decentralized System. Created by the people
             for the people.
           </p>
+          <h2 className={styles.year}>2022</h2>
         </center>
-        <Row>
-          <Col
-            xs={{ push: 0, span: 7 }}
-            sm={6}
-            md={{ push: 2 }}
-            lg={{ push: 8, span: 11 }}
-          >
-            <h3> Q1-2022</h3>
+        <Row gutter={[24, 24]}>
+          <Col xs={0} sm={0} md={{ push: 1 }} lg={12} xl={12}>
+            <h3>Released</h3>
           </Col>
-          <Col xs={16} lg={12} span={12}>
+          <Col xs={24} lg={12} span={12}>
             <div className={styles.roadmapRight}>
               <div className={styles.dotRight}></div>
               <div className={styles.roadmapul}>
-                <h3 className={styles.roadmapTitle}>SelendraChain 1</h3>
+                <h3 className={styles.roadmapTitle}>Released</h3>
                 <ul>
-                  <li>Release Technical Document</li>
-                  <li>Mainnet launched</li>
-                  <li>Selendra Governance NPoS</li>
-                  <li>Proof-of-Existence pallet for NFTs and Tokenization</li>
-                  <li>DeFi Applications (Solidity Support)</li>
-                  <li>Documentation for applications</li>
-                  <li>Selendra chain block explorer with index</li>
-                  <li>Bitriel wallet for iOS</li>
-                  <li>Publish on Apple app store</li>
-                  <li>EVM Playground UI with Remix</li>
-                  <li>Piloting Student IDs in partnership with Gov’t</li>
-                  <li>DeFi Applications (Solidity Support)</li>
-                  <li>Selendra RISE DAO Reserve & RICE stablecoin</li>
+                  <li> Mainnet launched</li>
+                  <li>Parachain wiget</li>
+                  <li>Bitriel Crowdfunding Platform dApp v1</li>
+                  <li>Bitriel wallet playstore</li>
+                  <li>Registered SELENDRA PTE. LTD in Singapore</li>
+                  <li>Open and support community dApp dev </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row gutter={[24, 24]}>
+          <Col xs={0} sm={0} md={{ push: 1 }} lg={12} xl={12}>
+            <h3>Developming & Testing</h3>
+          </Col>
+          <Col xs={24} lg={12} span={12}>
+            <div className={styles.roadmapRight}>
+              <div className={styles.dotRight}></div>
+              <div className={styles.roadmapul}>
+                <h3 className={styles.roadmapTitle}>Developming & Testing</h3>
+                <ul>
+                  <li>SelendraJS Brower Extention </li>
+                  <li>EVM support</li>
+                  <li>Native Parchain for EVM & Wasm</li>
+                  <li>Native Bridge (native token to SEL BSC V2 </li>
+                  <li> Proof-of-Existence pallet for NFTs and Tokenization</li>
+                  <li>Student ID dApp beta</li>
+                  <li>Wi-Fi hotspot & payment Apps</li>
+                  <li> Bitriel Wallet new UI for AppStore & Playstore</li>
+                  <li> Bitriel DEX for Cardamom testnet</li>
+                  <li>Selendra new staking UI</li>
+                  <li>Users and technical documentation </li>
+                </ul>
+                <br />
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row gutter={[24, 24]}>
+          <Col xs={0} sm={0} md={{ push: 1 }} lg={12} xl={12}>
+            <h3>Planned</h3>
+          </Col>
+          <Col xs={24} lg={12} span={12}>
+            <div className={styles.roadmapRight}>
+              <div className={styles.dotRight}></div>
+              <div className={styles.roadmapul}>
+                <h3 className={styles.roadmapTitle}>Planned</h3>
+                <ul>
+                  <li>Wasm contract suppport</li>
+                  <li>Algorithmic crypto native price stablecoin</li>
                   <li>Selendra Foundation DAO</li>
+                  <li>
+                    Substrate Bridge (bridge to polkadot, kusama, and substrate
+                    based){" "}
+                  </li>
+                  <li>DeFi X (allow all tokens on Selendra to trade)</li>
+                  <li>Security & asset tokenization platform (with Bitriel)</li>
+                  <li>dApp sandbox for Developers</li>
                 </ul>
                 <br />
               </div>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col
-            xs={{ push: 0, span: 7 }}
-            sm={6}
-            md={{ push: 2 }}
-            lg={{ push: 8, span: 11 }}
-          >
-            <h3> Q2-2022</h3>
-          </Col>
-          <Col span={12}>
-            <div className={styles.roadmapRight}>
-              <div className={styles.dotRight}></div>
-              <div className={styles.roadmapul}>
-                <h3>SelendraChain 2</h3>
-                <ul>
-                  <li>Ethereum bridge</li>
-                  <li>Implement Bitriel cross-chain</li>
-                  <li>Security & tokenization (with Bitriel)</li>
-                  <li>Asset tokenization Platform & DeFi Platform</li>
-                </ul>
-                <br />
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={{ push: 0, span: 7 }}
-            sm={6}
-            md={{ push: 2 }}
-            lg={{ push: 8, span: 11 }}
-          >
-            <h3>Q3-2022</h3>
-          </Col>
-          <Col span={12}>
-            <div className={styles.roadmapRight}>
-              <div className={styles.dotRight}></div>
-              <h3>SelendraChain 3</h3>
-              <div className={styles.roadmapul}>
-                <ul>
-                  <li>Selendra Relaychain</li>
-                  <li>Parachain Template</li>
-                  <li>Selendra bridge</li>
-                </ul>
-                <br />
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            xs={{ push: 0, span: 7 }}
-            sm={6}
-            md={{ push: 2 }}
-            lg={{ push: 8, span: 11 }}
-          >
-            <h3>Q4-2022</h3>
-          </Col>
-          <Col span={12}>
-            <div className={styles.roadmapRight}>
-              <div className={styles.dotRight}></div>
-              <div className={styles.roadmapul}>
-                <h3>SelendraChain 4</h3>
-                <ul>
-                  <li>Polkadot Crowdloan for Parachain</li>
-                  <li>Decentralized Distributed Storage</li>
-                  <li>Storage distributor based on IPFS</li>
-                </ul>
-                <br />
-              </div>
-            </div>
-          </Col>
-        </Row>
+
+        <br />
+        <center>
+          <h2 className={styles.year}>2023</h2>
+          <div className={styles.year2023}>
+            <div className={styles.newDotRight}></div>
+            <div className={styles.newDotRight}></div>
+            <div className={styles.newDotRight}></div>
+          </div>
+        </center>
       </div>
     </div>
   );

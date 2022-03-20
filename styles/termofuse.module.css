@@ -1,40 +1,41 @@
-.container {
-  max-width: 1216px;
-  margin: 0 auto;
-  padding: 80px 0;
+.termOfUse {
+  background: url("/images/background.png");
+  padding: 50px 0px;
 }
-.container h1 {
-  font-size: 52px;
+.termOfUse h1 {
+  font-size: 40px;
   font-weight: 900;
   color: #fff;
   margin-bottom: -10px;
 }
-.container h2 { 
-  font-size: 36px;
-  font-weight: 600;
-  color: #D65B09;
+.termOfUse h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #d65b09;
+  margin-top: 20px;
 }
-.container p {
+.termOfUse p {
   margin-left: 40px;
-} 
+  color: #f5f5f5c2;
+}
 @media only screen and (max-width: 76rem) {
-  .container {
+  .termOfUse {
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container { 
+  .termOfUse {
     padding: 40px 10px;
   }
-  .container h1 {
+  .termOfUse h1 {
     font-size: 36px;
     font-weight: 900;
     color: #fff;
     margin-bottom: -10px;
   }
-  .container h2 { 
+  .termOfUse h2 {
     font-size: 20px;
     font-weight: 600;
-    color: #D65B09;
+    color: #d65b09;
   }
 }
