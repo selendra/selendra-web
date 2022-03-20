@@ -1,13 +1,16 @@
 import { Row, Col, Button } from "antd";
 import styles from "../styles/product.module.css";
 import Head from "next/head";
+import NextMetaTags from "../components/NextMetaTags";
 
 export default function Product() {
   return (
     <div>
-      <Head>
-        <title>Product</title>
-      </Head>
+      <NextMetaTags
+        title="Products"
+        url="https://www.selendra.com/product"
+        image="https://www.selendra.com/images/meta-images/products.png"
+      />
       <div className={styles.background}>
         <div className="container">
           <Row align="middle" className={styles.bitriel}>
