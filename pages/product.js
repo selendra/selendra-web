@@ -17,7 +17,14 @@ export default function Product() {
                 Digital wallet management for cross-chain assets, staking and
                 governance operations, collection and self-owned private key.
               </p>
-              <Button>Get Android App</Button>
+              <Button>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet"
+                >
+                  Get Android App{" "}
+                </a>
+              </Button>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
               <Row justify="center">
@@ -44,7 +51,14 @@ export default function Product() {
                 application where a use case exists, connecting the application
                 to the Selendra main chain.
               </p>
-              <Button>Get Android App</Button>
+              <Button>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet"
+                >
+                  Get Android App{" "}
+                </a>
+              </Button>
             </Col>
             <Col xs={0} sm={0} md={0} lg={0} xl={0}>
               <Row justify="center">
