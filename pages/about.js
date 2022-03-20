@@ -38,12 +38,12 @@ export default function About() {
     {
       photo: "/images/teams/daveat.png",
       name: "Daveat CORN",
-      role: "Fullstack Mobile Dev",
+      role: "Full Stack Mobile Dev",
     },
     {
       photo: "/images/teams/piset.png",
       name: "Piset HEANG",
-      role: "Full-stack Web Developer",
+      role: "Full Stack Web Developer",
     },
     {
       photo: "/images/teams/vuthy.jpg",
@@ -53,7 +53,7 @@ export default function About() {
     {
       photo: "/images/teams/den.jpg",
       name: "Sovanden SARIN",
-      role: "Full-stack Web Developer",
+      role: "Full Stack Web Developer",
     },
     {
       photo: "/images/teams/thith.jpg",
