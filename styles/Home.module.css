@@ -283,8 +283,10 @@
 
 .roadmap {
   padding: 80px 0px;
-  background-image: url("../public/images/background.png");
+  background-image: url("../public/images/roadmap.png");
   color: #fff;
+  background-position: center;
+  background-size: cover;
 }
 
 .roadmap h1 {
