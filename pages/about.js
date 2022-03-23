@@ -17,7 +17,7 @@ export default function About() {
     {
       photo: "/images/teams/saing-sab.png",
       name: "Saing SAB",
-      role: "Co-founder & CTO",
+      role: "Co-founder",
     },
     {
       photo: "/images/teams/Ramesh.jpg",
@@ -212,7 +212,7 @@ export default function About() {
           <h1>Join Our Community</h1>
           <Row justify="center">
             <Button>
-              <a href="https://t.me/selendraorg" target="_blank">
+              <a href="https://t.me/selendrachain" target="_blank">
                 Selendra Blockchain Community
               </a>
             </Button>

@@ -128,7 +128,7 @@ export default function Faq() {
             group on Telegram to find information archives, support services,
             and the latest announcements. In addition, you may present questions
             and make comments in our open public forum. Please join and
-            participate in our community forum here: https://t.me/selendraorg
+            participate in our community forum here: https://t.me/selendrachain
           </p>
           <p>
             Selendra is an open-source development project with the source code
