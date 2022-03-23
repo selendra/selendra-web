@@ -17,9 +17,8 @@ function Banner({ styles }) {
               </h1>
               <p>
                 <b>Selendra</b> is multi-chains nominated proof-of-stake system
-                built with Substrate framework for mainstream users adoption by
-                empowering developers to build blockchain applications with
-                minimal learning curve.
+                built with Polkadot Substrate framework for mainstream users adoption by
+                empowering developers to build blockchain applications with minimal learning curve.
               </p>
 
               <Button type="primary" className={styles.btnOnBoard}>

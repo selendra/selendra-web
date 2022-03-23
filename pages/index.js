@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <NextMetaTags
-        title="Home"
+        title="A multi-chains nominated proof-of-stake system built with Polkadot Substrate framework for mainstream users adoption by empowering developers to build blockchain applications with minimal learning curve."
         url="https://www.selendra.com/"
         image="https://www.selendra.com/images/meta-images/home.png"
       />

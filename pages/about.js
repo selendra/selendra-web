@@ -10,65 +10,71 @@ export default function About() {
 
   const members = [
     {
-      photo: "/images/teams/rithy-thol.png",
-      name: "Rithy THUL",
-      role: "Co-founder & CEO",
+      photo: "/images/teams/nath.png",
+      name: "Nat LAY",
+      role: "Blockchain Developer",
     },
     {
-      photo: "/images/teams/saing-sab.png",
-      name: "Saing SAB",
-      role: "Co-founder",
+      photo: "/images/teams/daveat.png",
+      name: "Daveat CORN",
+      role: "Fullstake Mobile Dev",
+    },
+    {
+      photo: "/images/teams/piset.png",
+      name: "Piset HEANG",
+      role: "Fullstack Web3 Developer",
+    },
+    {
+      photo: "/images/teams/vuthy.jpg",
+      name: "Vuthy SAN",
+      role: "Web & Tech Lead",
+    },
+    {
+      photo: "/images/teams/rithy.jpg",
+      name: "Rithy THUL",
+      role: "Co-founder & mainDriver",
     },
     {
       photo: "/images/teams/Ramesh.jpg",
       name: "Belavadi N Ramesh",
       role: "Blockchain developer",
     },
-
-    {
-      photo: "/images/teams/nath.png",
-      name: "Nat LAY",
-      role: "Blockchain Developer",
-    },
     {
       photo: "/images/teams/leang.jpg",
       name: "Hangleang SUN",
-      role: "Blockchain Developer",
-    },
-    {
-      photo: "/images/teams/daveat.png",
-      name: "Daveat CORN",
-      role: "Full Stack Mobile Dev",
-    },
-    {
-      photo: "/images/teams/piset.png",
-      name: "Piset HEANG",
-      role: "Full Stack Web Developer",
-    },
-    {
-      photo: "/images/teams/vuthy.jpg",
-      name: "Vuthy SAN",
-      role: "Full Stack Devs Lead",
+      role: "Solidity Smart Contract Developer",
     },
     {
       photo: "/images/teams/den.jpg",
       name: "Sovanden SARIN",
-      role: "Full Stack Web Developer",
+      role: "Fullstack Web Developer",
     },
     {
       photo: "/images/teams/thith.jpg",
       name: "Thith THIN",
-      role: "Front-end Web Developer",
+      role: "UX/UI Web Developer",
     },
     {
       photo: "/images/teams/viseth.jpg",
       name: "Viseth SEA",
-      role: "Junior Web Developer",
+      role: "Web Developer",
     },
     {
       photo: "/images/teams/soklay.jpg",
       name: "Soklay VANN",
-      role: "Junior Web Developer",
+      role: "Web Developer",
+    },
+
+
+    {
+      photo: "/images/teams/sakada.jpg",
+      name: "Sakada Sam",
+      role: "Advisor",
+    },    
+    {
+      photo: "/images/teams/saing-sab.png",
+      name: "Saing SAB",
+      role: "Co-founder & Infra Advisor",
     },
   ];
 
