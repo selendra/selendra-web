@@ -5,6 +5,7 @@ import NProgress from "nprogress";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "antd/dist/antd.css";
+import "remixicon/fonts/remixicon.css";
 import "../styles/globals.css";
 
 NProgress.configure({

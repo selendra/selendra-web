@@ -9,7 +9,7 @@ export default function About() {
   const [isReadmore, setIsReadmore] = useState(false);
 
   const members = [
-// blockchain & web3 
+    // blockchain & web3
     {
       photo: "/images/teams/nath.png",
       name: "Nat LAY",
@@ -66,18 +66,20 @@ export default function About() {
       role: "Web Developer",
     },
 
-// advisor section
+    // advisor section
+  ];
 
+  const advisors = [
     {
       photo: "/images/teams/max.jpg",
       name: "Max Thornton",
       role: "BD & IR Advisor",
-    },    
+    },
     {
       photo: "/images/teams/sakada.jpg",
       name: "Sakada Sam",
       role: "Advisor",
-    },    
+    },
     {
       photo: "/images/teams/saing-sab.png",
       name: "Saing SAB",
@@ -155,6 +157,28 @@ export default function About() {
                 );
               })}
             </Row>
+
+            <center>
+              <h2>
+                <b>Advisor</b>
+              </h2>
+              <Row gutter={[18, 18]}>
+                {advisors.map((advisor) => {
+                  const { photo, name, role } = advisor;
+                  return (
+                    <Col xs={12} sm={24} md={12} lg={8} xl={5}>
+                      <Row justify="center">
+                        <Col className={styles.teamMember}>
+                          <img src={photo} alt={name} />
+                          <h2 className={styles.fullname}>{name}</h2>
+                          <h3 className={styles.role}>{role}</h3>
+                        </Col>
+                      </Row>
+                    </Col>
+                  );
+                })}
+              </Row>
+            </center>
           </div>
         </div>
       </div>

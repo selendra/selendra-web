@@ -56,7 +56,8 @@ export default function Header() {
             </Col>
             <Col xs={12} sm={12} md={0} lg={0} xl={0}>
               <Row justify="end">
-                <img src="/images/menu.svg" alt="menu" onClick={showDrawer} />
+                {/* <img src="/images/menu.svg" alt="menu" onClick={showDrawer} /> */}
+                <i class="ri-menu-3-line" onClick={showDrawer}></i>
               </Row>
             </Col>
           </Row>
@@ -79,7 +80,7 @@ export default function Header() {
                   />
                 </Row>
                 <div className={styles.drawer__product}>
-                  <h1>Products</h1>
+                  <h1>Apps</h1>
                   <p>
                     <Link href="/product">Bitriel Wallet</Link>{" "}
                   </p>
@@ -88,7 +89,7 @@ export default function Header() {
                   </p>
                 </div>
                 <div className={styles.drawer__company}>
-                  <h1>Company</h1>
+                  <h1>The Project</h1>
                   <p>
                     <Link href="/about">About Us</Link>
                   </p>

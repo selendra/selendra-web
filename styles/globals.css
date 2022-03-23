@@ -20,6 +20,10 @@ a {
   box-sizing: border-box;
 }
 
+.ri-menu-3-line {
+  font-size: 30px;
+}
+
 /* ==== Ngrogress ==== */
 
 /* Make clicks pass-through */
