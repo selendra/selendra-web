@@ -9,6 +9,7 @@ export default function About() {
   const [isReadmore, setIsReadmore] = useState(false);
 
   const members = [
+// blockchain & web3 
     {
       photo: "/images/teams/nath.png",
       name: "Nat LAY",
@@ -65,7 +66,13 @@ export default function About() {
       role: "Web Developer",
     },
 
+// advisor section
 
+    {
+      photo: "/images/teams/max.jpg",
+      name: "Max Thornton",
+      role: "BD & IR Advisor",
+    },    
     {
       photo: "/images/teams/sakada.jpg",
       name: "Sakada Sam",
