@@ -10,37 +10,10 @@ export default function Footer() {
           <Col xs={24} sm={24} md={24} lg={5} xl={5}>
             <img width={150} src="/images/selendra.png" alt="selendra" />
             <p className={styles.footerp}>
-              Used to build, deploy, and employ decentralized, peer-2-peer
+              A platform to build and deploy decentralized, peer-2-peer
               applications as simple as build the webapps and mobile
               applications we use today.
             </p>
-            <Row>
-              <Col xs={2} lg={4}>
-                <a href="https://www.facebook.com/selendrachain">
-                  <img src="/images/facebook.png" alt="facebook" />
-                </a>
-              </Col>
-              <Col xs={2} lg={4}>
-                <a href="https://twitter.com/selendrachain">
-                  <img src="/images/twitter.png" alt="twitter" />
-                </a>
-              </Col>
-              <Col xs={2} lg={4}>
-                <a href="https://medium.com/selendra">
-                  <img src="/images/medium.png" alt="medium" />
-                </a>
-              </Col>
-              <Col xs={2} lg={4}>
-                <a href="https://t.me/selendrachain">
-                  <img src="/images/telegram.png" alt="telegram" />
-                </a>
-              </Col>
-              <Col xs={2} lg={4}>
-                <a href="https://www.linkedin.com/company/selendrachain">
-                  <img src="/images/linkedin.png" alt="linkedin" />
-                </a>
-              </Col>
-            </Row>
 
             {/* === test === */}
           </Col>
@@ -90,9 +63,38 @@ export default function Footer() {
         <div className="container">
           <Row justify="space-between" align="middle">
             <Col>
-              <span>2021 © Selendra, Blockchain</span>
+              <span>2022 © Selendra, Blockchain</span>
               <br />
               <span>All right reserve</span>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={5} xl={5}>
+            <Row>
+              <Col xs={2} lg={4}>
+                <a href="https://t.me/selendrachain">
+                  <img src="/images/telegram.png" alt="telegram" />
+                </a>
+              </Col>
+              <Col xs={2} lg={4}>
+                <a href="https://twitter.com/selendrachain">
+                  <img src="/images/twitter.png" alt="twitter" />
+                </a>
+              </Col>
+              <Col xs={2} lg={4}>
+                <a href="https://www.linkedin.com/company/selendrachain">
+                  <img src="/images/linkedin.png" alt="linkedin" />
+                </a>
+              </Col>
+              <Col xs={2} lg={4}>
+                <a href="https://medium.com/selendra">
+                  <img src="/images/medium.png" alt="medium" />
+                </a>
+              </Col>
+              <Col xs={2} lg={4}>
+                <a href="https://www.facebook.com/selendrachain">
+                  <img src="/images/facebook.png" alt="facebook" />
+                </a>
+              </Col>
+            </Row>
             </Col>
             <Col>
               <span>info@selendra.org</span>

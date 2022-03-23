@@ -8,7 +8,7 @@ function Roadmap({ styles }) {
           <div className={styles.selendraRoadmap}>SELENDRA ROADMAP</div>
           <h1>
             The story of our <br />
-            <span className={styles.gradientColor2}>Roadmap</span> timeline
+            <span className={styles.gradientColor2}>Journey</span> and challenges ahead!
           </h1>
           <p className={styles.des}>
             Selendra has been under continuous development over the last 4

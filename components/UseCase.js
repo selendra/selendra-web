@@ -4,9 +4,9 @@ function UseCase({ styles }) {
   return (
     <div className={styles.usecase}>
       <div className="container">
-        <h4 className={styles.blue}>SELENDRA Use Cases</h4>
+        <h4 className={styles.blue}>SELENDRA #Buidl Use Cases</h4>
         <h1>
-          Projects that intergrating <br /> with Selendra
+          Some projects that are intergrating <br /> with Selendra
         </h1>
         <br />
         <Row justify="space-between" gutter={[30, 30]}>
@@ -56,6 +56,16 @@ function UseCase({ styles }) {
                 together with all the other added benefits blockchain technology
                 has to offer. Buyers and sellers are empowered through the
                 community where transactions can be negotiated with confidence.
+              </p>{" "}
+            </div>
+          </Col>
+          <Col xs={24} sm={24} md={12}>
+            <div className={styles.usecaseItem}>
+              <img src="/images/otherprojects.png" alt="others" />
+              <p>
+                There are projects related to Digital Student IDs Apps, Loyalty Rewards, Community Lottery
+                and several interesting DApps are being developed by community developers and enterprise partners. 
+                We look forward to list them on Selendra web page in the near future.
               </p>{" "}
             </div>
           </Col>
