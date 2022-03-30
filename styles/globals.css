@@ -124,7 +124,18 @@ a {
 .img-responsive {
   width: 100% !important;
 }
-
+.project-underway {
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: 15px;
+}
+.max-supply {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #ed1576;
+  position: relative;
+  top: -10px;
+}
 @media only screen and (max-width: 1440px) {
   .container {
     margin: 0 13%;

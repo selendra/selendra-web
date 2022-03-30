@@ -6,6 +6,9 @@ function TotalSupply({ styles }) {
       <div className="container">
         <center>
           <h1 className={styles.gradientColor}>Token Supply and Allocation</h1>
+          <center>
+            <div className="max-supply">Max Supply: 3,141,592,653 SEL</div>
+          </center>
           <p>
             Innovation and expansion are key factors in the Selendra network.
             The proposed tokenomic model comes with a strong approach to

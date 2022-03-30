@@ -34,50 +34,51 @@ function Banner({ styles }) {
               <br />
               <br />
               <div className={styles.partnersLogo}>
-                <center>
-                  <Row gutter={[12, 12]}>
-                    <Col xs={5} sm={5} md={6} lg={6}>
-                      <a href="https://www.isigroup.com.kh/" target="_blank">
-                        <img
-                          src="/images/partners/isi.png"
-                          height={80}
-                          alt="isi"
-                        />
-                      </a>
-                    </Col>
-                    <Col xs={5} sm={5} md={6} lg={6}>
-                      <a href="https://sabay.com.kh/" target="_blank">
-                        <img
-                          src="/images/partners/sabay.png"
-                          height={80}
-                          alt="sabay"
-                        />
-                      </a>
-                    </Col>
-
-                    <Col xs={5} sm={5} md={6} lg={6}>
-                      <a
-                        href="https://nomics.com/assets/sel2-selendra"
-                        target="_blank"
-                      >
-                        <img
-                          src="/images/partners/logo.png"
-                          height={80}
-                          alt="nomics"
-                        />
-                      </a>
-                    </Col>
-                    <Col xs={8} sm={8} md={6} lg={6}>
-                      <a href="https://doersasean.com/" target="_blank">
-                        <img
-                          src="/images/partners/doer.png"
-                          height={80}
-                          alt="doersasean"
-                        />
-                      </a>
-                    </Col>
-                  </Row>
-                </center>
+                <p>Partners</p>
+                <Row gutter={[12, 12]}>
+                  <Col xs={5} sm={5} md={6} lg={6}>
+                    <a href="https://www.isigroup.com.kh/" target="_blank">
+                      <img
+                        src="/images/partners/isi.png"
+                        height={80}
+                        alt="isi"
+                      />
+                    </a>
+                  </Col>
+                  <Col xs={5} sm={5} md={6} lg={6}>
+                    <a href="https://sabay.com.kh/" target="_blank">
+                      <img
+                        src="/images/partners/sabay.png"
+                        height={80}
+                        alt="sabay"
+                      />
+                    </a>
+                  </Col>
+                  <Col xs={8} sm={8} md={6} lg={6}>
+                    <a href="https://doersasean.com/" target="_blank">
+                      <img
+                        src="/images/partners/doer.png"
+                        height={80}
+                        alt="doersasean"
+                      />
+                    </a>
+                  </Col>
+                </Row>
+                <br />
+                <Row gutter={[12, 12]}>
+                  <Col xs={5} sm={5} md={6} lg={6}>
+                    <a
+                      href="https://nomics.com/assets/sel2-selendra"
+                      target="_blank"
+                    >
+                      <img
+                        src="/images/partners/logo.png"
+                        height={80}
+                        alt="nomics"
+                      />
+                    </a>
+                  </Col>
+                </Row>
               </div>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={11}>

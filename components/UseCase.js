@@ -61,11 +61,14 @@ function UseCase({ styles }) {
           </Col>
           <Col xs={24} sm={24} md={12}>
             <div className={styles.usecaseItem}>
-              <img src="/images/otherprojects.png" alt="others" />
+              <img src="/images/otherprojects.png" alt="others" />{" "}
+              <span className="project-underway">Other Projects</span>
               <p>
-                There are projects related to Digital Student IDs Apps, Loyalty Rewards, Community Lottery
-                and several interesting DApps are being developed by community developers and enterprise partners. 
-                We look forward to list them on Selendra web page in the near future.
+                There are projects related to Digital Student IDs Apps, Loyalty
+                Rewards, Community Lottery and several interesting DApps are
+                being developed by community developers and enterprise partners.
+                We look forward to list them on Selendra web page in the near
+                future.
               </p>{" "}
             </div>
           </Col>
