@@ -146,7 +146,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.partnersLogo img {
+  margin-right: 20px;
+}
 .benefit {
   background-image: url("/images/background.png");
   color: #fff;

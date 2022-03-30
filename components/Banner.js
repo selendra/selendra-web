@@ -33,12 +33,42 @@ function Banner({ styles }) {
               <br />
               <br />
               <br />
-              <div className="partners-logo">
-                <img
-                  src="/images/partners/partners.png"
-                  alt="ISI"
-                  height={70}
-                />
+              <div className={styles.partnersLogo}>
+                <span>
+                  <a href="https://www.isigroup.com.kh/" target="_blank">
+                    <img src="/images/partners/isi.png" height={80} alt="isi" />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://sabay.com.kh/" target="_blank">
+                    <img
+                      src="/images/partners/sabay.png"
+                      height={80}
+                      alt="sabay"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a href="https://doersasean.com/" target="_blank">
+                    <img
+                      src="/images/partners/doer.png"
+                      height={80}
+                      alt="doersasean"
+                    />
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://nomics.com/assets/sel2-selendra"
+                    target="_blank"
+                  >
+                    <img
+                      src="/images/partners/logo.png"
+                      height={80}
+                      alt="nomics"
+                    />
+                  </a>
+                </span>
               </div>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={11}>
