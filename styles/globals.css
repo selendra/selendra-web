@@ -124,6 +124,7 @@ a {
 .img-responsive {
   width: 100% !important;
 }
+
 @media only screen and (max-width: 1440px) {
   .container {
     margin: 0 13%;
