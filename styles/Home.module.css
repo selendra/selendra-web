@@ -26,6 +26,7 @@
   font-weight: 800;
   border: none;
   transition: 300ms;
+  margin-right: 15px;
 }
 .btnOnBoard:hover {
   opacity: 0.7;
@@ -374,7 +375,11 @@
     padding: 0 10px;
   }
 }
-
+@media only screen and (max-width: 1660px) {
+  .home {
+    padding: 50px 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .selendra {
     height: 100%;

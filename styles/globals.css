@@ -136,9 +136,9 @@ a {
   position: relative;
   top: -10px;
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1920px) {
   .container {
-    margin: 0 13%;
+    margin: 0 15%;
   }
 }
 @media only screen and (max-width: 992px) {

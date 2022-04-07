@@ -30,6 +30,15 @@ function Banner({ styles }) {
                   Whitepaper
                 </a>
               </Button>
+              <Button type="primary" className={styles.btnOnBoard}>
+                <a
+                  target="_blank"
+                  href="https://app.selendra.org"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Developers' UI
+                </a>
+              </Button>
               <br />
               <br />
               <br />
