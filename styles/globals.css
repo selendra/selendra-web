@@ -141,9 +141,16 @@ a {
     margin: 0 15%;
   }
 }
-@media only screen and (max-width: 992px) {
+
+@media only screen and (max-width: 1500px) {
   .container {
     margin: 0 8%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    margin: 0 4%;
   }
 }
 @media only screen and (max-width: 76rem) {
@@ -154,13 +161,11 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .container {
-    margin: 0 8%;
+    margin: 0 4%;
   }
   h1 {
     font-size: 30px !important;
-  }
-  h2 {
-    font-size: 25px !important;
+    line-height: 35px !important;
   }
 }
 

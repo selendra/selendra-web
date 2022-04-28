@@ -1,12 +1,14 @@
 .selendra {
+  display: flex;
   height: 95vh;
+  justify-content: center;
+  align-items: center;
 }
 .home {
   background-image: url("../public/images/background.png");
 }
 .home h1 {
   color: #fff;
-
   font-weight: 900;
 }
 .blue {
@@ -33,8 +35,9 @@
 }
 @media only screen and (max-width: 992px) {
   .btnOnBoard {
-    width: 250px;
+    width: 100%;
     height: 55px;
+    margin-bottom: 15px;
   }
 }
 .btnOnBoard:hover,
@@ -481,5 +484,8 @@
   }
   .newDotRight {
     left: 0px;
+  }
+  .gradientColor2 {
+    font-size: 40px !important;
   }
 }

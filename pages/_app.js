@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 import Header from "../components/Header";
@@ -15,7 +14,7 @@ NProgress.configure({
   showSpinner: false,
 });
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps, router }) {
   React.useEffect(() => {
     let routeChangeStart = () => NProgress.start();
     let routeChangeComplete = () => NProgress.done();
@@ -33,9 +32,6 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <div>
-      <Head>
-        <link rel="stylesheet" type="text/css" href="/nprogress.css" />
-      </Head>
       <Header />
       <Component {...pageProps} />
       <Footer />

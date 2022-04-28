@@ -49,7 +49,7 @@ function Banner({ styles }) {
                     <a href="https://www.isigroup.com.kh/" target="_blank">
                       <img
                         src="/images/partners/isi.png"
-                        height={80}
+                        height={100}
                         alt="isi"
                       />
                     </a>
@@ -58,7 +58,7 @@ function Banner({ styles }) {
                     <a href="https://sabay.com.kh/" target="_blank">
                       <img
                         src="/images/partners/sabay.png"
-                        height={80}
+                        height={100}
                         alt="sabay"
                       />
                     </a>
@@ -67,7 +67,7 @@ function Banner({ styles }) {
                     <a href="https://doersasean.com/" target="_blank">
                       <img
                         src="/images/partners/doer.png"
-                        height={80}
+                        height={100}
                         alt="doersasean"
                       />
                     </a>
@@ -82,7 +82,7 @@ function Banner({ styles }) {
                     >
                       <img
                         src="/images/partners/logo.png"
-                        height={80}
+                        height={100}
                         alt="nomics"
                       />
                     </a>
@@ -98,7 +98,7 @@ function Banner({ styles }) {
               />
             </Col>
           </Row>
-          <div className={styles.downloadBitriel}>
+          {/* <div className={styles.downloadBitriel}>
             <Row align="middle" justify="space-around" gutter={[0, 10]}>
               <Col>
                 <p>Download our multi asset crypto wallet</p>
@@ -114,7 +114,7 @@ function Banner({ styles }) {
                 </Button>
               </Col>
             </Row>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

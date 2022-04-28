@@ -57,7 +57,7 @@ export default function Header() {
             <Col xs={12} sm={12} md={0} lg={0} xl={0}>
               <Row justify="end">
                 {/* <img src="/images/menu.svg" alt="menu" onClick={showDrawer} /> */}
-                <i class="ri-menu-3-line" onClick={showDrawer}></i>
+                <i className="ri-menu-3-line" onClick={showDrawer}></i>
               </Row>
             </Col>
           </Row>

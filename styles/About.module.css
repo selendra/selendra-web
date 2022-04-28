@@ -168,14 +168,28 @@
   -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .joinTelegram Button:hover {
-  color: #4609d6;
-  background-color: #4609d628;
+  color: #fff;
+  background-color: #4609d6;
 }
 
 @media only screen and (max-width: 992px) {
+  .about h1 {
+    font-size: 32px;
+  }
   .faq__left Button {
     width: 220px;
     height: 40px;
+  }
+  .team img {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+  }
+  .team .fullname {
+    font-size: 18px;
+  }
+  .team .role {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 768px) {
