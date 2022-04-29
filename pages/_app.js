@@ -1,3 +1,5 @@
+import { motion, AnimatePresence } from "framer-motion";
+
 import React from "react";
 import Router from "next/router";
 import NProgress from "nprogress";
@@ -30,11 +32,23 @@ export default function MyApp({ Component, pageProps, router }) {
     };
   }, []);
 
+  const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  };
+
   return (
-    <div>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </div>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </motion.div>
+    </AnimatePresence>
   );
 }
